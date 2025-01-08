@@ -1,0 +1,332 @@
+<template>
+    <div class="container">
+        <h1>Member Registration</h1>
+        <div class="description">
+            <p class="f-size">Please fill out the registration form below. All fields marked with an asterisk (*) are
+                required.</p>
+        </div>
+
+        <div class="contact-info">
+            <h2>Contact Informaiton</h2>
+            <p class="f-size">Please provide your contact detials below.</p>
+            <form>
+                <div class="name">
+                    <div class="form-group">
+                        <label for="first-name" class="f-size">* First Name</label>
+                        <input type="text" id="first-name" class="f-size" name="FirstName" onchange={handleChange}
+                            maxlength="40">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name" class="f-size">* Last Name</label>
+                        <input type="text" id="last-name" class="f-size" name="LastName" onchange={handleChange}
+                            maxlength="80">
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="title" class="f-size">Title</label>
+                        <input type="text" id="title" class="f-size" name="Title" onchange={handleChange}
+                            maxlength="128">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="f-size">* E-mail Address</label>
+                        <input type="email" id="email" class="e-mail-address f-size" name="Email"
+                            onchange={handleChange}>
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="phone" class="f-size">* Phone</label>
+                        <input type="tel" id="phone" class="f-size" name="Phone" onchange={handleChange}>
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="contact-address" class="f-size">* Address</label>
+                        <input type="text" id="contact-address" class="f-size" name="ContactStreet-1"
+                            onchange={handleChange}>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-address-two" class="f-size">Address 2</label>
+                        <input type="text" id="contact-address-two" class="f-size" name="ContactStreet-2"
+                            onchange={handleChange}>
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="contact-country" class="f-size">* Country</label>
+                        <select name="ContactCountry" onchange={handleChange} id="contact-country"
+                            class="form-control f-size">
+                            <option value="">- Select One -</option>
+                            <template for:each={countries} for:item="country">
+                                <option key={country.value} value={country.value}>{country.label}</option>
+                            </template>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-state" class="f-size">* State / Province</label>
+                        <select name="ContactState" onchange={handleChange} id="contact-state"
+                            class="state-province f-size">
+                            <option value="">- Select One -</option>
+                            <template for:each={states} for:item="state">
+                                <option key={state.value} value={state.value}>{state.label}</option>
+                            </template>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="conatct-city" class="f-size">* City</label>
+                        <input type="text" id="contact-city" class="f-size" name="ContactCity" onchange={handleChange}>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-postal-code" class="f-size">* Postal Code</label>
+                        <input type="text" id="contact-postal-code" class="f-size" name="ContactPostalCode"
+                            onchange={handleChange}>
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label class="f-size">Opt Out of Email?</label>
+                        <input type="checkbox" id="opt-email" class="checkbox" name="OptOutEmail"
+                            onchange={handleChange}><label for="opt-email" class="checkbox-label f-size">Yes</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="company-info">
+            <h2>Company Information</h2>
+            <p class="f-size">Please provide your company's detials below.</p>
+            <form>
+                <div class="company">
+                    <div class="form-group">
+                        <label for="company-name" class="f-size">* Company Name</label>
+                        <input type="text" id="company-name" class="f-size" name="Company" onchange={handleChange} maxlength="255">
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <input type="checkbox" id="duplicate-address" class="checkbox">
+                        <label for="duplicate-address" class="checkbox-label f-size">Duplicate address information from
+                            above</label>
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="address" class="f-size">* Address</label>
+                        <input type="text" id="address" class="f-size" name="CompanyStreet-1" onchange={handleChange}>
+                    </div>
+                    <div class="form-group">
+                        <label for="address-two" class="f-size">Address 2</label>
+                        <input type="text" id="address-two" class="f-size" name="CompanyStreet-2"
+                            onchange={handleChange}>
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="country" class="f-size">* Country</label>
+                        <select name="CompanyCountry" onchange={handleChange} id="country" class="form-control f-size">
+                            <option value="">- Select One -</option>
+                            <template for:each={countries} for:item="country">
+                                <option key={country.value} value={country.value}>{country.label}</option>
+                            </template>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="opt-email" class="f-size">* State / Province</label>
+                        <select name="CompanyState" onchange={handleChange} id="state" class="state-province f-size">
+                            <option value="">- Select One -</option>
+                            <template for:each={states} for:item="state">
+                                <option key={state.value} value={state.value}>{state.label}</option>
+                            </template>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="city" class="f-size">* City</label>
+                        <input type="text" id="city" class="f-size" name="CompanyCity" onchange={handleChange}>
+                    </div>
+                    <div class="form-group">
+                        <label for="postal-code" class="f-size">* Postal Code</label>
+                        <input type="text" id="postal-code" class="f-size" name="CompanyPostalCode"
+                            onchange={handleChange}>
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="company-phone" class="f-size">* Phone</label>
+                        <input type="text" id="company-phone" class="f-size" name="CompanyPhone"
+                            onchange={handleChange}>
+                    </div>
+                    <div class="form-group">
+                        <label for="industry" class="f-size">* Industry</label>
+                        <select name="Industry" onchange={handleChange} id="industry" class="f-size">
+                            <option value="">- Select One -</option>
+                            <template for:each={industries} for:item="industry">
+                                <option key={industry.value} value={industry.value}>{industry.label}</option>
+                            </template>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="website" class="f-size">* Website</label>
+                        <input type="url" id="website" class="f-size" name="Website" onchange={handleChange} maxlength="255">
+                    </div>
+                    <div class="form-group">
+                        <label for="employees" class="f-size">* Number of Employees</label>
+                        <select name="NumberOfEmployees" onchange={handleChange} id="employees" class="f-size">
+                            <option value="">- Select One -</option>
+                            <option value="< 50">&lt; 50</option>
+                            <option value="50 - 250">50 - 250</option>
+                            <option value="250 - 1,000">250 - 1,000</option>
+                            <option value="> 1,000">&gt; 1,000</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="revenue" class="f-size">* Annual Revenue</label>
+                        <input type="number" id="revenue" class="f-size" name="AnnualRevenue" onchange={handleChange} maxlength="18">
+                    </div>
+                    <div class="form-group">
+                        <label for="db-number" class="f-size">D&B Number</label>
+                        <input type="text" id="db-number" class="f-size" name="D&B_Number" onchange={handleChange} maxlength="255">
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label class="f-size">* Markets Served</label>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="north-america" name="Market-NorthAmerica"
+                                onchange={handleChange}>
+                            <label for="north-america" class="checkbox-label f-size">North America</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="LATAM" name="Market-LATAM"
+                                onchange={handleChange}>
+                            <label for="LATAM" class="checkbox-label f-size">LATAM</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="EMEA" name="Market-EMEA"
+                                onchange={handleChange}>
+                            <label for="EMEA" class="checkbox-label f-size">EMEA</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="APAC" name="Market-APAC"
+                                onchange={handleChange}>
+                            <label for="APAC" class="checkbox-label f-size">APAC</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="revenue" class="f-size">CEO/Owner First Name</label>
+                        <input type="text" id="owner-first-name" class="f-size" name="CEO-FirstName"
+                            onchange={handleChange} maxlength="255">
+                    </div>
+                    <div class="form-group">
+                        <label for="db-number" class="f-size">CEO/Owner Last Name</label>
+                        <input type="text" id="owner-last-name" class="f-size" name="CEO-LastName"
+                            onchange={handleChange} maxlength="255">
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="revenue" class="f-size">CEO/Owner Title</label>
+                        <input type="text" id="owner-title" class="f-size" name="CEO-Title" onchange={handleChange} maxlength="255">
+                    </div>
+                    <div class="form-group">
+                        <label for="region" class="f-size">* Region</label>
+                        <select name="Region" onchange={handleChange} id="region" class="f-size">
+                            <option value="">- Select One -</option>
+                            <option value="APJ">APJ</option>
+                            <option value="EMEA">EMEA</option>
+                            <option value="NAM">NAM</option>
+                            <option value="LATAM">LATAM</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label class="f-size">*Solution Area of Interest</label>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="protection" name="DataProtection"
+                                onchange={handleChange}>
+                            <label for="protection" class="checkbox-label f-size">Data protection</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="endpoint-management"
+                                name="UnifiedEndpointManagement" onchange={handleChange}>
+                            <label for="endpoint-management" class="checkbox-label f-size">Unified Endpoint
+                                Management</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="platform-management"
+                                name="MicrosoftPlatformManagement" onchange={handleChange}>
+                            <label for="platform-management" class="checkbox-label f-size">Microsoft Platform
+                                Management</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="information-management"
+                                name="InformationManagement" onchange={handleChange}>
+                            <label for="information-management" class="checkbox-label f-size">Information
+                                Management</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="one-identity" name="OneIdentity"
+                                onchange={handleChange}>
+                            <label for="one-identity" class="checkbox-label f-size">One Identity</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="former-balabit-solutions"
+                                name="FormerBalabitsolutions" onchange={handleChange}>
+                            <label for="former-balabit-solutions" class="checkbox-label f-size">Former Balabit
+                                solutions</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="former-metalogix-solutions"
+                                name="FormerMetalogixSolutions" onchange={handleChange}>
+                            <label for="former-metalogix-solutions" class="checkbox-label f-size">Former Metalogix
+                                Solutions</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="former-apexSQL-solutions"
+                                name="FormerApexSQLSolutions" onchange={handleChange}>
+                            <label for="former-apexSQL-solutions" class="checkbox-label f-size">Former ApexSQL
+                                Solutions</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="former-binary-tree" name="FormerBinaryTree"
+                                onchange={handleChange}>
+                            <label for="former-binary-tree" class="checkbox-label f-size">Former Binary Tree</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="msp" name="MSP" onchange={handleChange}>
+                            <label for="msp" class="checkbox-label f-size">MSP (Managed Service Provider)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="erwin" name="erwin" onchange={handleChange}>
+                            <label for="erwin" class="checkbox-label f-size">erwin</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="one-login" name="OneLogin"
+                                onchange={handleChange}>
+                            <label for="one-login" class="checkbox-label f-size">OneLogin</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="technology-partner" name="TechnologyPartner"
+                                onchange={handleChange}>
+                            <label for="technology-partner" class="checkbox-label f-size">Technology Partner</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="f-size" onclick={handleSumbit}>Complete Registration</button>
+            </form>
+        </div>
+    </div>
+</template>

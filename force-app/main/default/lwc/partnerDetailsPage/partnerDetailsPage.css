@@ -1,0 +1,460 @@
+@import "c/cssUtility";
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, label, select, input {
+    color: black;
+}
+
+p, a, span {
+    font-size: 16px;
+}
+
+.bg-gray {
+    background-color: #EFEFEF;
+}
+
+.p-1 {
+    padding: 30px 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.contact-me {
+    background-color: #016a9c;
+    color: white;
+    cursor: pointer;
+    padding: 6px 12px;
+    outline: none;
+    border: 1px solid #015983;
+    display: block;
+    width: fit-content;
+    margin: 16px 0 10px;
+}
+
+.contact-me svg {
+    fill: white;
+    width: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.contact-me:hover {
+    text-decoration: none;
+    background-color: #003769;
+    border-color: #002a50;
+}
+
+.slds-map {
+    height: 300px !important;
+}
+
+.slds-has-coordinates {
+    overflow: hidden !important;
+}
+
+.forceCommunitySection .cb-section_column {
+    padding: 0;
+}
+
+/* -------------------------- Result Section --------------------------- */
+
+.first-section {
+    margin-top: 80px;
+}
+
+.search-results {
+    display: block;
+    margin-left: auto;
+    width: fit-content;
+    padding: 5px 10px;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    font-size: 14px;
+}
+
+.search-results:hover {
+    background-color: #d5d5d5;
+    text-decoration: none;
+}
+
+.search-results svg {
+    fill: #016a9c;
+    width: 14px;
+    margin-right: 5px;
+}
+
+/* ------------------------------------- Partner Info Section ------------------------------ */
+
+.partner-info h1 {
+    margin: 24px 0;
+}
+
+.partner-info > div {
+    margin: 10px 0;
+}
+
+.partner-contact > div{
+    margin: 5px 0;
+}
+
+.partner-info svg {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.partner-info .address {
+    display: flex;
+    align-items: flex-start;
+    gap: 3px;
+}
+
+.partner-info .address .d-block {
+    display: block;
+}
+
+.partner-info .address svg {
+    width: 16px;
+}
+
+.partner-info a {
+    font-size: 16px;
+}
+
+.listing-logo img {
+    width: 100%;
+}
+
+.video .image img{
+    padding: 4px;
+    border: 1px solid #dddddd;
+    margin: 0 120px 20px;
+    cursor: pointer;
+}
+
+.video .image-info {
+    width: 50%;
+    text-align: center;
+}
+
+.video .image-info a{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.video .overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.video iframe {
+    width: 100%;
+    height: 484px;
+}
+
+.last-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.last-section .contact-me {
+    margin: 0;
+}
+
+.last-section .search-results {
+    margin-left: 0;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    h3 {
+        font-size: 24px;
+    }
+
+    .first-section {
+        margin-top: 100px;
+    }
+
+    .first-section a {
+        margin-right: 15px;
+    }
+    .overview > div{
+        display: flex;
+        align-items: center;
+    }
+    .partner-info {
+        flex-basis: 66.6%;
+        margin: 0 0 15px;
+    }
+
+    .partner-info h1{
+        margin-top: 0;
+    }
+
+
+    .headquarters .container > div {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .container .location {
+        flex-basis: 30%;
+    }
+
+    lightning-map {
+        height: 298px;
+    }
+
+    .last-section svg{
+        vertical-align: middle;
+        margin-bottom: 3px;      
+    }
+
+    .last-section .search-results {
+        padding: 6px 12px;
+    }
+}
+
+/* ------------------------------- Model ---------------------------  */
+
+h4 {
+    font-size: 20px;
+}
+
+.modal {
+    position: fixed;
+    width: auto;
+    top: -250px;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+    overflow-y: auto;
+}
+
+.show {
+    opacity: 1;
+    top: 0;
+    z-index: 999;
+}
+
+.modal-content {
+    position:relative;
+    background-color: white;
+    margin: 10px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+    position: fixed;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+    top: 0; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.overlay-bg {
+    z-index: 99;
+    opacity: 1;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modal h2{
+    margin-bottom: 10px;
+}
+
+.modal-header button {
+    outline: none;
+    background: transparent;
+    border: none;
+    align-self: flex-start;  
+}
+
+.modal-header svg{
+    width: 12px;
+    fill: #33333378;
+}
+
+.modal-header button:hover svg {
+    fill: #333;
+}
+
+.modal p {
+    margin-bottom: 30px;
+    margin-left: auto;
+    color: #333;
+}
+
+.modal .modal-body > div {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.modal-body, .modal-footer {
+    padding: 20px;
+}
+
+.form-group {
+    flex-basis: 100%;
+}
+
+.form-group span {
+    color: #333;
+    font-size: 16px;
+    font-weight: 100;
+    margin-right: 5px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+input, select, textarea{
+    width: 100%;
+    display: block;
+    border: 1px solid #ccc;
+    padding: 5px 12px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #016a9c;
+    box-shadow: 0px 0px 8px rgb(1, 106, 156, 0.6) ;
+}
+
+.modal .checkbox, .modal .checkbox-label {
+    width: fit-content;
+    display: inline-block;
+    font-weight: normal;
+}
+
+.modal .checkbox-label {
+    margin-left: 5px;
+}
+
+.text-area .form-group {
+    flex-basis: 100%;
+}
+
+.modal-content textarea {
+    height: auto;
+}
+
+.modal-footer {
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+.modal-footer button {
+    display: block;
+    width: fit-content;
+    padding: 6px 12px;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 34px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+
+    .modal-one {
+        width: 600px;
+        margin: auto;
+    }
+
+    .modal {
+        width: 600px;
+        margin: 10px auto;
+    }
+    
+    .modal-content {
+        margin: 10px auto;
+    }
+
+    .modal form > div {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .modal p{
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        flex-basis: 50%;
+    }
+
+    .company .form-group {
+        flex-basis: 47%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .video .modal-one, .video .modal {
+        width: 900px;
+    }
+
+    .video .modal-content {
+        margin: 15px auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    h1 {
+        font-size: 38px;
+    }
+    
+    h2 {
+        font-size: 34px;
+    }
+
+    input, select {
+        padding: 7px 14px;
+    }
+
+}

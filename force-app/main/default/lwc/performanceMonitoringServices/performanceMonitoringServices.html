@@ -1,0 +1,135 @@
+<template>
+    <div class="DataBasepage">
+        <h3>Performance Monitoring Services</h3>
+        <div class="slds-p-around_medium">
+            <div>
+                <h4 style="font-size: 16px; padding:10px">Quickly identify and resolve performance issues across your
+                    physical and virtual environments, databases and applications.
+                </h4>
+                <p>Whether you are looking to diagnose and detect complex application performance problems, standardize
+                    performance and consolidate performance management tools, or create customized real-time dashboards,
+                    our certified consultants and integration experts will provide strategic planning, architectural
+                    assessment, and managed implementation. We use best practices to speed deployment, reduce
+                    operational costs, and accelerate your business objectives.
+                </p><br>
+                <lightning-button label="Download Service Overview" variant="brand"
+                    onclick={handleDownload}></lightning-button>
+            </div>
+            <!-- Image for Data Protection Service -->
+            <img src="https://support.quest.com/Images/ess-cs-22.jpg" class="slds-image"
+                alt="Data Protection Service Image" />
+
+        </div>
+
+
+        <!-- Main Content Section -->
+        <div>
+            <h3>Featured Services</h3>
+            <div style="border-bottom: 1px solid #ccc; margin-bottom: 10px;">
+                <button class={standardButtonClass} data-id="standard" onclick={handleButtonClick}>
+                    Install and Configure Foglight
+                </button>
+                <button class={support24x7ButtonClass} data-id="24x7" onclick={handleButtonClick}>
+                    Design and Implement Stat
+                </button>
+            </div>
+
+            <div if:true={isStandardVisible}>
+                <div class="content">
+                    <div class="service-content">
+                        <img src="https://support.quest.com/Images/ess-cs-7.jpg" alt="Install and Configure Foglight"
+                            class="service-image" />
+                        <div class="service-text">
+                            <p>
+                                We provide you with a simple, practical, and cost-effective way to analyze and document
+                                the performance of your Foglight solution, providing recommendations for improvements.
+                                Our highly skilled consultants partner with your team to verify that servers and
+                                appliances are configured properly and determine if any additional environmental
+                                constraints are impacting your unique end-to-end implementation.</p>
+                                <p></p><a href="javascript:void(0)">Learn More</a>
+                            </p><br>
+                            <p>Let our Foglight services experts help you.</p><br>
+                            <div class="custom-picklist">
+                                <select class="contact-expert-dropdown" onchange={handlePicklistChange}>
+                                    <option value="" disabled selected style=" background-color: rgb(0, 85, 108); color: white;">Contact an Expert</option>
+                                    <option value="FoglighttoRemedyIntegrationServicesPack">Foglight to Remedy Integration Services Pack</option>
+                                    <option value="FoglightFoundationServicesRemoteOffering">Foglight Foundation Services - Remote Offering</option>
+                                    <option value="FoglightFoundationServicesOnsiteOffering">Foglight Foundation Services - Onsite Offering</option>
+                                    <option value="FoglighttoServiceNowIntegrationServicesPack">Foglight to ServiceNow Integration Services Pack</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div if:true={is24x7Visible}>
+            <div class="content">
+                <div class="service-content">
+                    <img src="https://support.quest.com/Images/ess-cs-13.jpg" alt="Design and Implement Stat"
+                        class="service-image" />
+                    <div class="service-text">
+                        <p>Let us help you plan, analyze, design, and implement your solution to move you from a manual
+                            workflow process to an automated, secured, and streamlined application change management
+                            process.
+                            Learn More</p>
+                        <div class="custom-picklist">
+                            <select class="contact-expert-dropdown" onchange={handlePicklistChange}>
+                                <option value="" disabled selected style=" background-color: rgb(0, 85, 108); color: white;">Contact an Expert</option>
+                                <option value="StatUpgradeServicesOffering">Stat Upgrade Services Offering</option>
+                                <option value="StatBasicProductionServicesforOracleE-BusinessSuite">Stat Basic Production Services for Oracle E-Business Suite</option>
+                                <option value="StatBasicProductionServicesforPeopleSoft">Stat Basic Production Services for PeopleSoft</option>
+                                <option value="StatProductionPreferredPremierServicesforOracleE-BusinessSuite">Stat Production Preferred Premier Services for Oracle E-Business Suite</option>
+                                <option value="StatProductionPreferredPremierServicesforPeopleSoft">Stat Production Preferred Premier Services for PeopleSoft</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Additional Services Section -->
+        <div class="additional-services">
+            <h2>Additional Services</h2>
+            <div class="service-container">
+                <div class="service-box">
+                    <img src="https://cdn-icons-png.flaticon.com/256/205/205826.png" alt="Consulting Services Icon">
+                    <div class="service-box-text">
+                        <h3>Consulting Services</h3>
+                        <p>
+                            <a href="#">Microsoft Platform</a> |
+                            <a href="#">Data Protection</a> |
+                            <a href="#">Endpoint Systems</a> |
+                            <a href="#">Performance Monitoring</a> |
+                            <a href="#">Database Management</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <img src="https://cdn-icons-png.freepik.com/256/15867/15867239.png">
+                    <div class="service-box-text">
+                        <h3>Educational Services</h3>
+                        <p>
+                            <a href="#">Training courses</a> delivered through online web-based, on-site, or virtual
+                            instructor-led.
+                        </p>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <img src="https://st2.depositphotos.com/4410397/7229/v/450/depositphotos_72296883-stock-illustration-wrench-icon.jpg"
+                        alt="Support Services Icon">
+                    <div class="service-box-text">
+                        <h3>Support Services</h3>
+                        <p>
+                            Find the <a href="#">right level of support</a> to accommodate the unique needs of your
+                            organization.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

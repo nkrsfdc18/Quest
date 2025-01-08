@@ -1,0 +1,230 @@
+*{
+    font-family: "Noto-SansRegular",Arial, sans-serif;
+    color: #333;
+}
+.home-section {
+    display: block;
+}
+.pb-40 {
+    padding-bottom: 40px;
+}
+.pt-40 {
+    padding-top: 20px;
+}
+.image-heading img {
+    width: 48px;
+    height: 48px;
+}
+img {
+    vertical-align: middle;
+    border: 0;
+}
+.text-center {
+    text-align: center;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row {
+    display: flex;
+}
+.image-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+}
+.image-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    line-height: 1.16667;
+    color: #333;
+}
+.home-section-content {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.image-content-container span {
+    font-size: 16px;
+    color: #333;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+@media (min-width: 992px) {
+    .image-content-container{
+        width: 25%;
+        float: left;
+    }
+}
+
+/* Stats Content Design */
+.home_stats {
+    display: block;
+}
+.stat-row {
+    display: flex;
+}
+.stats-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.stats-boxes {
+    padding: 0;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+.stat-box {
+    padding: 30px;
+    width: 25%;
+}
+.stats-boxes>div h4 {
+    color: #fff;
+    font-size: 78px;
+    font-weight: 700;
+    margin: 0;
+}
+.stats-boxes>div p {
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+}
+.stats-boxes .stat-1 {
+    background: #53565a;
+}
+.stats-boxes .stat-2 {
+    background: #6fb7ba;
+}
+.stats-boxes .stat-3 {
+    background: #00556c;
+}
+.stats-boxes .stat-4 {
+    background: #fb4f14;
+}
+
+
+/* Quest Partner Programs Section Desinging */
+.quest-partners-programs {
+    display: block;
+}
+.programs-row {
+    display: flex;
+}
+.partner-box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px auto 40px;
+}
+.partner-box-container .partner-box {
+    margin: 10px;
+    max-width: 23%;
+    text-align: center;
+    background: #f9f9f9;
+    box-shadow: 0 4px 10px 0 rgba(140, 114, 80, .30);
+    -webkit-box-shadow: 0 4px 10px 0 rgba(140, 114, 80, .30);
+    padding: 15px;
+    position: relative;
+}
+.partner-box-container .partner-box h4 {
+    font-weight: bold;
+    color: #5d5d5d;
+    font-size: 20px;
+    margin-bottom: 11px;
+    line-height: 1.16667;
+}
+.partner-box-container .partner-box p {
+    margin-bottom: 60px;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #333333;
+}
+.partner-box-container .partner-box .partner-box-cta {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    margin-left: -15px;
+}
+.btn-orange {
+    color: #fff;
+    background-color: #fb4f14;
+    border-color: #f14104;
+    padding: 6px 36px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.btn-orange:hover {
+    background-color: #f14104;
+}
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    /* font-weight: normal; */
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    /* padding: 6px 12px; */
+    /* font-size: 14px; */
+    line-height: 1.5;
+    border-radius: 1px;
+    /* -webkit-user-select: none; */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* Quest Customers Section Designing */
+.quest-customers {
+    display: block;
+}
+.body-logos h3 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding-top: 70px;
+    padding-bottom: 10px !important;
+    font-size: 24px;
+}
+.customer-logo-flex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.body-logos .customer-logo-flex .customer-logo {
+    margin: 0 10px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.customer-logo-flex .customer-logo img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

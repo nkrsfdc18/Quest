@@ -1,0 +1,230 @@
+.DataBasepage{
+    margin: 0 auto !important;
+    max-width: 1200px !important;
+}
+
+.active-button {
+    color: 2px solid #016a9c;
+    background-color: #fff;
+    cursor: default;
+    border-color: transparent;
+    margin-left: -1px;
+    border-top: 4px solid #016a9c;
+    border-bottom: 2px solid white !important;
+    margin-bottom: -1px;
+}
+button{
+       
+       background: none;
+       background-color: #e9efef;
+        padding: 10px 15px;
+} 
+
+.inactive-button {
+    color: 2px solid #016a9c;
+    border-color: transparent;
+    cursor: default;
+    margin-left: -1px;
+    border: 1px solid black;
+    
+}
+
+.inactive-button:hover{
+    border-color: transparent;
+    color: 2px solid #016a9c;
+    background-color: #e7fbfb;
+}
+
+/* General Card Styling */
+.slds-p-around_medium{
+    display:flex;
+    background-color: #f9f9f9;
+}
+.slds-card {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border:none;
+}
+
+/* Section Heading Styling */
+h3 {
+    font-size: 1.75rem;
+    font-weight: 150;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Featured Services Section Layout */
+.featured-services .slds-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.slds-col {
+    flex: 1;
+    min-width: 250px;
+}
+
+.slds-button {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.slds-button_brand {
+    background-color: #0070d2;
+    color: white;
+    font-weight: 600;
+}
+
+.slds-button_neutral {
+    background-color: #f4f6f9;
+    color: #0070d2;
+    font-weight: 600;
+}
+
+.slds-button:hover {
+    background-color: #0056a1;
+}
+
+.slds-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(63, 127, 255, 0.5);
+}
+
+/* Image Styling */
+.slds-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+/* Title for Additional Services */
+.additional-services-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Contact Expert Button */
+.slds-m-top_medium {
+    margin-top: 2rem;
+}
+
+/* Header of Each Card */
+.lightning-card .slds-card__header {
+    background-color: #0070d2;
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.featured-services {
+    font-family: Arial, sans-serif;
+  }
+  
+  .service-content {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    
+  }
+  
+  .service-image {
+    width: 50%;
+    height: auto;
+  }
+  
+  .service-text {
+    flex: 1;
+    line-height: 1.6;
+    width: 49%;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 11rem;
+    margin-left: 30px;
+  }
+  
+  
+
+  .contact-expert-dropdown {
+    background-color: rgb(0, 85, 108); /* Blue background */
+    color: white; /* White text */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 300px; /* Adjust size */
+  }
+  
+  option:hover {
+    background-color: #047cf4 !important; /* Darker blue on hover */
+    font-size: 32px;
+  }
+  
+  .contact-expert-dropdown option {
+    background-color: rgb(0, 85, 108); /* Blue background */
+    color: white; /* White text */
+  }
+  /* Container styling */
+
+.additional-services h2 {
+    padding-top: .5em;
+    font-size: 28px !important;
+    line-height: 32px;
+    margin: 0 0 10px 0;
+    text-align: left;
+    font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', 'MS P Gothic', 'Meiryo UI', 'Meiryo UI Reg', 'メイリオ Reg', 'MS UI Gothic Reg', 'Hiragino Kaku Gothic Reg', 'ヒラギノ角ゴ Pro W3 Reg', 'Microsoft YaHei', '微软雅黑', 'Hiragino Sans GB', 'Microsoft JhengHei', '微軟正黑體', 'Malgun Gothic', Gulim, Tahoma, 'Arial Unicode', sans-serif;
+    font-weight: normal !important;
+}
+ 
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+ 
+.service-box {  
+    display: flex;
+    text-align: center;
+    width: 60%;
+}
+ 
+.service-box img {
+    height: 40px;
+    margin-bottom: 15px;
+    width: 40px;
+}
+ 
+.service-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+ 
+.service-box p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+ 
+.service-box a {
+    color: #007bff;
+    text-decoration: none;
+}
+ 
+.service-box a:hover {
+    text-decoration: underline;
+}
+ 
+.service-box-text {
+    padding: 0 10px;
+    text-align: left;
+}

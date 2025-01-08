@@ -1,0 +1,312 @@
+<template>
+    
+    <ul id="Toolbar" class="Toolbar">
+        <li class="leftrail-toggle">
+            <button type="button"  class="leftrail-toggle navbar-toggle" onclick={toggleSidebar}>
+                <lightning-icon icon-name="utility:rows" size="small" style="text-align: left;" alternative-text="Toggle Sidebar" title="Toggle Sidebar" class="nav-symbol"></lightning-icon>
+                <div style=" text-align: center;">Support Portal</div>
+            </button>
+        </li>
+        <li class="hidden-xs mobile-hide toolbar-right">
+            <a class="mobile-hide" href="/my-downloads">
+                <svg width="24" height="19">
+                    <use xlink:href="/Content/Icons/SideNavigationMap.svg#cart"></use>
+                </svg>
+                My Downloads
+                (<span id="dnldCount"></span>)
+            </a>
+        </li>
+    </ul>
+    <div
+        style="display: flex; flex-direction: row; background-color: #f9f9f9; font-family: 'Noto Sans', sans-serif; border: 1px solid #ddd; padding: 20px; border-radius: 5px; max-width: 1600px; margin: 0 auto;" >
+        <!-- Left Navigation Section -->
+        <div style="width:20%; padding-right: 20px; border-right: 1px solid #ccc;" if:true={isSidebarVisible}>
+            <dl class="transitioning-to-qst become-pro-link">
+                <a data-i18n="dsg_offerings_transitioning_to_qst" href="/essentials/getting-started-offerings"
+                    id="GettingStarted" style="text-decoration: none;
+                color: #333;
+                display: block;
+                padding-left: 10px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                line-height: 1.5;
+                font-size: 16px;">Become a portal pro</a>
+                <svg width="20" height="20" data-toggle="tooltip" data-container="body" data-placement="auto right"
+                    title
+                    data-original-title="New to Quest Support? become a pro by reviewing FAQ&#39;s and video tutorials regarding this and other sections.">
+                    <use xlink:href="/Content/Icons/ServiceRequestMap.svg#Info"></use>
+                </svg>
+            </dl>
+            <div class="sidebar1" >
+            <h3 style="font-size: 18px; color: #333; font-weight: bold; margin-bottom: 10px; padding-left: 10px;">
+                Services</h3>
+            <ul style="list-style-type: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 8px;"><a href="#" class="sidebar">Consulting Services</a></li>
+                <li style="margin-bottom: 8px;"><a href="#" class="sidebar">Educational Services</a></li>
+                <li style="margin-bottom: 8px;"><a href="#" class="sidebar">Support Services</a></li>
+            </ul>
+
+            <h3
+                style="font-size: 18px; color: #333; font-weight: bold; margin-top: 20px; margin-bottom: 10px; padding-left: 10px;">
+                Self Service Tools</h3>
+            <ul style="list-style-type: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 8px;"><a href="#" class="sidebar">Knowledge Base</a></li>
+                <li style="margin-bottom: 8px;"><a href="#" class="sidebar">Notifications & Alerts</a></li>
+                <li style="margin-bottom: 8px;"><a href="#" class="sidebar">Product Support</a></li>
+                <li style="margin-bottom: 8px;"><a href="#" class="sidebar">Software Downloads</a></li>
+                <li style="margin-bottom: 8px;"><a href="#" class="sidebar">Technical Documentation</a></li>
+                <li style="margin-bottom: 8px;"><a href="#" class="sidebar">User Forums</a></li>
+                <li style="margin-bottom: 8px;"><a href="#" class="sidebar">Video Tutorials</a></li>
+            </ul>
+
+            <h3
+                style="font-size: 18px; color: #333; font-weight: bold; margin-top: 20px; margin-bottom: 10px; padding-left: 10px;">
+                Support Essentials</h3>
+            <ul style="list-style-type: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 8px;"><a href="#" class="sidebar">Awards and Testimonials</a></li>
+                <li style="margin-bottom: 8px;"><a href="#" class="sidebar">Getting Started</a></li>
+                <li style="margin-bottom: 8px;"><a href="#" class="sidebar">License Agreement</a></li>
+                <li style="margin-bottom: 8px;"><a href="#" class="sidebar">Support Guide</a></li>
+            </ul>
+            </div>
+        </div>
+
+        <!-- Main Content Section -->
+        <div style="width: 100%; padding-left: 20px; background-color:white" class="supportservice" >
+            <h2 style="font-size: 32px; color: #333; margin-bottom: 10px; text-align: center;">Support Services</h2>
+            <img src="https://support.quest.com/pdf/support-offerings-925x200_updated.jpg" alt="Support Services Image"
+                style="width: 100%; height: auto; border-radius: 5px; margin-bottom: 20px;">
+
+            <p style="font-size: 14px; color: #555; line-height: 1.6;">
+                Quest Support accommodates connected solutions by providing a comprehensive support plan to suit any
+                business organization.
+                Whether there is an issue with software, the hardware part of an appliance solution, or one of our
+                cloud-delivered technologies,
+                our support engineers will collectively work to resolve the issue quickly and effectively.
+            </p>
+
+            <p style="font-size: 14px; color: #555; line-height: 1.6;">
+                We recognize how important our products are to your business environment, and we strive to help you
+                maximize your investment by
+                offering a wide range of global services to accommodate the varying needs of your organization.
+            </p>
+
+            <a href="https://support.quest.com/pdf/QSFT_Support_Services_2022.pdf"
+                style="font-size: 14px; color: #0056b3; text-decoration: none; font-weight: bold;">
+                Quest Support Overview Datasheet (PDF)
+            </a>
+
+            <!-- Main Content Section -->
+            <div>
+                <p style="font-size: 14px; color: #333; margin-top: 30px; margin-bottom: 10px;">Overview of the services
+                    offered by Quest Support.</p>
+                <div style="border-bottom: 1px solid #ccc; margin-bottom: 10px;">
+                    <button class={standardButtonClass} data-id="standard" onclick={handleButtonClick}>
+                        Standard Support
+                    </button>
+                    <button class={support24x7ButtonClass} data-id="24x7" onclick={handleButtonClick}>
+                        24x7 Support
+                    </button>
+                    <button class={premierButtonClass} data-id="premier" onclick={handleButtonClick}>
+                        Premier Support
+                    </button>
+                </div>
+
+                <div if:true={isStandardVisible}>
+                    <p style="font-size: 14px; color: #555; line-height: 1.6;">Standard Support is an extensive range of
+                        services, available Monday through Friday, during Quest Support business hours in a single
+                        geographic region.
+                        With the purchase of Standard Support, you will receive the following elements of service:
+                    </p>
+                    <ul
+                        style="list-style-type: disc; padding-left: 30px; font-size: 14px; color: #555; line-height: 1.6;">
+                        <li>Unlimited 24x7 access to our support portal</li>
+                        <li>Technical support resources available during local business hours</li>
+                        <li>Access to online forums, documents, videos, and Knowledge Base</li>
+                        <li>Online service request management</li>
+                        <li>Basic how-to troubleshooting</li>
+                        <li>The latest software/firmware upgrades</li>
+                        <li>Unlimited phone and chat support</li>
+                        <li>Next business day parts delivered (for applicable solutions)</li>
+                        <li>Support is provided in English with local language accommodated when possible</li>
+                    </ul>
+                </div>
+
+                <div if:true={is24x7Visible}>
+                    <p style="font-size: 14px; color: #555; line-height: 1.6;">24x7 Support provides around-the-clock
+                        assistance...</p>
+                    <ul
+                        style="list-style-type: disc; padding-left: 3cap; font-size: 14px; color: #555; line-height: 1.6;">
+                        <li>All the features included with Standard Support</li>
+                        <li>Technical support resources 24x7 for all Severity Level 1 issues </li>
+                        <li>Next business day parts and labor (for applicable solutions)</li>
+                        <li>Support calls will be handled by regional support teams during local business hours, and
+                            managed by the global support queue outside those hours</li>
+                    </ul>
+                </div>
+
+                <div if:true={isPremierVisible}>
+                    <p style="font-size: 14px; color: #555; line-height: 1.6;">Premier Support is our highest level
+                        service offering designed for organizations with complex environments that require a closer
+                        day-to-day relationship with our support team and a more proactive approach to technical
+                        assistance. Customers who select Premier Support receive 24x7 support, which includes faster
+                        response times, direct access to senior support engineers and a named Customer Success Manager
+                        (CSM). Your CSM becomes your trusted advisor, acts as your go-to advocate for issues and
+                        delivers a wide range of services tailored to your unique needs.</p>
+
+                    <a href="https://support.quest.com/pdf/QSFT_Support_Services_2022.pdf"
+                        style="font-size: 14px; color: #0056b3; text-decoration: none; font-weight: bold; padding-top: 20px;">
+                        Quest Support Overview Datasheet (PDF)
+                    </a>
+
+                    <ul style="font-size: 14px; color: #555; line-height: 1.6; padding-left: 100px;">
+                        <li>All the features included with 24x7 Support</li>
+                        <li>Faster response times, escalation and resolution</li>
+                        <li>A named Customer Success Manager</li>
+                        <li>Proactive product notifications</li>
+                        <li>Monthly review calls and status reports</li>
+                        <li>Single point of accountability to engage Quest resources on your behalf</li>
+                        <li>Onboarding assistance, enablement and product adoption</li>
+                        <li>Proactive prevention of issues and mitigation of risk</li>
+                        <li>Annual product roadmap review</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <hr>
+            <!--table for features-->
+            <table
+                style="width: 100%; border-collapse: collapse; font-family: 'Noto Sans', sans-serif; font-size: 14px; margin: 20px 0;">
+                <thead>
+                    <tr style="color: white; text-align: left;">
+                        <th style="border: none;background-color: #444;  font-size: 18px;">Support Features</th>
+                        <th style="border: none; background-color:#62A8E5; text-align: center; font-size: 18px;">
+                            Standard</th>
+                        <th style="border: none;  background-color:#62A8E5; text-align: center; font-size: 18px;">24x7
+                        </th>
+                        <th style="border: none;  background-color:#62A8E5; text-align: center; font-size: 18px;">
+                            Premier <sup>1</sup></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: none;">Maximum response time for Severity Level 1 issues</td>
+                        <td style="border: none; text-align: center;">1 Hour</td>
+                        <td style="border: none; text-align: center;">1 Hour</td>
+                        <td style="border: none; text-align: center;">30 Minutes</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;">Technical support coverage</td>
+                        <td style="border: none; text-align: center;">Regional Hours<sup>2</sup></td>
+                        <td style="border: none; text-align: center;">24x7<sup>2</sup></td>
+                        <td style="border: none; text-align: center;">24x7<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;">Online forums, documents, videos, and Knowledge Base</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;">Online Service Request Management</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;">Latest Software Updates</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;">Phone Support</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;">Email Support</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;">Chat Support</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;">Collaborative 3rd party assistance</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;">Weekend & holiday support for severity 1 issues</td>
+                        <td></td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;">Faster response times</td>
+                        <td></td>
+                        <td></td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;">Named Customer Success Manager (CSM) - your advocate within Quest/OI
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;">Support Onboarding and enablement</td>
+                        <td></td>
+                        <td></td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;">Monthly review calls and status reports</td>
+                        <td></td>
+                        <td></td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                    </tr>
+                    <tr>
+                        <td style=" border: none;">Proactive product updates and knowledge sharing</td>
+                        <td></td>
+                        <td></td>
+                        <td style=" border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;">Annual product map review session</td>
+                        <td></td>
+                        <td></td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;">CSM monitors escalations</td>
+                        <td></td>
+                        <td></td>
+                        <td style="border: none; text-align: center; color: #FFC107;">&#9679;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <div>
+                <p>Support is provided in English with local language accommodated when possible.</p>
+                <p>There are some products that require 24x7 Support. See your sales account representative for details
+                </p>
+                <p><sup>1</sup> Not available on all products. Contact your sales representative for details.</p>
+                <p><sup>2</sup> Regional hours are listed at https://support.quest.com/essentials/phone-number-listing.
+                    24x7 Support enhances regional hours with extended coverage for Severity 1 issues on Saturday,
+                    Sunday and holidays. Support Calls will be handled by regional support teams during published
+                    regional hours and managed by the global support team outside those hours.</p>
+                <p><sup>3</sup> Not available on all products and regions.</p>
+            </div>
+        </div>
+    </div>
+</template>

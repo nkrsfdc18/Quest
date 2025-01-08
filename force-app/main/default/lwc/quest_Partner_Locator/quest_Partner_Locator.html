@@ -1,0 +1,371 @@
+<template>
+    <div class="locator-hero">
+        <a href="" class="img-responsive">
+            <img src={logoUrl} alt="logo.png">
+        </a>
+        <div class="locator-hero-content">
+            <h1>Partner Locator</h1>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Enter keyword, company, or location"
+                    onchange={handleSearch}>
+                <button class="btn btn-primary" onclick={handleSubmitSearch}>Search</button>
+            </div>
+        </div>
+    </div>
+    <div class="container pagination">
+        <div class="pagination-left">
+            <p class="f-size">{recordRange} of <span class="fw-bold">{totalPartners}</span> Partners</p>
+        </div>
+        <div class="pagination-right">
+            <div class="sort-container">
+                <div>
+                    <span style="font-weight: bold; color:#333">Sort By: </span>
+                    <a href="#" class={partnerTierClass}><span data-id="partner-tier" onclick={handleSorting}>Partner
+                            Tier</span></a><span> | </span>
+                    <a href="#" class={companyNameClass}><span data-id="company-name" onclick={handleSorting}>Company
+                            Name</span></a>
+                </div>
+                <nav class="sort-page-btns-container">
+                    <ul if:false={noRecordsFound}>
+                        <li><a href="#" class="pagination-btn prev-btn" onclick={prevPage} if:true={prevbtnActive}>Previous</a></li>
+                        <li><a href="#" class="pagination-btn nxt-btn" onclick={nextPage} if:true={nxtbtnActive}>Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="dropdown-filter-container">
+            <div class="dropdowns">
+                <div>
+                    <select name="type" id="typeList" class="shadow" onchange={handePartnerTypeChange}>
+                        <option value=""> - Select Type - </option>
+                        <option value="Distributor">Distributor</option>
+                        <option value="Resellers & Service Providers">Resellers &amp; Service Providers</option>
+                        <option value="Resellers & Service Providers">&nbsp; - Managed Services Providers</option>
+                        <option value="Resellers & Service Providers">&nbsp; - US Federal Resellers</option>
+                    </select>
+                </div>
+                <div>
+                    <select id="country" name="country" class="shadow" onchange={handeCountryChange}>
+                        <option value="">Select Location / Region</option>
+                        <optgroup label="Country">
+                            <template for:each={countries} for:item="country">
+                                <option key={country.value} value={country.value}>{country.label}</option>
+                            </template>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-container">
+                <div class="filter-box" if:true={filterApplied}>
+                    <div class="filters">
+                        <template for:each={filters} for:item="filterItem">
+                            <p key={filterItem.value} data-key={filterItem.key} data-value={filterItem.value}>
+                                {filterItem.value} <span class="close-icon" onclick={removeFilter}></span></p>
+                        </template>
+                    </div>
+                    <button class="clear-filter-btn" onclick={clearFilter}>Clear</button>
+                </div>
+                <div class="filter-message" if:true={noRecordsFound}>
+                    <p class="no-records-message">
+                        Sorry! no partners match your search criteria. Please adjust your filters and try again.
+                    </p>
+                </div>
+            </div>                                 
+        </div>
+        <div class="panels">
+            <template if:true={numberofAccountCatagories}>
+                <div>
+                    <div class="panel-group">
+                        <div class="panel-heading">
+                            <h2>Solution</h2>
+                        </div>
+                        <div class="panel-data">
+                            <ul>
+                                <li><a href="#" class="link f-size" data-value="Data Protection" data-key="Solution"
+                                        onclick={handleMultiFilters}>Data Protection ({dataProtection})</a></li>
+                                <li><a href="#" class="link f-size"
+                                        data-value="Information Management - Database Management" data-key="Solution"
+                                        onclick={handleMultiFilters}>Information Management - Database Management ({databaseManagement})</a>
+                                </li>
+                                <li><a href="#" class="link f-size"
+                                        data-value="Information Management - Database Replication" data-key="Solution"
+                                        onclick={handleMultiFilters}>Information Management - Database Replication ({databaseReplication})</a>
+                                </li>
+                                <li><a href="#" class="link f-size"
+                                        data-value="Information Management - Performance Monitoring" data-key="Solution"
+                                        onclick={handleMultiFilters}>Information Management - Performance Monitoring ({performanceMonitoring})</a></li>
+                                <li><a href="#" class="link f-size" data-value="Microsoft Platform Management"
+                                        data-key="Solution" onclick={handleMultiFilters}>Microsoft Platform Management ({microsoftPlatformManagement})</a>
+                                </li>
+                                <li><a href="#" class="link f-size" data-value="One Identity - Active Directory Management"
+                                        data-key="Solution" onclick={handleMultiFilters}>One Identity - Active Directory
+                                        Management ({activeDirectoryManagement})</a>
+                                </li>
+                                <li><a href="#" class="link f-size"
+                                        data-value="One Identity - Identity Governance & Administration" data-key="Solution"
+                                        onclick={handleMultiFilters}>One Identity - Identity Governance & Administration ({identityGovernanceAdministration})</a></li>
+                                <li><a href="#" class="link f-size" data-value="One Identity - Log Management (syslog-ng)"
+                                        data-key="Solution" onclick={handleMultiFilters}>One Identity - Log Management
+                                        (syslog-ng) ({logManagement})</a></li>
+                                <li><a href="#" class="link f-size" data-value="One Identity - Privileged Access Management"
+                                        data-key="Solution" onclick={handleMultiFilters}>One Identity - Privileged Access
+                                        Management ({privilegedAccessManagement})</a>
+                                </li>
+                                <li><a href="#" class="link f-size" data-value="KACE" data-key="Solution"
+                                        onclick={handleMultiFilters}>KACE ({numberofAccountCatagories.Solutions.KACE})</a></li>
+                                <li><a href="#" class="link f-size" data-value="erwin Data Intelligence" data-key="Solution"
+                                        onclick={handleMultiFilters}>erwin Data Intelligence</a> ({erwinDataIntelligence})</li>
+                                <li><a href="#" class="link f-size" data-value="erwin Data Modeler" data-key="Solution"
+                                        onclick={handleMultiFilters}>erwin Data Modeler ({erwinDataModeler})</a></li>
+
+                                <template if:true={showMoreSolutions}>
+                                    <li><a href="#" class="link f-size" data-value="erwin Evolve" data-key="Solution"
+                                        onclick={handleMultiFilters}>erwin Evolve ({erwinEvolve})</a></li>
+                                    <li><a href="#" class="link f-size"
+                                        data-value="One Identity - Identity & Access Management (OneLogin)"
+                                        data-key="Solution" onclick={handleMultiFilters}>One Identity - Identity & Access
+                                        Management ({identityAccessManagement})</a></li>
+                                </template>
+
+                                <template if:false={showMoreSolutions}>
+                                    <li><a href="#" class="link f-size" onclick={handleShowMoreSolutions}>See More >></a></li>
+                                </template>
+
+                                <template if:true={showMoreSolutions}>
+                                    <li><a href="#" class="link f-size" onclick={handleShowLessSolutions}>&lt;&lt; less</a></li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel-group">
+                        <div class="panel-heading">
+                            <h2>Services</h2>
+                        </div>
+                        <div class="panel-data">
+                            <ul>
+                                <li><a href="#" class="link f-size" data-value="Active Roles" data-key="Services"
+                                        onclick={handleMultiFilters}>Active Roles ({activeRoles})</a></li>
+                                <li><a href="#" class="link f-size" data-value="Asset Manager" data-key="Services"
+                                        onclick={handleMultiFilters}>Asset Manager ({assetManager})</a></li>
+                                <li><a href="#" class="link f-size" data-value="ChangeAuditor" data-key="Services"
+                                        onclick={handleMultiFilters}>ChangeAuditor ({numberofAccountCatagories.Services.ChangeAuditor})</a></li>
+                                <li><a href="#" class="link f-size" data-value="ChangeBASE" data-key="Services"
+                                        onclick={handleMultiFilters}>ChangeBASE ({numberofAccountCatagories.Services.ChangeBASE})</a></li>
+                                <li><a href="#" class="link f-size" data-value="Coexistence Manager for Notes"
+                                        data-key="Services" onclick={handleMultiFilters}>Coexistence Manager for Notes ({coexistenceManager})</a>
+                                </li>
+                                <li><a href="#" class="link f-size" data-value="Foglight" data-key="Services"
+                                        onclick={handleMultiFilters}>Foglight ({numberofAccountCatagories.Services.Foglight})</a></li>
+                                <li><a href="#" class="link f-size" data-value="GroupWise Migrator" data-key="Services"
+                                        onclick={handleMultiFilters}>GroupWise Migrator ({groupWiseMigrator})</a></li>
+                                <li><a href="#" class="link f-size" data-value="Identity Manager" data-key="Services"
+                                        onclick={handleMultiFilters}>Identity Manager ({identityManager})</a></li>
+                                <li><a href="#" class="link f-size"
+                                        data-value="KACE Asset Management Implementation for AMA or SMA" data-key="Services"
+                                        onclick={handleMultiFilters}>KACE Asset Management Implementation for AMA or SMA ({kaceAssetManagement})</a></li>
+                                <li><a href="#" class="link f-size"
+                                        data-value="KACE SMA Implementation - excludes Service Desk" data-key="Services"
+                                        onclick={handleMultiFilters}>KACE SMA Implementation - excludes Service Desk ({kaceSMAImplementation})</a>
+                                </li>
+                                <li><a href="#" class="link f-size" data-value="KACE SMA Service Desk Implementation"
+                                        data-key="Services" onclick={handleMultiFilters}>KACE SMA Service Desk
+                                        Implementation ({kaceSMAService})</a></li>
+                                <li><a href="#" class="link f-size" data-value="Migration Manager for AD"
+                                        data-key="Services" onclick={handleMultiFilters}>Migration Manager for AD ({migrationManager})</a>
+                                </li>
+                                <template if:true={showMoreServices}>
+                                    <li><a href="#" class="link f-size" data-value="Migration Manager for Exchange"
+                                        data-key="Services" onclick={handleMultiFilters}>Migration Manager for Exchange ({migrationManagerforExchange})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="Migration Manager for Office 365"
+                                        data-key="Services" onclick={handleMultiFilters}>Migration Manager for Office 365 ({migrationManagerforOffice365})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="Migrator for Notes to Exchange"
+                                        data-key="Services" onclick={handleMultiFilters}>Migrator for Notes to Exchange ({migratorforNotestoExchange})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="NetVault"
+                                        data-key="Services" onclick={handleMultiFilters}>NetVault ({numberofAccountCatagories.Services.NetVault})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="Rapid Recovery"
+                                        data-key="Services" onclick={handleMultiFilters}>Rapid Recovery ({rapidRecovery})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="Recovery Manager for AD Forest Edition"
+                                        data-key="Services" onclick={handleMultiFilters}>Recovery Manager for AD Forest Edition ({recoveryManagerforADForestEdition})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="SharePlex"
+                                        data-key="Services" onclick={handleMultiFilters}>SharePlex ({numberofAccountCatagories.Services.SharePlex})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="Toad"
+                                        data-key="Services" onclick={handleMultiFilters}>Toad ({numberofAccountCatagories.Services.Toad})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="One Identity Safeguard"
+                                        data-key="Services" onclick={handleMultiFilters}>One Identity Safeguard ({oneIdentitySafeguard})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="Active Directory Pro"
+                                        data-key="Services" onclick={handleMultiFilters}>Active Directory Pro ({activeDirectoryPro})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="Exchange Pro"
+                                        data-key="Services" onclick={handleMultiFilters}>Exchange Pro ({exchangePro})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="Power 365"
+                                        data-key="Services" onclick={handleMultiFilters}>Power 365 ({power365})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="Notes Migrator"
+                                        data-key="Services" onclick={handleMultiFilters}>Notes Migrator ({notesMigrator})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="Notes Integration"
+                                        data-key="Services" onclick={handleMultiFilters}>Notes Integration ({notesIntegration})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="syslog-ng"
+                                        data-key="Services" onclick={handleMultiFilters}>syslog-ng ({syslogng})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="One Identity - Identity & Access Management (OneLogin) - Technical Specialist"
+                                        data-key="Services" onclick={handleMultiFilters}>One Identity - Identity & Access Management (OneLogin) - Technical Specialist ({technicalSpecialist})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="One Identity - Identity & Access Management (OneLogin) - Implementation Professional"
+                                        data-key="Services" onclick={handleMultiFilters}>One Identity - Identity & Access Management (OneLogin) - Implementation Professional ({implementationProfessional})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="KACE SDA Core Implementation"
+                                        data-key="Services" onclick={handleMultiFilters}>KACE SDA Core Implementation ({kaceSDAcoreImplementation})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="KACE SDA Advanced Implementation"
+                                        data-key="Services" onclick={handleMultiFilters}>KACE SDA Advanced Implementation ({kaceSDAAdvancedImplementation})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="On Demand Migration for Active Directory"
+                                        data-key="Services" onclick={handleMultiFilters}>On Demand Migration for Active Directory ({onDemandDirectory})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="On Demand Migration for Domain Move"
+                                        data-key="Services" onclick={handleMultiFilters}>On Demand Migration for Domain Move ({onDemandDomainMove})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="On Demand Migration for M365"
+                                        data-key="Services" onclick={handleMultiFilters}>On Demand Migration for M365 ({onDemandM365})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="On Demand Recovery"
+                                        data-key="Services" onclick={handleMultiFilters}>On Demand Recovery ({onDemandRecovery})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="Archive Shuttle Operator Readiness"
+                                        data-key="Services" onclick={handleMultiFilters}>Archive Shuttle Operator Readiness ({archiveShuttleOperator})</a>
+                                    </li>
+                                    <li><a href="#" class="link f-size" data-value="erwin Data Intelligence Suite Implementation Professional Certification"
+                                        data-key="Services" onclick={handleMultiFilters}>erwin Data Intelligence Suite Implementation Professional Certification ({erwinDataIntelligenceImplementationProfessional})</a>
+                                    </li>
+                                </template>
+
+                                <template if:false={showMoreServices}>
+                                    <li><a href="#" class="link f-size" onclick={handleShowMoreServices}>See More >></a></li>
+                                </template>
+
+                                <template if:true={showMoreServices}>
+                                    <li><a href="#" class="link f-size" onclick={handleShowLessServices}>&lt;&lt; less</a></li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel-group">
+                        <div class="panel-heading">
+                            <h2>Region</h2>
+                        </div>
+                        <div class="panel-data">
+                            <ul>
+                                <li><a href="#" class="link f-size" data-value="NAM" data-key="Region"
+                                        onclick={handleRegionFilters}>NAM ({numberofAccountCatagories.Region.NAM})</a></li>
+                                <li><a href="#" class="link f-size" data-value="LATAM" data-key="Region"
+                                        onclick={handleRegionFilters}>LATAM ({numberofAccountCatagories.Region.NAM})</a></li>
+                                <li><a href="#" class="link f-size" data-value="APJ" data-key="Region"
+                                        onclick={handleRegionFilters}>APJ ({numberofAccountCatagories.Region.NAM})</a></li>
+                                <li><a href="#" class="link f-size" data-value="EMEA" data-key="Region"
+                                        onclick={handleRegionFilters}>EMEA ({numberofAccountCatagories.Region.NAM})</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel-group">
+                        <div class="panel-heading">
+                            <h2>Partner Tier</h2>
+                        </div>
+                        <div class="panel-data">
+                            <ul>
+                                <li><a href="#" class="link f-size" data-value="Platinum +" data-key="Partner Tier"
+                                        onclick={handleFilters}>Platinum + ({platinumPlus})</a></li>
+                                <li><a href="#" class="link f-size" data-value="Platinum" data-key="Partner Tier"
+                                        onclick={handleFilters}>Platinum ({numberofAccountCatagories.PartnerTier.Platinum})</a></li>
+                                <li><a href="#" class="link f-size" data-value="erwin Diamond" data-key="Partner Tier"
+                                        onclick={handleFilters}>erwin Diamond ({erwinDiamond})</a></li>
+                                <li><a href="#" class="link f-size" data-value="Gold +" data-key="Partner Tier"
+                                        onclick={handleFilters}>Gold + ({goldPlus})</a></li>
+                                <li><a href="#" class="link f-size" data-value="Gold" data-key="Partner Tier"
+                                        onclick={handleFilters}>Gold ({numberofAccountCatagories.PartnerTier.Gold})</a></li>
+                                <li><a href="#" class="link f-size" data-value="Silver +" data-key="Partner Tier"
+                                        onclick={handleFilters}>Silver + ({silverPlus})</a></li>
+                                <li><a href="#" class="link f-size" data-value="Silver" data-key="Partner Tier"
+                                        onclick={handleFilters}>Silver ({numberofAccountCatagories.PartnerTier.Silver})</a></li>
+                                <li><a href="#" class="link f-size" data-value="Global Partner" data-key="Partner Tier"
+                                        onclick={handleFilters}>Global Partner ({globalPartner})</a></li>
+                                <li><a href="#" class="link f-size" data-value="Distributor" data-key="Partner Tier"
+                                        onclick={handleFilters}>Distributor ({numberofAccountCatagories.PartnerTier.Distributor})</a></li>
+                                <li><a href="#" class="link f-size" data-value="Distributor + " data-key="Partner Tier"
+                                        onclick={handleFilters}>Distributor + ({distributorPlus})</a></li>
+                                <li><a href="#" class="link f-size" data-value="Registered" data-key="Partner Tier"
+                                        onclick={handleFilters}>Registered ({numberofAccountCatagories.PartnerTier.Registered})</a></li>
+                                <li><a href="#" class="link f-size" data-value="erwin Korea" data-key="Partner Tier"
+                                        onclick={handleFilters}>erwin Korea ({erwinKorea})</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </template>
+
+            <div class="partner-grids">
+                <template for:each={paginatedAccounts} for:item="account">
+                    <div class="partner-grid" key={account.id}>
+                        <div class="platinum">
+                            <div class="panel-3">
+                                <div class="locator-search-heading">
+                                    <p>{account.Partner_Tier__c}</p>
+                                </div>
+                                <div class="panel-body">
+                                    <h3>{account.Name}</h3>
+                                    <p class="f-size">{account.BillingStreet}</p>
+                                    <p class="f-size"><span>{account.BillingCity}, {account.BillingState}
+                                            {account.BillingPostalCode}</span></p>
+                                    <p class="f-size">{account.BillingCountry}</p>
+                                    <p class="f-size"><span>Phone: {account.Phone}</span></p>
+                                    <br>
+                                    <br>
+                                    <p class="f-size">
+                                        <span class="fw-bold">Solutions: </span>{account.Solutions__c}
+                                    </p>
+                                    <br><br>
+                                    <p class="f-size">
+                                        <span class="fw-bold">Services: </span>{account.Services__c}
+                                    </p>
+                                    <br><br>
+                                </div>
+                                <div class="partner-detail">
+                                    <a href="#" class="btn btn-primary"
+                                        role="button" onclick={handlePartnerDetailsPage} data-id={account.Id} >Partner Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+        <div class="container pagination">
+            <div class="pagination-left">
+                <p class="f-size">{recordRange} of <span class="fw-bold">{totalPartners}</span> Partners</p>
+            </div>
+            <div class="pagination-right" if:false={noRecordsFound}>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="pagination-btn prev-btn" onclick={prevPage} if:true={prevbtnActive}>Previous</a></li>
+                        <li><a href="#" class="pagination-btn nxt-btn" onclick={nextPage} if:true={nxtbtnActive}>Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+</template>

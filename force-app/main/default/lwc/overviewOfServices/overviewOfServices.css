@@ -1,0 +1,136 @@
+.active-button {
+    color: 2px solid #016a9c;
+    background-color: #fff;
+    cursor: default;
+    border-color: transparent;
+    margin-left: -1px;
+    border-top: 4px solid #016a9c;
+    border-bottom: 2px solid white !important;
+    margin-bottom: -1px;
+}
+button{
+       
+       background: none;
+       background-color: #e9efef;
+        padding: 10px 15px;
+} 
+
+.inactive-button {
+    color: 2px solid #016a9c;
+    border-color: transparent;
+    cursor: default;
+    margin-left: -1px;
+    border: 1px solid black;
+    
+}
+
+.inactive-button:hover{
+    border-color: transparent;
+    color: 2px solid #016a9c;
+    background-color: #e7fbfb;
+}
+
+
+.sidebar {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.sidebar:hover {
+    background-color: white; 
+}
+
+.Toolbar {
+    height: 65px;
+    background: #333;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 15px;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.leftrail-toggle{
+    display: inline;
+    background-color: #333;
+}
+
+
+Toolbar .navbar-toggle {
+    cursor: pointer;
+    height: 36px;
+}
+
+.navbar-toggle {
+    float: right;
+    margin-right: 5px;
+    padding: 9px 10px 9px 0;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: flex;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.mobile-hide{
+    color: #fff;
+    position: relative;
+}
+
+.mobile-hide:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.Toolbar .toolbar-right {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding-right: 10px;
+    padding-left: 1100px;
+}
+
+tr{
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+.sidebar {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0); /* Visible */
+}
+
+.sidebar[hidden] {
+    transform: translateX(-100%); /* Hidden */
+    display: none; /* Fully hide when toggled off */
+ 
+}

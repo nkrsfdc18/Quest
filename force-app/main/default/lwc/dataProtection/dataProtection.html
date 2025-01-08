@@ -1,0 +1,174 @@
+<template>
+  <div class="DataBasepage">
+    <h3>Data Protection Services</h3>
+    <div class="slds-p-around_medium">
+      <div>
+        <h4 style="font-size: 16px;">We assist over 76,000 organizations worldwide to plan, deploy, and configure their
+          backup and recovery solutions.
+        </h4><br>
+        <p>Avoid data loss and costly degradation to your business operations with our Data Protection solutions.
+          Countless customers depend on our solutions - backed by our services - to protect their applications and data.
+          Our team of experts understand that data-driven businesses like yours need to safeguard data from corruption
+          and loss. That’s why we take the time to learn your unique business challenges and design solutions that
+          protect you in case of disasters, reduce storage requirements, minimize implementation time, and scale to meet
+          your growing needs. Our consultants provide the knowledge and expertise to help your team implement a solution
+          that is right for you.
+
+        </p><br>
+        <lightning-button label="Download Service Overview" variant="brand" onclick={handleDownload}></lightning-button>
+      </div>
+      <!-- Image for Data Protection Service -->
+      <img src="https://support.quest.com/Images/ess-cs-19.jpg" class="slds-image"
+        alt="Data Protection Service Image" />
+
+    </div>
+
+
+    <!-- Main Content Section -->
+    <div>
+      <h3>Featured Services</h3>
+      <div style="border-bottom: 1px solid #ccc; margin-bottom: 10px;">
+        <button class={standardButtonClass} data-id="standard" onclick={handleButtonClick}>
+          Rapid Recovery Installation
+        </button>
+        <button class={support24x7ButtonClass} data-id="24x7" onclick={handleButtonClick}>
+          NetVault Backup Implementation
+        </button>
+        <button class={premierButtonClass} data-id="premier" onclick={handleButtonClick}>
+          Configure Foglight for Virtualization
+        </button>
+      </div>
+
+      <div if:true={isStandardVisible}>
+        <div class="content">
+          <div class="service-content">
+            <img src="https://support.quest.com/Images/ess-cs-1.jpg" alt="Rapid Recovery Installation"
+              class="service-image" />
+            <div class="service-text">
+              <p>
+                You can depend on Rapid Recovery to protect your data by simplifying
+                your backup and recovery process. Rely on our experts to install and
+                configure your solution to properly archive your static data, easily
+                capture application snapshots, and quickly restore your data when
+                needed.Plus, we can help you identify and prioritize system improvements to
+                ensure your solution is performing as it should.</p>
+                <p><a href="javascript:void(0)">Learn More</a>
+              </p><br>
+              <p>Let our Rapid Recovery services experts help you.</p>
+              <div class="custom-picklist">
+                <select class="contact-expert-dropdown" onchange={handlePicklistChange}>
+                  <option value="" disabled selected>Contact an Expert</option>
+                  <option value="#">"Right Start" RIS Essentials of a DL1000 Backup &amp; Recovery Appliance</option>
+                  <option value="#">"Right Start" RIS Plus of a DL1000 Backup &amp; Recovery Appliance</option>
+                  <option value="#">"Right Start" RIS Essentials of a Rapid Recovery Environment</option>
+                  <option value="#">"Right Start" RIS Premium of a Rapid Recovery Environment</option>
+                  <option value="#">"Right Start" RIS Essentials of a DL4300 Backup &amp; Recovery Appliance</option>
+                  <option value="#">"Right Start" RIS Plus of a DL4300 Backup &amp; Recovery Appliance</option>
+                  <option value="#">"Right Start" RIS Premium of a DL4300 Backup &amp; Recovery Appliance</option>
+                  <option value="#">Data Protection | Rapid Recovery Health Check</option>
+                  <option value="#">Rapid Recovery 3 Day Onsite QuickStart</option>
+                  <option value="#">Rapid Recovery 4 Day Onsite QuickStart</option>
+                  <option value="#">Rapid Recovery 5 Day Onsite QuickStart</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div if:true={is24x7Visible}>
+      <div class="content">
+        <div class="service-content">
+          <img src="https://support.quest.com/Images/ess-cs-2.jpg" alt="NetVault Backup Implementation"
+            class="service-image" />
+          <div class="service-text">
+            <p>To accelerate your implementation, we use our proven architectural expertise to design a blueprint to
+              deploy and configure your NetVault Backup solution. Our services consultants also provide knowledge
+              transfer to empower you to become your own solution expert.
+              </p>
+              <p><a href="javascript:void(0)">Learn More</a></p><br>
+              <p>Let our NetVault services experts help you.</p>
+            <div class="custom-picklist">
+              <select class="contact-expert-dropdown" onchange={handlePicklistChange}>
+                <option value="" disabled selected>Contact an Expert</option>
+                <option value="#">“Right Start” RIS Essentials of a NetVault Environment</option>
+                <option value="#">“Right Start” RIS Plus of a NetVault Environment (Remote)</option>
+                <option value="#">“Right Start” RIS Premium of a NetVault Environment (Remote)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div if:true={isPremierVisible}>
+      <div class="content">
+        <div class="service-content">
+          <img src="https://support.quest.com/Images/ess-cs-4.jpg" alt="Configure Foglight for Virtualization"
+            class="service-image" />
+          <div class="service-text">
+            <p>Count on our experts to scope and architect your environment so you can properly visualize, analyze, and
+              optimize your virtual infrastructure. Our services consultants will help you reduce your operational
+              costs, speed deployments, decrease any performance impacts due to changes, and simplify the complexity of
+              your data center with end-to-everything visualization.
+              </p>
+              <p><a href="javascript:void(0)">Learn More</a></p><br>
+              <p>Let our Foglight for Virtualization services experts help you.</p>
+            <div class="custom-picklist">
+              <select class="contact-expert-dropdown" onchange={handlePicklistChange}>
+                <option value="" disabled selected>Contact an Expert</option>
+                <option value="#">Foglight for Virtualization Enterprise Edition (FVE) Quickstart Service Offering</option>
+                <option value="#">Foglight for Virtualization Implementation Architecture Service Offering</option>
+                <option value="#">Foglight for Virtualization Quickstart Service Offering</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Additional Services Section -->
+    <div class="additional-services">
+      <h2>Additional Services</h2>
+      <div class="service-container">
+        <div class="service-box">
+          <img src="https://cdn-icons-png.flaticon.com/256/205/205826.png" alt="Consulting Services Icon">
+          <div class="service-box-text">
+            <h3>Consulting Services</h3>
+            <p>
+              <a href="#">Microsoft Platform</a> |
+              <a href="#">Data Protection</a> |
+              <a href="#">Endpoint Systems</a> |
+              <a href="#">Performance Monitoring</a> |
+              <a href="#">Database Management</a>
+            </p>
+          </div>
+        </div>
+        <div class="service-box">
+          <img src="https://cdn-icons-png.freepik.com/256/15867/15867239.png">
+          <div class="service-box-text">
+            <h3>Educational Services</h3>
+            <p>
+              <a href="#">Training courses</a> delivered through online web-based, on-site, or virtual
+              instructor-led.
+            </p>
+          </div>
+        </div>
+        <div class="service-box">
+          <img
+            src="https://st2.depositphotos.com/4410397/7229/v/450/depositphotos_72296883-stock-illustration-wrench-icon.jpg"
+            alt="Support Services Icon">
+          <div class="service-box-text">
+            <h3>Support Services</h3>
+            <p>
+              Find the <a href="#">right level of support</a> to accommodate the unique needs of your
+              organization.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

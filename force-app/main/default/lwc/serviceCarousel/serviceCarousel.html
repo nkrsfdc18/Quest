@@ -1,0 +1,64 @@
+<template>
+    <div class="service">
+        <!-- Link to view all -->
+        <div class="link-container">
+            <a
+                class="link-v3-default icomoon-container"
+                href="https://support.quest.com/professional-services-product-select"
+            >
+                View All
+                <span class="icomoon-icon icon-arrow_forward"></span>
+            </a>
+        </div>
+
+        <!-- Sticky Navigation for Tabs -->
+        <div class="sticky-v3 st-tab-wrap">
+            <div class="sticky-wrap stuck" style="top: 79.2px;" data-stuck="true">
+                <div class="container">
+                    <div class="splide splide__inline-arrows st-tabs md-static-tab splide--slide splide--ltr splide--draggable is-active">
+                        <div class="splide__track" id="st-t-1-track">
+                            <div class="splide__list" id="st-t-1-list">
+                                <!-- Dynamic Tabs rendering -->
+                                <template for:each={tabClasses} for:item="tab">
+                                    <div
+                                        key={tab.id}
+                                        class={tab.className}
+                                        onclick={handleTabClick}
+                                        data-id={tab.id}
+                                    >
+                                        {tab.name}
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dynamic Service Content -->
+        <template for:each={visibleServices} for:item="service">
+            <div key={service.id} class="st-content" data-content={service.id}>
+                <div class="zig-zag-v3 zz-single bulletedlist-v3 bg-grey pt-v3 pb-v3">
+                    <div class="container">
+                        <div class="row zz-vertical-center">
+                            <!-- Text on the left side -->
+                            <div class="zz-txt col-md-6">
+                                <h3 class="title-v3">{service.name}</h3>
+                                <div class="txt-v3 intro-v3">{service.description}</div>
+                                <div class="cta-v3">
+                                    <a class="btn-v3 btn-block-xs btn-orange" href={service.link} target="_blank">Learn More</a>
+                                </div>
+                            </div>
+
+                            <!-- Image on the right side -->
+                            <div class="zz-img col-md-6">
+                                <img alt={service.name} class="single-column-img" src={service.imgUrl} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>

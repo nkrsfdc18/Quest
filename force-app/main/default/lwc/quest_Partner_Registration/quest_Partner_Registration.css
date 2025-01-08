@@ -1,0 +1,164 @@
+@import "c/cssUtility";
+* {
+    color: #333;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+    margin: 72px auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0 14px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.description p {
+    margin-top: 10px;
+}
+
+.applicant-info {
+    margin: 30px 0;
+}
+
+.applicant-info h2, .address-info h2{
+    margin-bottom: 10px;
+}
+
+.applicant-info p, .address-info p {
+    margin-bottom: 30px;
+}
+
+.applicant-info form > div, .address-info form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.form-group {
+    flex-basis: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: block;
+}
+
+input, select{
+    width: 100%;
+    display: block;
+    border: 1px solid #ccc;
+    padding: 5px 12px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #016a9c;
+    box-shadow: 0px 0px 8px rgb(1, 106, 156, 0.6) ;
+}
+
+.applicant-info .checkbox, .applicant-info .checkbox-label {
+    width: fit-content;
+    display: inline-block;
+    font-weight: normal;
+}
+
+.applicant-info .checkbox-label {
+    margin-left: 5px;
+}
+
+.e-mail-address, .company input {
+    background-color: #e6e6e6;
+}
+
+.address-info button {
+    outline: none;
+    cursor: pointer;
+    padding: 5px 12px;
+    border: 1px solid ;
+    border: 1px solid #ccc;
+}
+
+.address-info button:hover {
+    background-color: #d5d5d5;
+}
+
+.address-info button a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+
+    .applicant-info form > div, .address-info form > div {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .form-group {
+        flex-basis: 50%;
+    }
+
+    .company .form-group {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        padding: 20px 0 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    h1 {
+        font-size: 38px;
+    }
+    
+    h2 {
+        font-size: 34px;
+    }
+    
+    .applicant-info {
+        margin: 45px 0;
+    }
+
+    .applicant-info p, .address-info p {
+        margin-bottom: 45px;
+    }
+
+    .applicant-info form > div, .address-info form > div {
+        gap: 24px;
+        margin-bottom: 30px;
+    }
+
+    input, select {
+        padding: 7px 14px;
+    }
+
+    .address-info button {
+        border-color: #aaa;
+    }
+}

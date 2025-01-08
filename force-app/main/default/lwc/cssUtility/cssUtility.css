@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:host {
+    --orange: #fb4f14;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.f-size {
+    font-size: 16px;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.link {
+    color: #016a9c;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #002537;
+}
+
+.shadow:focus {
+    box-shadow: 0px 0px 8px rgb(1, 106, 156, 0.6) ;
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+.bg-orange {
+    background-color: var(--orange);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}

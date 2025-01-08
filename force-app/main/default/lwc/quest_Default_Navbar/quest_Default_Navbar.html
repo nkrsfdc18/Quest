@@ -1,0 +1,57 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-07-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <header>
+        <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Customer logo -->
+                <div class="navbar-header pull-left">
+                    <div class="navbar-brand">
+                        <a href="/questpartnerportal/s/" class="img-responsive">
+                            <img src={logoUrl} alt="logo.png">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="/questpartnerportal/s/partner-locator" target="_self" role="button">
+                                <span>Find a Partner</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/questpartnerportal/s/partner-registration" target="_self" role="button">
+                                <span>Apply</span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">
+                                <span><lightning-icon icon-name="utility:world" size="small" alternative-text="Language!" title="Language" class="world-icon-color"></lightning-icon></span>
+                                <i></i>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <!-- <li><a href="">Português</a></li>
+                                <li><a href="">Français</a></li>
+                                <li><a href="">Deutsch</a></li>
+                                <li><a href="">日本語</a></li>
+                                <li><a href="">Español</a></li>
+                                <li><a href="">中文</a></li> -->
+                                <template for:each={availableLanguages} for:item="language">
+                                    <li key={language}>
+                                        <a href="javascript:void(0);" data-language={language} onclick={handleLanguageChange}>{language}</a>
+                                    </li>
+                                </template>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+</template>

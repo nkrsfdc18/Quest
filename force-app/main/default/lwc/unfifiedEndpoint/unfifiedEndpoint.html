@@ -1,0 +1,147 @@
+<template>
+<div class="DataBasepage">  
+        <h3>Unified Endpoint Management Services</h3>
+        <div class="slds-p-around_medium">
+            <div>
+                <h4 style="font-size: 16px; padding-bottom: 10px;">Used by more than 10,000 customers worldwide, we help you configure a solution for your environment so you can easily manage network-connected devices.
+                </h4>
+                <p>The security and effectiveness of an organization depends on having a unified endpoint management (UEM) solution. Our expert consultants help guide you through the process of implementing a comprehensive solution that works for your specific environment, lessening IT time and the resources required throughout the process. Once implemented, we assist you with reducing downtime and cybersecurity risk while helping your organization with achieving license compliance, performing application updates in minutes, and migrating or upgrading platforms in days, not weeks. You can rely on our extensive knowledge and proven track-record to drive down your infrastructure costs and expedite time-to-value.
+                </p><br>
+                <lightning-button label="Download Service Overview" variant="brand" onclick={handleDownload}></lightning-button>
+            </div>
+            <!-- Image for Data Protection Service -->
+            <img src="https://support.quest.com/Images/ess-cs-19.jpg" class="slds-image" alt="Data Protection Service Image" />
+            
+        </div>
+    
+
+            <!-- Main Content Section -->
+            <div>
+                <h3>Featured Services</h3>
+                <div style="border-bottom: 1px solid #ccc; margin-bottom: 10px;">
+                    <button class={standardButtonClass} data-id="standard" onclick={handleButtonClick}>
+                        Implement KACE Systems Management Appliance
+                    </button>
+                    <button class={support24x7ButtonClass} data-id="24x7" onclick={handleButtonClick}>
+                        Deploy KACE Systems Deployment Appliance
+                    </button>
+                    <button class={premierButtonClass} data-id="premier" onclick={handleButtonClick}>
+                        Install Desktop Authority
+                    </button>
+                </div>
+
+                <div if:true={isStandardVisible}>
+                    <div class="content">
+                        <div class="service-content">
+                          <img src="https://support.quest.com/Images/ess-cs-6.jpg" alt="Implement KACE Systems Management Appliance" class="service-image" />
+                          <div class="service-text">
+                            <p>
+                              Quickly implement and configure your appliance. Our skilled services consultants will review your overall systems management architecture, make recommendations, and provide support during the engagement. We plan the development and configuration setup, provide systems management best practices, and training
+                              <a href="javascript:void(0)">Learn More</a>
+                            </p><br>
+                            <p>Let our KACE Systems Management Appliance services experts help you.</p>
+                            <div class="custom-picklist">
+                              <select class="contact-expert-dropdown" onchange={handlePicklistChange}>
+                                <option value="" disabled selected>Contact an Expert</option>
+                                <option value="#">KACE Endpoint System Management Appliances 5-Day Consulting Service</option>
+                                <option value="#">Remote Implementation of a KACE Appliance</option>
+                                <option value="#">Remote Configuration of a KACE, Service Desk</option>
+                                <option value="#">KACE Point of Need (PON) SQL Script Development</option>
+                                <option value="#">KACE Health Check</option>
+                              </select>
+                            </div>    
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div if:true={is24x7Visible}>
+                    <div class="content">
+                        <div class="service-content">
+                          <img src="https://support.quest.com/Images/ess-cs-8.jpg" alt="Deploy KACE Systems Deployment Appliance" class="service-image" />
+                          <div class="service-text">
+                            <p>Optimize your deployment with our subject matter experts to help you build a working scripted task sequence to perform deployments through the KACE appliance and off network builds to reduce latency.
+                            </p><p>Learn More</p><br>
+                            <p>Let our KACE Systems Deployment Appliance services experts help you.</p>
+                              <div class="custom-picklist">
+                                  <select class="contact-expert-dropdown" onchange={handlePicklistChange}>
+                                    <option value="" disabled selected>Contact an Expert</option>
+                                    <option value="#">KACE Endpoint System Management Appliances 5-Day Consulting Service</option>
+                                    <option value="#">Remote Implementation of a KACE Appliance</option>
+                                    <option value="#">KACE Point of Need (PON) SQL Script Development</option>
+                                    <option value="#">KACE Health Check</option>
+                                    <option value="#">KACE System Deployment Appliances Optimization Deployment 10-Day C</option>
+                                  </select>
+                                </div>        
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div if:true={isPremierVisible}>
+                    <div class="content">
+                        <div class="service-content">
+                          <img src="https://support.quest.com/Images/ess-cs-8.jpg" alt="Install Desktop Authority" class="service-image" />
+                          <div class="service-text">
+                            <p>Optimize your deployment with our subject matter experts to help you build a working scripted task sequence to perform deployments through the KACE appliance and off network builds to reduce latency.
+                            </p><p>Learn More</p><br>
+                            <p>Let our KACE Systems Deployment Appliance services experts help you.</p>
+                              <div class="custom-picklist">
+                                  <select class="contact-expert-dropdown" onchange={handlePicklistChange}>
+                                    <option value="" disabled selected>Contact an Expert</option>
+                                    <option value="#">KACE Endpoint System Management Appliances 5-Day Consulting Service</option>
+                                    <option value="#">Remote Implementation of a KACE Appliance</option>
+                                    <option value="#">KACE Point of Need (PON) SQL Script Development</option>
+                                    <option value="#">KACE Health Check</option>
+                                    <option value="#">KACE System Deployment Appliances Optimization Deployment 10-Day C</option>
+                                  </select>
+                                </div>        
+                          </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Services Section -->
+    <div class="additional-services">
+        <h2>Additional Services</h2>
+        <div class="service-container">
+            <div class="service-box">
+                <img src="https://cdn-icons-png.flaticon.com/256/205/205826.png" alt="Consulting Services Icon">
+                <div class="service-box-text">
+                    <h3>Consulting Services</h3>
+                    <p>
+                        <a href="#">Microsoft Platform</a> |
+                        <a href="#">Data Protection</a> |
+                        <a href="#">Endpoint Systems</a> |
+                        <a href="#">Performance Monitoring</a> |
+                        <a href="#">Database Management</a>
+                    </p>
+                </div>
+            </div>
+            <div class="service-box">
+                <img src="https://cdn-icons-png.freepik.com/256/15867/15867239.png">
+                <div class="service-box-text">
+                    <h3>Educational Services</h3>
+                    <p>
+                        <a href="#">Training courses</a> delivered through online web-based, on-site, or virtual
+                        instructor-led.
+                    </p>
+                </div>
+            </div>
+            <div class="service-box">
+                <img src="https://st2.depositphotos.com/4410397/7229/v/450/depositphotos_72296883-stock-illustration-wrench-icon.jpg"
+                    alt="Support Services Icon">
+                <div class="service-box-text">
+                    <h3>Support Services</h3>
+                    <p>
+                        Find the <a href="#">right level of support</a> to accommodate the unique needs of your
+                        organization.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</template>
