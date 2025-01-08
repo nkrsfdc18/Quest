@@ -24,7 +24,15 @@
     position: absolute;
 }
 
+body {
+    font-family: "Noto Sans", sans-serif;;
+}
+
 /* ---------------------------------- Hero / Banner Section ------------------------ */
+
+.inner-page-hero {
+    padding-bottom: 30px;
+}
 
 .container .hero-content {
     display: flex;
@@ -41,17 +49,21 @@
 }
 
 .hero-content-wrapper {
-    padding-right: 56px;
+    padding-right: 55px;
 }
 
 .hero-content-wrapper h1 {
     font-size: 48px;
     color: var(--blue);
+    line-height: 1.25;
+    font-family: "Noto Sans", sans-serif;
+    margin-bottom: 10px;
 }
 
 .hero-content-wrapper div p{
     font-size: 20px;
     color: #53565a;
+    font-family: "Noto Sans", sans-serif;
 }
 
 .hero-content-wrapper strong {
@@ -104,7 +116,7 @@
     border: 2px solid var(--orange);
     width: 100%;
     padding: 16px 20px;
-    margin: 10px 0;
+    margin: 5px 0 10px;
     text-align: center;
     font-size: 16px;
     letter-spacing: 1px;
@@ -134,7 +146,7 @@
   background-color: white; 
   border-top: 1px solid #eff1f1;
   border-bottom: 1px solid #eff1f1;
-  padding: 50px 0;
+  padding: 55px 0;
   z-index: 9;
   transition: 0.1s;
 }
@@ -179,9 +191,10 @@
 /* ---------------------overview----------------------------- */
 .features{
     background-color: #f9f9f9;
+    margin-bottom: 40px;
 }
 
-.features {
+.features .title{
     margin-bottom: 40px;
 }
 
@@ -503,7 +516,7 @@
 }
 .slide {
     flex-shrink: 0;
-    width: 300px;
+    width: 320px;
     margin: 0 15px;
     text-align:left;
 }
@@ -515,12 +528,15 @@
     height: 150px;
 }
 
+.awards .title {
+    margin-bottom: 40px;
+}
+
 .award img {
-    width: 100px; 
+    width: 140px; 
     height: 100px; 
     object-fit: cover; 
     border-radius: 5px;
-    margin-right: 20px;
 }
 
 .award h3 {
@@ -530,6 +546,11 @@
     text-align: center;
 }
 /* --------------content---------------------- */
+
+.bottom-content {
+    padding-bottom: 100px;
+}
+
 .content h5{
     color: #444;
     font-weight: 700;
@@ -579,7 +600,7 @@
 @media screen and (min-width: 768px) {
     .hero-btns a{
         width: fit-content;
-        padding: 14px 30px;
+        padding: 12px 30px;
         margin-right: 24px;
     }
 }

@@ -1,4 +1,12 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-08-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
 <template>
+    <template if:false={formSubmited}>
     <div class="container">
         <h1>Member Registration</h1>
         <div class="description">
@@ -37,7 +45,7 @@
                 <div>
                     <div class="form-group">
                         <label for="phone" class="f-size">* Phone</label>
-                        <input type="tel" id="phone" class="f-size" name="Phone" onchange={handleChange}>
+                        <input type="tel" id="phone" class="f-size phone" name="Phone" onchange={handleChange}>
                     </div>
                 </div>
                 <div>
@@ -87,7 +95,7 @@
                 </div>
                 <div>
                     <div class="form-group">
-                        <label class="f-size">Opt Out of Email?</label>
+                        <label class="f-size checkbox-heading">Opt Out of Email?</label>
                         <input type="checkbox" id="opt-email" class="checkbox" name="OptOutEmail"
                             onchange={handleChange}><label for="opt-email" class="checkbox-label f-size">Yes</label>
                     </div>
@@ -198,7 +206,7 @@
                 </div>
                 <div>
                     <div class="form-group">
-                        <label class="f-size">* Markets Served</label>
+                        <label class="f-size checkbox-heading">* Markets Served</label>
                         <div>
                             <input type="checkbox" class="checkbox" id="north-america" name="Market-NorthAmerica"
                                 onchange={handleChange}>
@@ -252,7 +260,7 @@
                 </div>
                 <div>
                     <div class="form-group">
-                        <label class="f-size">*Solution Area of Interest</label>
+                        <label class="f-size checkbox-heading">*Solution Area of Interest</label>
                         <div>
                             <input type="checkbox" class="checkbox" id="protection" name="DataProtection"
                                 onchange={handleChange}>
@@ -329,4 +337,10 @@
             </form>
         </div>
     </div>
+</template>
+<template if:true={formSubmited}>
+    <div class="container afterSubmit">
+        <h1>Your form has been submitted succcessfully</h1>
+    </div>
+</template>
 </template>

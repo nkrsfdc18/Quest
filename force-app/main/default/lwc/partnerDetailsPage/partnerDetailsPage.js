@@ -80,9 +80,12 @@ export default class PartnerDetailsPage extends LightningElement {
     showModal() {
         const modal = this.template.querySelector(".modal");
         const overlay = this.template.querySelector(".overlay");
+        console.log(modal)
         modal.classList.add("show");
         overlay.classList.add("overlay-bg");
         document.body.style.overflow = "hidden";
+        // modal.style.overflow = "auto";
+        this.template.querySelector(".modal-one").style.overflow = "auto"
         
     }
 
@@ -100,7 +103,7 @@ export default class PartnerDetailsPage extends LightningElement {
         modal.classList.add("show");
         overlay.classList.add("overlay-bg");
         document.body.style.overflow = "hidden";
-        overlay.style.overflowY = "auto";
+        // overlay.style.overflowY = "auto";
     }
 
     hideVideoModal() {

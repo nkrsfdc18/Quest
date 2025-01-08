@@ -1,7 +1,8 @@
 import { LightningElement, track, wire } from 'lwc';
-import createRegistrationRecord from '@salesforce/apex/Quest_HandlePartnerRegistration.createPartnerRegistrationRecord';
+import createPartnerRegistrationRecord from '@salesforce/apex/Quest_HandlePartnerRegistration.createPartnerRegistrationRecord';
 
 export default class Quest_Partner_Registration extends LightningElement {
+    formSubmited = true;
 
     partnerRegistrationRecord = {
         FirstName: '',
@@ -30,10 +31,13 @@ export default class Quest_Partner_Registration extends LightningElement {
 
         let partnerRegistration = this.partnerRegistrationRecord;
         // Calling the Apex Method to create Partner Registration Record in CRM
-        createRegistrationRecord({partnerRegistration})
+        createPartnerRegistrationRecord({partnerRegistration})
             .then((result) => {
                 let newRecord = result;
                 console.log('Record created successfully: ',newRecord);
+                if(result) {
+                    this.formSubmited = true;
+                }
                 this.partnerRegistrationRecord = {}; // Resetting the Form Values
                 console.log('After Submit Record: ',JSON.stringify(this.partnerRegistrationRecord));
             })

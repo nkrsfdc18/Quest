@@ -8,6 +8,8 @@ import getEmployeesPicklistValues from '@salesforce/apex/Quest_HandlePartnerRegi
 
 export default class Quest_PartnerRegistrationForm extends LightningElement {
 
+    formSubmited = false;
+
     // Object to Store Form Details
     partnerRegistrationFormDetails = {};
     countries = [];
@@ -51,6 +53,7 @@ export default class Quest_PartnerRegistrationForm extends LightningElement {
 
                 //Resetting the Form Details in JS
                 this.partnerRegistrationFormDetails = {};
+                this.formSubmited = true;
                 //console.log('After Submit Details',JSON.stringify(this.partnerRegistrationFormDetails));
             })
             .catch((error) =>{

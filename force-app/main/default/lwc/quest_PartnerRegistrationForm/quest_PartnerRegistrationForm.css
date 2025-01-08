@@ -50,6 +50,10 @@ h2 {
     flex-basis: 100%;
 }
 
+.form-group .phone {
+    flex-basis: 48.5%;
+}
+
 label {
     margin-bottom: 5px;
     font-weight: bold;
@@ -102,6 +106,14 @@ input:focus, select:focus {
     text-decoration: none;
 }
 
+.afterSubmit h1 {
+    font-size: 24px;
+}
+
+.checkbox-heading {
+    margin-bottom: 10px;
+}
+
 @media screen and (min-width: 768px) {
     .container {
         padding: 0 16px;
@@ -133,6 +145,7 @@ input:focus, select:focus {
     }
 }
 
+
 @media screen and (min-width: 992px) {
     .container {
         padding: 20px 0 30px;
@@ -158,7 +171,7 @@ input:focus, select:focus {
     }
 
     .contact-info form > div, .company-info form > div {
-        gap: 24px;
+        gap: 30px;
         margin-bottom: 30px;
     }
 

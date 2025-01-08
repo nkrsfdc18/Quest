@@ -1,4 +1,12 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-08-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
 <template>
+    <template if:false={formSubmited}>
     <div class="container">
         <h1>Member Registration</h1>
         <div class="description">
@@ -394,4 +402,10 @@
             </form>
         </div>
     </div>
+</template>
+<template if:true={formSubmited}>
+    <div class="afterSubmit">
+        <h1>Your form has been submitted succcessfully</h1>
+    </div>
+</template>
 </template>
