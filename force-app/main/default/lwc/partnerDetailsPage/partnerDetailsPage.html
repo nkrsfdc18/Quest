@@ -6,10 +6,11 @@
   @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 -->
 <template>
+
     <div class="overlay"></div>
     <div class="modal-one">
         <section class="modal">
-            <div class="applicant-info modal-content">
+            <div class="applicant-info modal-content partner-contact-form">
                 <div class="modal-header">
                     <h4>Have Partner Contact Me</h4>
                     <button onclick={hideModal}>
@@ -400,7 +401,7 @@
                                         <div><iframe title="reCAPTCHA" width="304" height="78" role="presentation"
                                                 name="a-26i79fxrywf4" frameborder="0" scrolling="no"
                                                 sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
-                                                src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdhnAITAAAAAJcNnQ-uixct-XaExEuBBjcbQzU_&amp;co=aHR0cHM6Ly9wYXJ0bmVycy5xdWVzdC5jb206NDQz&amp;hl=en&amp;v=zIriijn3uj5Vpknvt_LnfNbF&amp;size=normal&amp;cb=bwn6mfsov18n"></iframe>
+                                                src="https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LdhnAITAAAAAJcNnQ-uixct-XaExEuBBjcbQzU_&co=aHR0cHM6Ly9wYXJ0bmVycy5xdWVzdC5jb206NDQz&hl=en&v=zIriijn3uj5Vpknvt_LnfNbF&size=normal&cb=bwn6mfsov18n"></iframe>
                                         </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
                                             class="g-recaptcha-response"
                                             style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
@@ -493,6 +494,7 @@
             </div>
         </template>
     </section>
+
 
     <section class="headquarters bg-gray">
         <template if:true={partnerAccount}>

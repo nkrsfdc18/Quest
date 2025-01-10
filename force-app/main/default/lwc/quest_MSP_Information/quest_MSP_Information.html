@@ -1,0 +1,202 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-09-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <div class="container">
+        <h1>Want information on the Quest MSP Program?</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-7 register-description mt-0">
+
+                <!-- Banners -->
+
+                <div class="">
+                    Simply fill out this form and we'll get in touch with you to address your specific questions or
+                    concerns, as well as help you customize an MSP solution that meets your customers' requirements and
+                    delivers recurring revenue for your business.
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-5 form-container-v3 common-v2-view frm-title-49 ">
+                <div id="frmhandlercontainer">
+                    <div id="form-container">
+                        <form id="frmHandler">
+
+
+                            <h4>Complete the following form to learn more about the Quest MSP Program.</h4>
+                            <div id="form-loading-container" class="vertical-center horizontal-center hidden">
+                                <div class="text-center loading-spinner">
+                                    <div class="preloader preloader-relative">
+                                        <div class="preloader-wrapper active">
+                                            <div class="spinner-layer quest-orange">
+                                                <div class="circle-clipper left">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="gap-patch">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="circle-clipper right">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="preloader-text preloader-overlay-text">
+                                            Please wait...
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: none;">
+                                <symbol id="icon-triangle-down" viewBox="0 0 20 20">
+                                    <title>triangle-down</title>
+                                    <path d="M5 6h10l-5 9-5-9z"></path>
+                                </symbol>
+                                <symbol id="icon-check" viewBox="0 0 16 16">
+                                    <title>check</title>
+                                    <path d="M6 10.767l-2.767-2.767-0.933 0.933 3.7 3.733 8-8-0.933-0.933-7.067 7.033z">
+                                    </path>
+                                </symbol>
+                            </svg>
+                            <div id="group1">
+                                <div class="form-field form-group" id="tr_Email">
+                                    <div>
+                                        <!-- <label>Business Email</label> -->
+                                    </div>
+                                    <div>
+                                        <input type="email" id="Email" name="Email" placeholder="Business Email"
+                                            class="form-control" maxlength="100" required="" data-id="Email" onchange={handleChange}>
+
+                                    </div>
+
+                                    <p class="error-msg de"
+                                        data-error-default="Invalid <strong>&quot;Business Email&quot;</strong>. Please try again">
+                                        Invalid <strong>"Business Email"</strong>. Please try again</p>
+                                </div>
+
+                            </div>
+                            <div id="group2">
+                                <div class="form-field form-group " id="div_FirstName">
+                                    <div>
+                                        <!-- <label class="">First Name</label> -->
+                                    </div>
+                                    <div>
+                                        <input type="text" title="First Name" name="FirstName" id="FirstName"
+                                            placeholder="First Name" maxlength="40" autocomplete="FirstName"
+                                            class="form-control" required="" data-id="fName" onchange={handleChange}>
+                                    </div>
+                                    <p class="error-msg de"
+                                        data-error-default="Invalid <strong>&quot;First Name&quot;</strong>. Please try again">
+                                        Invalid <strong>"First Name"</strong>. Please try again</p>
+                                </div>
+                                <div class="form-field form-group " id="div_LastName">
+                                    <div>
+                                        <!-- <label class="">Last Name</label> -->
+                                    </div>
+                                    <div>
+                                        <input type="text" title="Last Name" name="LastName" id="LastName"
+                                            placeholder="Last Name" maxlength="80" autocomplete="LastName"
+                                            class="form-control" required="" data-id="lName" onchange={handleChange}>
+                                    </div>
+                                    <p class="error-msg de"
+                                        data-error-default="Invalid <strong>&quot;Last Name&quot;</strong>. Please try again">
+                                        Invalid <strong>"Last Name"</strong>. Please try again</p>
+                                </div>
+                                <div class="form-field form-group " id="div_Company">
+                                    <div>
+                                        <!-- <label class="">Company</label> -->
+                                    </div>
+                                    <div>
+                                        <input type="text" title="Company" name="Company" id="Company" maxlength="100"
+                                            placeholder="Company" autocomplete="Company" class="form-control"
+                                            required="" data-id="Company" onchange={handleChange}>
+                                    </div>
+                                    <p class="error-msg de"
+                                        data-error-default="Invalid <strong>&quot;Company&quot;</strong>. Please try again">
+                                        Invalid <strong>"Company"</strong>. Please try again</p>
+                                </div>
+                                <div class="form-field form-group " id="div_Phone">
+                                    <div>
+                                        <!-- <label class="">Business Phone (Optional)</label> -->
+                                    </div>
+                                    <div>
+                                        <input type="text" title="Business Phone (Optional)" name="Phone" id="Phone"
+                                            placeholder="Business Phone (Optional)" maxlength="50" autocomplete="Phone"
+                                            class="form-control" data-id="Phone" onchange={handleChange}>
+                                    </div>
+                                    <p class="error-msg de"
+                                        data-error-default="Invalid <strong>&quot;Business Phone (Optional)&quot;</strong>. Please try again">
+                                        Invalid <strong>"Business Phone (Optional)"</strong>. Please try again</p>
+                                </div>
+                                <div class="form-field form-group " id="div_Looking">
+                                    <div>
+                                        <!-- <label class=""><div style="box-sizing:border-box;font-family:'Segoe UI', system-ui, 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;font-size:14px;">What are you looking for?</div></label> -->
+                                    </div>
+                                    <div>
+                                        <input type="text"
+                                            title="<div style=&quot;box-sizing:border-box;font-family:'Segoe UI', system-ui, 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;font-size:14px;&quot;>What are you looking for?</div>"
+                                            name="Looking" id="Looking" placeholder="What are you looking for?"
+                                            maxlength="40" autocomplete="Looking" class="form-control" data-id="goal" onchange={handleChange}>
+                                    </div>
+                                    <p class="error-msg de"
+                                        data-error-default="Invalid <strong>&quot;What are you looking for?&quot;</strong>. Please try again">
+                                        Invalid <strong>"What are you looking for?"</strong>. Please try again</p>
+                                </div>
+                            </div>
+                            <div id="tr_OptInAccept" style="display:none">
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" name="chkOptIn" id="chkOptIn" class="left">
+                                    <label for="chkOptIn">
+                                        <svg class="icon-check">
+                                            <use xlink:href="#icon-check"></use>
+                                        </svg>
+                                    </label>
+                                    Yes, I agree to receive electronic messages from Quest including information about
+                                    products, services, solutions, offers and deals.
+
+                                </label>
+                            </div>
+                            <div>
+                                <div>
+                                    <button type="submit" value="Submit" class="btn btn-orange btn-block btn-submit" onclick={handleSubmit}>Submit</button>
+                                </div>
+                            </div>
+                            <div id="tr_OptInPrivacy" class="privacy-statement">
+                                <div>
+                                    <br>reCAPTCHA protects this site. See Google's <a
+                                        href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>
+                                    and <a href="https://policies.google.com/terms" target="_blank">Terms of Use</a>.
+                                </div>
+                            </div>
+                            <input type="hidden" id="chkdr" name="chkdr" value="0">
+                            <input type="hidden" id="AssetCodeId" name="AssetCodeId" value="130926">
+                            <input type="hidden" id="zi_title" name="zi_title" value="">
+                            <input type="hidden" id="zi_state_province" name="zi_state_province" value="">
+                            <input type="hidden" id="reqpfields" name="reqpfields"
+                                value="mexZDkDfmOpsgy/cRjz2wO1fdrdaB+VGf4od8MWIbnb4AsOKsvtpu47F1lASrR7C">
+                            <input type="hidden" id="AssetTypeId" value="44">
+                            <input type="hidden" id="2" value="130926">
+                            <input type="hidden" id="EventItemId">
+                            <input type="hidden" id="ProductLineId" value="1">
+                            <input type="hidden" id="DoNotDisplayPhoneOnZI" value="1">
+                            <input id="hd_pffields" name="hd_pffields" type="hidden"
+                                value="Email,FirstName,LastName,Company,Phone,zi_title,zi_state_province"><input
+                                id="hd_pdfields" name="hd_pdfields" type="hidden" value=""><input id="hd_cfields"
+                                name="hd_cfields" type="hidden" value="Looking"><input id="hd_pfzifields"
+                                name="hd_pfzifields" type="hidden"
+                                value="FirstName,LastName,zi_title,Company,CountryCode,Phone,City,zi_state_province,PostalCode,DA_company_sic,DA_company_employees"><input
+                                id="hd_dafields" name="hd_dafields" type="hidden"
+                                value="DA_contact_phone_number,DA_contact_mobile_phone_number,DA_contact_supplemental_email,DA_contact_job_function,DA_contact_management_level,DA_contact_department,DA_contact_accourcy_score,DA_contact_accouracy_grade,DA_company_website,DA_company_phone,DA_company_revenue,DA_company_employees,DA_company_sic,DA_company_naics,DA_company_street,DA_company_city,DA_company_country,DA_company_zip_code,DA_company_state,DA_primary_industry,DA_industry_category,DA_marketing_budget,DA_it_budget,DA_finance_budget,DA_hr_budget,DA_zoominfo_contact_id,DA_zoominfo_company_id">
+                            <div id="rcToken"></div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

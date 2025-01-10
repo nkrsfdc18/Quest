@@ -21,12 +21,15 @@
 .guestHomePage_Banner {
     margin-top: 72px;
 }
+.banner-info {
+    margin-top: 5px;
+}
 .banner-title {
     color: #00556c;
     font-size: 48px;
     font-weight: bold;
     line-height: 1.25;
-    margin: 0 0 10px;
+    margin: 0 0 12px;
     font-family: "Noto-SansRegular", sans-serif;
 }
 b, strong {
@@ -44,6 +47,7 @@ p {
 }
 .video-frame {
     padding-top: 20px;
+    margin-top: 10px;
 }
 .video-frame-container{
     position: relative;
@@ -62,7 +66,8 @@ p {
 .banner-content {
     font-size: 16px;
     font-family: "Noto-SansRegular", sans-serif;
-    color: #333;;
+    color: #333;
+    line-height: 1.65;
 }
 .banner-content-b {
     font-family: "Noto-SansRegular", sans-serif;

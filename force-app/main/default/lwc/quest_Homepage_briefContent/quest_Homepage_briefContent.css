@@ -42,6 +42,12 @@ img {
     text-align: center;
     padding: 0 15px;
 }
+.first-image-content-container {
+    padding: 0 15px 0 0 ;
+}
+.last-image-content-container {
+    padding: 0 0 0 15px;
+}
 .image-title {
     font-size: 16px;
     font-weight: bold;
@@ -96,7 +102,7 @@ img {
     min-height: 1px;
 }
 .stat-box {
-    padding: 30px;
+    padding:10px 30px 30px;
     width: 25%;
 }
 .stats-boxes>div h4 {
@@ -135,7 +141,7 @@ img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 30px auto 40px;
+    margin: 60px auto 40px;
 }
 .partner-box-container .partner-box {
     margin: 10px;

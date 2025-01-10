@@ -25,7 +25,11 @@
 }
 
 body {
-    font-family: "Noto Sans", sans-serif;;
+    font-family: "Noto Sans", sans-serif;
+}
+
+h1, h2, h2, h4, h5, p, a, span {
+    font-family: "Noto Sans", sans-serif;
 }
 
 /* ---------------------------------- Hero / Banner Section ------------------------ */
@@ -235,14 +239,11 @@ body {
 }
 
 /* -------------------------------------stats section-------------------------------- */
-.stats-section{
-    padding: 10px 0px;
-}
 .stats-row {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 .stats-column {
     flex: 1;
@@ -258,6 +259,7 @@ body {
 .stats-column p {
     font-size: 16px;
     margin: 0;
+    color: black;
 }
 .stats-divider {
     width: 2px;
@@ -282,7 +284,7 @@ body {
 .Offerings .title p{
     font-size: 20px;
     color: #53565a;
-    font-weight: 100;
+    font-weight: 400;
     width: 75%;
     margin: 20px auto 80px;
 }
@@ -315,6 +317,10 @@ body {
 
 .offering-row.reverse {
     flex-direction: row-reverse;
+}  
+
+.last-offering-row {
+    margin-bottom: 0;
 }
 
 .offering-text {
@@ -388,20 +394,21 @@ body {
 .support p{
     font-size: 16px;
     color:#53565a;
-    font-weight: 300;
+    font-weight: 500;
     padding: 0px 150px;
     margin-top: 30px;
+    margin-bottom: 20px;
     text-align: start;
 }
 
-/* ------------------------------------- Testimonials Section ------------------------- */
+/* ------------------------------------- testimonial Section ------------------------- */
 
-.testimonials {
+.testimonial {
     background-color: #f9f9f9;
     padding: 80px 0px;
 }
 
-.testimonials h1{
+.testimonial h1{
     text-align: center;
     color: var(--blue);
     font-size: 39px;
@@ -416,7 +423,7 @@ body {
 }
 .carousel-card {
     background-color: white;
-    padding: 50px 91px;
+    padding: 50px 150px 50px 91px;
     flex: 0 0 auto;
     width: 100%;
     transition: 0.5s;
@@ -427,14 +434,19 @@ body {
     position: relative;
 }
 
-.quote {
-    position: absolute;
-    width: 30px;
+.carousel-body p {
+    position: relative;
 }
 
-.quote svg {
+/* .quote {
+    position: absolute;
+    width: 30px;
+} */
+
+.carousel-body p svg {
+    position: absolute;
     fill: var(--orange);
-    width: 100%;
+    width: 30px;
 }
 
 .left-quote {
@@ -444,7 +456,7 @@ body {
 
 .right-quote {
     bottom: 0;
-    right: 170px;
+    margin-left: 10px;
 }
 
 .carousel-header h2 {
@@ -496,6 +508,7 @@ body {
 
 .carousel-pagination .arrow {
     align-self: flex-start;
+    margin-bottom: 11.25px;
 }
 
 .carousel-pagination .arrow button {

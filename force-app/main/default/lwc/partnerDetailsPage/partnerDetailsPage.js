@@ -4,6 +4,7 @@ import getPartnerAccount from '@salesforce/apex/Quest_HandlePartnerLocatorPage.g
 // import getAccountImage from "@salesforce/apex/Quest_HandlePartnerLocatorPage.getAccountImage";
 import { CurrentPageReference } from 'lightning/navigation';
 
+
 export default class PartnerDetailsPage extends LightningElement {
     
     get ADMUrl() {
@@ -80,12 +81,9 @@ export default class PartnerDetailsPage extends LightningElement {
     showModal() {
         const modal = this.template.querySelector(".modal");
         const overlay = this.template.querySelector(".overlay");
-        console.log(modal)
         modal.classList.add("show");
         overlay.classList.add("overlay-bg");
-        document.body.style.overflow = "hidden";
-        // modal.style.overflow = "auto";
-        this.template.querySelector(".modal-one").style.overflow = "auto"
+        // document.body.style.overflow = "hidden";
         
     }
 
@@ -94,7 +92,7 @@ export default class PartnerDetailsPage extends LightningElement {
         const overlay = this.template.querySelector(".overlay");
         modal.classList.remove("show");
         overlay.classList.remove("overlay-bg");
-        document.body.style.overflow = "auto";
+        // document.body.style.overflow = "auto";
     }
 
     showVideoModal() {
@@ -103,7 +101,6 @@ export default class PartnerDetailsPage extends LightningElement {
         modal.classList.add("show");
         overlay.classList.add("overlay-bg");
         document.body.style.overflow = "hidden";
-        // overlay.style.overflowY = "auto";
     }
 
     hideVideoModal() {

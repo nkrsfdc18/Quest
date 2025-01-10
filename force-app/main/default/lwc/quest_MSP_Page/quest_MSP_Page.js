@@ -124,4 +124,35 @@ export default class Quest_msp extends LightningElement {
             nextBtn.style.display = "block"
         }
     }
+
+    scrollToSection(event) {
+        // Get the section to scroll to from the clicked link's data-section attribute
+        const sectionId = event.target.getAttribute('data-section');
+        console.log(sectionId);
+        // const targetElement = this.template.querySelector(`#${sectionId}`);
+        const targetElement = this.template.querySelector(`.${sectionId}`);
+        console.log(targetElement);
+
+        if (targetElement) {
+            const elementTop = targetElement.offsetTop;
+            const windowHeight = window.innerHeight;
+            let scrollPosition;
+            if(sectionId == 'overview') {
+                const elementHeight = targetElement.offsetHeight;
+                // Calculate the scroll position so the section is centered
+                scrollPosition = elementTop - (windowHeight - elementHeight) / 2;
+                // const scrollPosition = elementTop - windowHeight  / 2;
+            } else {
+                const offset = 160;
+                scrollPosition = elementTop - offset;
+            }
+
+
+            // Scroll smoothly to the calculated position
+            window.scrollTo({
+                top: scrollPosition,
+                behavior: 'smooth'
+            });
+        }
+    }
 }

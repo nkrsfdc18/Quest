@@ -143,6 +143,7 @@ p, a, span {
     width: 100%;
 }
 
+
 .video .image img{
     padding: 4px;
     border: 1px solid #dddddd;
@@ -241,18 +242,22 @@ h4 {
     font-size: 20px;
 }
 
-/* .modal-one {
-    overflow-y: scroll
-} */
-
 .modal {
     position: fixed;
     width: auto;
-    top: -250px;
     opacity: 0;
     transition: 0.5s;
     z-index: -1;
     /* overflow-y: auto; */
+    height: 100%;
+}
+.partner-contact-form {
+    height: 90%;
+    overflow: auto;
+    scrollbar-width: none;
+}
+.partner-contact-form::-webkit-scrollbar {
+    display: none;
 }
 
 .show {
@@ -412,7 +417,7 @@ input:focus, select:focus {
 
     .modal {
         width: 600px;
-        margin: 10px auto;
+        margin: 20px auto;
     }
     
     .modal-content {

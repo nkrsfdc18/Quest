@@ -5,10 +5,13 @@ import getStatePicklistValues from '@salesforce/apex/Quest_HandlePartnerRegistra
 import getIndustryPicklistValues from '@salesforce/apex/Quest_HandlePartnerRegistration.getIndustryPicklistValues';
 import getRegionPicklistValues from '@salesforce/apex/Quest_HandlePartnerRegistration.getRegionPicklistValues';
 import getEmployeesPicklistValues from '@salesforce/apex/Quest_HandlePartnerRegistration.getEmployeesPicklistValues';
+import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
 export default class Quest_PartnerRegistrationForm extends LightningElement {
 
     formSubmited = false;
+    isLoading = false;
+    formSuccessfullySubmitted = false;
 
     // Object to Store Form Details
     partnerRegistrationFormDetails = {};
@@ -41,25 +44,52 @@ export default class Quest_PartnerRegistrationForm extends LightningElement {
         event.preventDefault();
         console.log('In handleSubmit function...');
 
-        console.log('Before Submit Details: ',JSON.stringify(this.partnerRegistrationFormDetails));
+        // Select all checkboxes in the 'Markets Served' section by class
+        const marketCheckboxes = this.template.querySelectorAll('.markets-served');
 
-        const partnerRegistration = this.partnerRegistrationFormDetails;
+        // Select all checkboxes in the 'Solution Area of Interest' section by class
+        const solutionCheckboxes = this.template.querySelectorAll('.solution-area');
 
-        // Call the Apex Method to create Partner Registration Record in CRM
-        createRegistrationRecord({partnerRegistration})
-            .then((result) => {
-                const sfRecord = result;
-                console.log('Record Submitted Successfully',sfRecord);
+        // Check if at least one checkbox is selected in 'Markets Served'
+        const isMarketChecked = Array.from(marketCheckboxes).some((checkbox) => checkbox.checked);
 
-                //Resetting the Form Details in JS
-                this.partnerRegistrationFormDetails = {};
-                this.formSubmited = true;
-                //console.log('After Submit Details',JSON.stringify(this.partnerRegistrationFormDetails));
-            })
-            .catch((error) =>{
-                console.log('Error occured while submitting the Form.');
-                console.log(error);
-            })
+        // Check if at least one checkbox is selected in 'Solution Area of Interest'
+        const isSolutionChecked = Array.from(solutionCheckboxes).some((checkbox) => checkbox.checked);
+
+        if (!isMarketChecked) {
+            event.preventDefault();
+            this.showToast('Required Field', 'Please select at least one market.', 'error');
+        } else if (!isSolutionChecked) {
+            event.preventDefault();
+            this.showToast('Required Field', 'Please select at least one solution area of interest.', 'error');
+        } else {
+            this.formSubmited = true;
+            this.isLoading = true;
+
+            console.log('Before Submit Details: ', JSON.stringify(this.partnerRegistrationFormDetails));
+
+            const partnerRegistration = this.partnerRegistrationFormDetails;
+
+            // Call the Apex Method to create Partner Registration Record in CRM
+            createRegistrationRecord({ partnerRegistration })
+                .then((result) => {
+                    const sfRecord = result;
+                    console.log('Record Submitted Successfully', sfRecord);
+
+                    //Resetting the Form Details in JS
+                    this.partnerRegistrationFormDetails = {};
+                    this.isLoading = false;
+                    this.formSubmited = true;
+                    this.formSuccessfullySubmitted = true;
+                    //console.log('After Submit Details',JSON.stringify(this.partnerRegistrationFormDetails));
+                })
+                .catch((error) => {
+                    this.isLoading = false;
+                    this.formSubmited = false;
+                    console.log('Error occured while submitting the Form.');
+                    console.log(error);
+                })
+        }
     }
 
     // Fetch Country Picklist Values
@@ -71,7 +101,7 @@ export default class Quest_PartnerRegistrationForm extends LightningElement {
                     label: key,
                     value: result[key]
                 }));
-                console.log('Countries: ',result);
+                console.log('Countries: ', result);
             })
             .catch((error) => {
                 console.error('Error fetching country picklist values:', error);
@@ -136,5 +166,16 @@ export default class Quest_PartnerRegistrationForm extends LightningElement {
             .catch((error) => {
                 console.error('Error fetching employees picklist values:', error);
             })
+    }
+
+    // Function to display toast message
+    showToast(title, message, variant) {
+        const evt = new ShowToastEvent({
+            title: title,
+            message: message,
+            variant: variant, // 'success', 'error', 'warning', 'info'
+            mode: 'dismissable', // Make the toast dismissable
+        });
+        this.dispatchEvent(evt);
     }
 }

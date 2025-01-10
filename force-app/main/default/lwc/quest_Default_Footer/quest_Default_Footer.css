@@ -21,18 +21,21 @@ footer {
     padding: 0 15px;
 }
 
+.container .icon-footer {
+    align-items: flex-start;
+}
+
 a {
     text-decoration: none;
 }
 
 .container > div {
-    margin: 10px 0 5px;
+    margin: 5px 0;
 }
 
 svg {
     width: 35px;
-    width: 30px;
-    height: 30px;
+    height: 35px;
     padding: 6px;
 }
 
@@ -41,7 +44,7 @@ svg {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 16px;
+    /* margin-top: 16px; */
 }
 
 .icons svg {

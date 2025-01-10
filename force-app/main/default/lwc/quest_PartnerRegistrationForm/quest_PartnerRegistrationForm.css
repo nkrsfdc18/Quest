@@ -39,7 +39,7 @@ h2 {
     margin-bottom: 30px;
 }
 
-.contact-info form > div, .company-info form > div {
+.contact-info > div, .company-info > div {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -106,12 +106,91 @@ input:focus, select:focus {
     text-decoration: none;
 }
 
-.afterSubmit h1 {
+/* .afterSubmit h1 {
     font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #d5f5d5;
+    border-radius: 5px;
+    border: 1px solid #a0d8a0;
+} */
+
+.afterSubmit {
+    margin-top: 10%;
+    text-align: center;
+    background-color: #57c8a6; /* Soft light green */
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    animation: fadeInUp 0.6s ease-out forwards; /* Smooth fade-in effect */
 }
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.afterSubmit.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.afterSubmit h1 {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px; /* Slight letter-spacing for elegance */
+}
+
+.afterSubmit p {
+    font-size: 18px;
+    color: #f1f1f1;
+    margin-top: 10px;
+    font-style: italic; /* Slight italic for a soft feel */
+    line-height: 1.6; /* Make text more readable */
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .afterSubmit {
+        padding: 20px 15px;
+    }
+    .afterSubmit h1 {
+        font-size: 24px;
+    }
+    .afterSubmit p {
+        font-size: 16px;
+    }
+}
+
+
 
 .checkbox-heading {
     margin-bottom: 10px;
+}
+
+.partner-registration-container {
+    margin-top: 72px;
+    min-height: 500px;
 }
 
 @media screen and (min-width: 768px) {
@@ -127,7 +206,7 @@ input:focus, select:focus {
         font-size: 30px;
     }
 
-    .contact-info form > div, .company-info form > div {
+    .contact-info > div, .company-info > div {
         flex-direction: row;
         gap: 20px;
     }
@@ -170,7 +249,7 @@ input:focus, select:focus {
         margin-bottom: 45px;
     }
 
-    .contact-info form > div, .company-info form > div {
+    .contact-info > div, .company-info > div {
         gap: 30px;
         margin-bottom: 30px;
     }
