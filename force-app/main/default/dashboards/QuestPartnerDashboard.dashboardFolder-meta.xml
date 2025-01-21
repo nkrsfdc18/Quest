@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DashboardFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>satish.r1@etg.digital</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>nagasimha.k@etg.digital.partner</sharedTo>
+        <sharedToType>PartnerUser</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>mohiuddin99mohd@etg.com</sharedTo>
+        <sharedToType>PartnerUser</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>mohiuddin.m@etg.com</sharedTo>
+        <sharedToType>CustomerPortalUser</sharedToType>
+    </folderShares>
+    <name>Quest Partner Dashboard</name>
+</DashboardFolder>

@@ -1,0 +1,15 @@
+<aura:component implements="forceCommunity:themeLayout" access="global" description="Sample Custom Theme Layout">
+    <aura:attribute name="TemplateHeader" type="Aura.Component[]" required="true"/>
+    <aura:attribute name="TemplateFooter" type="Aura.Component[]" required="true"/>
+    <div>
+        <div class="templateHeader">
+            {!v.TemplateHeader}
+        </div>
+        <div class="mainContentArea">
+            {!v.body}
+        </div>
+        <div class="templateFooter">
+            {!v.TemplateFooter}
+        </div>
+    </div>
+</aura:component>
