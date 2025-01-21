@@ -42,7 +42,7 @@
                                 <li><a href="">日本語</a></li>
                                 <li><a href="">Español</a></li>
                                 <li><a href="">中文</a></li> -->
-                                <template for:each={availableLanguages} for:item="language">
+                                <template for:each={filteredLanguages} for:item="language">
                                     <li key={language}>
                                         <a href="javascript:void(0);" data-language={language} onclick={handleLanguageChange}>{language}</a>
                                     </li>

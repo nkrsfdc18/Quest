@@ -1,0 +1,102 @@
+/* Quest Standard Font for: Banner, Navigation */
+.contentCaption,.contentTitle,.contentSubtitle,.lwc-59kp5sov61j,.ctaButtons {
+    font-family: "Noto Sans", sans-serif !important;
+}
+
+/* Navigation & Dropdowns  Text Color */
+.lwc-59kp5sov61j,.lwc-44m8jpc5qct {
+    color: #00556c !important;
+}
+.lwc-59kp5sov61j:hover,.lwc-44m8jpc5qct:hover,.contentTitle {
+    color: #fb4f14 !important;
+}
+
+/* Navigation Text Style */
+.lwc-59kp5sov61j {
+    font-weight: bold !important;
+    font-size: 17px !important;
+    border: none !important;
+}
+/* Navigation Menu Items Hovering */
+a.lwc-59kp5sov61j:hover,button.lwc-59kp5sov61j:hover {
+    border-bottom: 4px Solid #fb4f14 !important;
+}
+
+/* Dropdown Border Style */
+ul.lwc-44m8jpc5qct {
+    outline: none !important;
+}
+
+.contentCaption {
+    font-size: 60px !important; 
+    font-weight: 700;
+}
+.contentTitle {
+    font-style: italic;
+    font-weight: 700;
+    margin: 0px !important;
+}
+.contentSubtitle{
+    font-size:18px !important;
+    margin: 0px !important;
+}
+.ctaButtons {
+    font-size: 18px !important;
+    font-weight: bold !important;
+}
+
+.slds-map_container {
+    height: 300px!important;
+}
+
+/* Login brand image */
+.salesforceIdentityLoginBody2 .cCenterPanel .slds-col--padded .ui-widget {
+    margin: 20px 0px !important;
+}
+
+/*Login Button*/
+.salesforceIdentityLoginForm2 .uiButton {
+    background-color: #016A9C !important;
+    border: 1px solid #015983 !important;
+}
+
+.salesforceIdentityLoginForm2 .inverseTextColor, 
+.salesforceIdentityEmployeeLoginLink2.employeeLoginLink a.inverseTextColor{
+    color: #016A9C !important;
+}
+
+@font-face {
+    font-family: 'Noto-SansRegular';
+    src: url(../resource/NotoSansRegular/NotoSans-Regular.ttf);
+             
+}
+
+/* Removing Padding from the Custom Pages*/
+.comm-layout-column {
+    padding: 0 !important
+}
+.forceCommunitySection .cb-section_column {
+    padding: 0 !important;
+}
+
+/*related topics*/
+.forceCommunityRelatedTopics{
+    padding-left:30px;
+}
+
+/*chatter */
+.forceActionsContainer{
+    padding-left:30px;
+}
+
+/*Pipeline Inspection Height*/
+.runtime_pipeline_inspectorPipelineInspectorHomeExperienceContainer .commonListContainer {
+    min-height: 350px !important;
+}
+
+/* Article and Discussion padding */
+.siteforceSldsTwoCol84Layout {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+:root { --dxp-c-section-columns-max-width: 1440px; }

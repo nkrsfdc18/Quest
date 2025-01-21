@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Partner_Site_Home_ApplyNow_Btn</fullName>
+        <categories>Partner Portal Site - Buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Apply Now Button</shortDescription>
+        <value>Apply Now</value>
+    </labels>
+    <labels>
+        <fullName>Partner_Site_Home_FindPartner_Btn</fullName>
+        <categories>Partner Portal Site - Buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Find Partner Button</shortDescription>
+        <value>Find a Partner</value>
+    </labels>
+    <labels>
+        <fullName>Partner_Site_Home_MSP_Btn</fullName>
+        <categories>Partner Portal Site - Buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSP Program Button</shortDescription>
+        <value>MSP Program</value>
+    </labels>
+    <labels>
+        <fullName>Partner_Site_Home_Page_Banner_Content</fullName>
+        <categories>Partner Portal Site - Content</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Home Page Banner Content</shortDescription>
+        <value>The Quest Partner Circle isn&apos;t just a program. It&apos;s a commitment that delivers greater rewards as your business grows. As a Quest partner, you&apos;ll have the tools, resources and expertise you need for delivering the latest in differentiated technologies to your customers - all with the support of one of the best channel programs in the industry. There&apos;s never been a better time to work in the IT sector, and if you want greater business efficiency and higher potential profitability, there&apos;s never been a better time to partner with Quest.</value>
+    </labels>
+    <labels>
+        <fullName>Partner_Site_Home_Page_Sub_Title</fullName>
+        <categories>Partner Portal Site - Content</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Home Page Sub Title</shortDescription>
+        <value>Where Next Meets Now</value>
+    </labels>
+    <labels>
+        <fullName>Partner_Site_Home_Page_Title</fullName>
+        <categories>Partner Portal Site - Content</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Home Page Title</shortDescription>
+        <value>Welcome to the Quest Partner Circle</value>
+    </labels>
+    <labels>
+        <fullName>Partner_Site_Home_SignIn_Btn</fullName>
+        <categories>Partner Portal Site - Buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sign In Button</shortDescription>
+        <value>Sign In</value>
+    </labels>
+</CustomLabels>
