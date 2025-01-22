@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Partner_fund_Allocation_Rule</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Partner fund Allocation Rule</label>
+        <sharedTo>
+            <portalRole>srPartnerPersonAccount</portalRole>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

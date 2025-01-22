@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solutions__c</fullName>
+    <label>Accreditation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Data Protection</fullName>
+                <default>false</default>
+                <label>Data Protection</label>
+            </value>
+            <value>
+                <fullName>erwin Data Intelligence</fullName>
+                <default>false</default>
+                <label>erwin Data Intelligence</label>
+            </value>
+            <value>
+                <fullName>erwin Data Modeler</fullName>
+                <default>false</default>
+                <label>erwin Data Modeler</label>
+            </value>
+            <value>
+                <fullName>erwin Evolve</fullName>
+                <default>false</default>
+                <label>erwin Evolve</label>
+            </value>
+            <value>
+                <fullName>Information Management - Database Management</fullName>
+                <default>false</default>
+                <label>Information Management - Database Management</label>
+            </value>
+            <value>
+                <fullName>Information Management - Database Replication</fullName>
+                <default>false</default>
+                <label>Information Management - Database Replication</label>
+            </value>
+            <value>
+                <fullName>Information Management - Performance Monitoring</fullName>
+                <default>false</default>
+                <label>Information Management - Performance Monitoring</label>
+            </value>
+            <value>
+                <fullName>KACE</fullName>
+                <default>false</default>
+                <label>KACE</label>
+            </value>
+            <value>
+                <fullName>Microsoft Platform Management</fullName>
+                <default>false</default>
+                <label>Microsoft Platform Management</label>
+            </value>
+            <value>
+                <fullName>One Identity - Active Directory Management</fullName>
+                <default>false</default>
+                <label>One Identity - Active Directory Management</label>
+            </value>
+            <value>
+                <fullName>One Identity - Identity &amp; Access Management (OneLogin)</fullName>
+                <default>false</default>
+                <label>One Identity - Identity &amp; Access Management (OneLogin)</label>
+            </value>
+            <value>
+                <fullName>One Identity - Identity Governance &amp; Administration</fullName>
+                <default>false</default>
+                <label>One Identity - Identity Governance &amp; Administration</label>
+            </value>
+            <value>
+                <fullName>One Identity - Log Management (syslog-ng)</fullName>
+                <default>false</default>
+                <label>One Identity - Log Management (syslog-ng)</label>
+            </value>
+            <value>
+                <fullName>One Identity - Privileged Access Management</fullName>
+                <default>false</default>
+                <label>One Identity - Privileged Access Management</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Services__c</fullName>
+    <label>Certifications</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Active Directory Pro</fullName>
+                <default>false</default>
+                <label>Active Directory Pro</label>
+            </value>
+            <value>
+                <fullName>Active Roles</fullName>
+                <default>false</default>
+                <label>Active Roles</label>
+            </value>
+            <value>
+                <fullName>ActiveRoles Server</fullName>
+                <default>false</default>
+                <label>ActiveRoles Server</label>
+            </value>
+            <value>
+                <fullName>Archive Manager</fullName>
+                <default>false</default>
+                <label>Archive Manager</label>
+            </value>
+            <value>
+                <fullName>Archive Shuttle Operator Readiness</fullName>
+                <default>false</default>
+                <label>Archive Shuttle Operator Readiness</label>
+            </value>
+            <value>
+                <fullName>Asset Manager</fullName>
+                <default>false</default>
+                <label>Asset Manager</label>
+            </value>
+            <value>
+                <fullName>ChangeAuditor</fullName>
+                <default>false</default>
+                <label>ChangeAuditor</label>
+            </value>
+            <value>
+                <fullName>ChangeBASE</fullName>
+                <default>false</default>
+                <label>ChangeBASE</label>
+            </value>
+            <value>
+                <fullName>Cloud Solutions Pro</fullName>
+                <default>false</default>
+                <label>Cloud Solutions Pro</label>
+            </value>
+            <value>
+                <fullName>Coexistence Manager for Notes</fullName>
+                <default>false</default>
+                <label>Coexistence Manager for Notes</label>
+            </value>
+            <value>
+                <fullName>Desktop Authority</fullName>
+                <default>false</default>
+                <label>Desktop Authority</label>
+            </value>
+            <value>
+                <fullName>DR Series Systems</fullName>
+                <default>false</default>
+                <label>DR Series Systems</label>
+            </value>
+            <value>
+                <fullName>Exchange Pro</fullName>
+                <default>false</default>
+                <label>Exchange Pro</label>
+            </value>
+            <value>
+                <fullName>Foglight</fullName>
+                <default>false</default>
+                <label>Foglight</label>
+            </value>
+            <value>
+                <fullName>Foglight for Virtual Enterprise</fullName>
+                <default>false</default>
+                <label>Foglight for Virtual Enterprise</label>
+            </value>
+            <value>
+                <fullName>Foglight for Virtualization</fullName>
+                <default>false</default>
+                <label>Foglight for Virtualization</label>
+            </value>
+            <value>
+                <fullName>Foglight for Virtualization Enterprise</fullName>
+                <default>false</default>
+                <label>Foglight for Virtualization Enterprise</label>
+            </value>
+            <value>
+                <fullName>GroupWise Migrator</fullName>
+                <default>false</default>
+                <label>GroupWise Migrator</label>
+            </value>
+            <value>
+                <fullName>Identity Manager</fullName>
+                <default>false</default>
+                <label>Identity Manager</label>
+            </value>
+            <value>
+                <fullName>InTrust</fullName>
+                <default>false</default>
+                <label>InTrust</label>
+            </value>
+            <value>
+                <fullName>KACE Asset Management Implementation for AMA or SMA</fullName>
+                <default>false</default>
+                <label>KACE Asset Management Implementation for AMA or SMA</label>
+            </value>
+            <value>
+                <fullName>KACE SMA Implementation - excludes Service Desk</fullName>
+                <default>false</default>
+                <label>KACE SMA Implementation - excludes Service Desk</label>
+            </value>
+            <value>
+                <fullName>KACE SMA Service Desk Implementation</fullName>
+                <default>false</default>
+                <label>KACE SMA Service Desk Implementation</label>
+            </value>
+            <value>
+                <fullName>KACE Systems Management Appliance (SMA)</fullName>
+                <default>false</default>
+                <label>KACE Systems Management Appliance (SMA)</label>
+            </value>
+            <value>
+                <fullName>Managed Service Partner Specialization</fullName>
+                <default>false</default>
+                <label>Managed Service Partner Specialization</label>
+            </value>
+            <value>
+                <fullName>Migration Manager for AD</fullName>
+                <default>false</default>
+                <label>Migration Manager for AD</label>
+            </value>
+            <value>
+                <fullName>Migration Manager for Exchange</fullName>
+                <default>false</default>
+                <label>Migration Manager for Exchange</label>
+            </value>
+            <value>
+                <fullName>Migration Manager for Office 365</fullName>
+                <default>false</default>
+                <label>Migration Manager for Office 365</label>
+            </value>
+            <value>
+                <fullName>Migrator for Notes to Exchange</fullName>
+                <default>false</default>
+                <label>Migrator for Notes to Exchange</label>
+            </value>
+            <value>
+                <fullName>NetVault</fullName>
+                <default>false</default>
+                <label>NetVault</label>
+            </value>
+            <value>
+                <fullName>Notes Integration</fullName>
+                <default>false</default>
+                <label>Notes Integration</label>
+            </value>
+            <value>
+                <fullName>Notes Migrator</fullName>
+                <default>false</default>
+                <label>Notes Migrator</label>
+            </value>
+            <value>
+                <fullName>On Demand Migration for Active Directory</fullName>
+                <default>false</default>
+                <label>On Demand Migration for Active Directory</label>
+            </value>
+            <value>
+                <fullName>On Demand Migration for Domain Move</fullName>
+                <default>false</default>
+                <label>On Demand Migration for Domain Move</label>
+            </value>
+            <value>
+                <fullName>On Demand Migration for M365</fullName>
+                <default>false</default>
+                <label>On Demand Migration for M365</label>
+            </value>
+            <value>
+                <fullName>On Demand Recovery</fullName>
+                <default>false</default>
+                <label>On Demand Recovery</label>
+            </value>
+            <value>
+                <fullName>One Identity Safeguard</fullName>
+                <default>false</default>
+                <label>One Identity Safeguard</label>
+            </value>
+            <value>
+                <fullName>Power 365</fullName>
+                <default>false</default>
+                <label>Power 365</label>
+            </value>
+            <value>
+                <fullName>Privilege Account Manager (TPAM)</fullName>
+                <default>false</default>
+                <label>Privilege Account Manager (TPAM)</label>
+            </value>
+            <value>
+                <fullName>Rapid Recovery</fullName>
+                <default>false</default>
+                <label>Rapid Recovery</label>
+            </value>
+            <value>
+                <fullName>Recovery Manager for AD Forest Edition</fullName>
+                <default>false</default>
+                <label>Recovery Manager for AD Forest Edition</label>
+            </value>
+            <value>
+                <fullName>SharePlex</fullName>
+                <default>false</default>
+                <label>SharePlex</label>
+            </value>
+            <value>
+                <fullName>syslog-ng</fullName>
+                <default>false</default>
+                <label>syslog-ng</label>
+            </value>
+            <value>
+                <fullName>Toad</fullName>
+                <default>false</default>
+                <label>Toad</label>
+            </value>
+            <value>
+                <fullName>One Identity - Identity &amp; Access Management (OneLogin) - Technical Specialist</fullName>
+                <default>false</default>
+                <label>One Identity - Identity &amp; Access Management (OneLogin) - Technical Specialist</label>
+            </value>
+            <value>
+                <fullName>One Identity - Identity &amp; Access Management (OneLogin) - Implementation Professional</fullName>
+                <default>false</default>
+                <label>One Identity - Identity &amp; Access Management (OneLogin) - Implementation Professional</label>
+            </value>
+            <value>
+                <fullName>KACE SDA Core Implementation</fullName>
+                <default>false</default>
+                <label>KACE SDA Core Implementation</label>
+            </value>
+            <value>
+                <fullName>KACE SDA Advanced Implementation</fullName>
+                <default>false</default>
+                <label>KACE SDA Advanced Implementation</label>
+            </value>
+            <value>
+                <fullName>erwin Data Intelligence Suite Implementation Professional Certification</fullName>
+                <default>false</default>
+                <label>erwin Data Intelligence Suite Implementation Professional Certification</label>
+            </value>
+            <value>
+                <fullName>MSP</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MSP</label>
+            </value>
+            <value>
+                <fullName>NDS Migrator</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NDS Migrator</label>
+            </value>
+            <value>
+                <fullName>vRanger</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>vRanger</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

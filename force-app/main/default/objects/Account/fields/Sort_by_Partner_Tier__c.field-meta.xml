@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sort_by_Partner_Tier__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+ Partner_Tier__c, 
+ &quot;Platinum +&quot;, 1, 
+ &quot;Platinum&quot;, 2,
+ &quot;Gold +&quot;, 3,
+ &quot;Gold&quot;, 4,
+ &quot;Silver +&quot;, 5,
+ &quot;Silver&quot;, 6,
+ 99999)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sort by Partner Tier</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>
