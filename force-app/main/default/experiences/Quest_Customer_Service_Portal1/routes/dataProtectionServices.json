@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "449ecf99-45b4-489d-8399-84fbd3338f2d",
+  "appPageId" : "b987754b-affb-4e0d-82de-c3e1b310b89f",
+  "configurationTags" : [ ],
+  "devName" : "Data_Protection_Services__c",
+  "id" : "be91e636-d82c-4eba-bb38-d63376091653",
+  "label" : "Data Protection Services",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-data-protection-services",
+  "type" : "route",
+  "urlPrefix" : "data-protection-services"
+}

@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "c643eed4-3482-4079-8c78-281953589737",
+  "appPageId" : "41ee606a-6732-48e8-8e93-1cc20e6e8f47",
+  "configurationTags" : [ ],
+  "devName" : "partner_registration__c",
+  "id" : "c6f8b399-3f93-4377-9859-f375f96bebe5",
+  "label" : "Partner Registration",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-partner-registration",
+  "type" : "route",
+  "urlPrefix" : "partner-registration"
+}

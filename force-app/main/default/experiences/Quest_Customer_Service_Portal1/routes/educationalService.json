@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "a2b3b298-81d9-452c-a80f-3ca0b566377f",
+  "appPageId" : "b987754b-affb-4e0d-82de-c3e1b310b89f",
+  "configurationTags" : [ ],
+  "devName" : "EducationalService__c",
+  "id" : "1653873e-323b-4f50-8968-42ed30b2f004",
+  "label" : "Educational Service",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-educational-service",
+  "type" : "route",
+  "urlPrefix" : "educational-service"
+}

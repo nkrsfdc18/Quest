@@ -1,0 +1,122 @@
+{
+  "appPageId" : "1fc50bb0-8e65-4e9d-8fc8-e1a5c4335ed2",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "13c5ba4a-bde3-4b59-9f3f-e88c455a887e",
+  "label" : "Login",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "salesforceIdentity:communityLogo2",
+      "id" : "a0c34287-6aa7-4a3e-8b52-ffbcbaac6201",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "forgotPasswordLabel" : "Forgot your password?",
+        "forgotPasswordUrl" : "/ForgotPassword",
+        "loginButtonLabel" : "Log in",
+        "passwordLabel" : "Password",
+        "selfRegisterLabel" : "Not a member?",
+        "selfRegisterUrl" : "/SelfRegister",
+        "startUrl" : "",
+        "usernameLabel" : "Username"
+      },
+      "componentName" : "salesforceIdentity:loginForm2",
+      "id" : "33d3b4a3-9006-4591-b154-939beea9d5f4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "2116e423-48c6-4220-8eca-30892ac2b705",
+        "fr_ca" : "b0bcf15a-eb41-43bb-9a9d-7ef991e51e54"
+      },
+      "renditions" : [ {
+        "id" : "b0bcf15a-eb41-43bb-9a9d-7ef991e51e54",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "forgotPasswordLabel" : "Mot de passe oublié ?",
+            "loginButtonLabel" : "Se connecter",
+            "passwordLabel" : "Mot de passe",
+            "selfRegisterLabel" : "Pas encore membre ?",
+            "usernameLabel" : "Nom d'utilisateur"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "2116e423-48c6-4220-8eca-30892ac2b705",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "forgotPasswordLabel" : "Mot de passe oublié ?",
+            "loginButtonLabel" : "Se connecter",
+            "passwordLabel" : "Mot de passe",
+            "selfRegisterLabel" : "Pas encore membre ?",
+            "usernameLabel" : "Nom d'utilisateur"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "headerText" : "",
+        "showHeader" : false,
+        "useCommunityDomainSso" : true
+      },
+      "componentName" : "salesforceIdentity:socialLogin2",
+      "id" : "437c0cb7-590e-4b6c-97f7-5ab0cce437b2",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "employeeLoginLinkLabel" : "Are you an employee? Login here"
+      },
+      "componentName" : "salesforceIdentity:employeeLoginLink2",
+      "id" : "5c702d23-8207-4914-bd81-e164359fd763",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "5965d59c-5317-4f28-ab07-c305a95aabc5",
+        "fr_ca" : "9a782cbc-c47e-4734-bb13-ff41fa070c51"
+      },
+      "renditions" : [ {
+        "id" : "9a782cbc-c47e-4734-bb13-ff41fa070c51",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "employeeLoginLinkLabel" : "Êtes-vous un employé ? Connectez-vous ici"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "5965d59c-5317-4f28-ab07-c305a95aabc5",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "employeeLoginLinkLabel" : "Êtes-vous un employé ? Connectez-vous ici"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "d816598e-1f42-4e07-9ba6-03c84f78f939",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Login"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "902e917f-05f7-46ad-8f47-21d568338133",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "719fa24f-ea76-47a6-918e-e7943d4e7b36",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Login",
+  "type" : "view",
+  "viewType" : "login-home"
+}

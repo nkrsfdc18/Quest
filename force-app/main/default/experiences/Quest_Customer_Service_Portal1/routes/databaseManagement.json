@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "c514b2d7-3f1d-4f34-960b-ab8a75e867f3",
+  "appPageId" : "b987754b-affb-4e0d-82de-c3e1b310b89f",
+  "configurationTags" : [ ],
+  "devName" : "Database_Management__c",
+  "id" : "71901300-ea6c-42ee-9783-8d2a710e52ec",
+  "label" : "Database Management",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-database-management",
+  "type" : "route",
+  "urlPrefix" : "database-management"
+}

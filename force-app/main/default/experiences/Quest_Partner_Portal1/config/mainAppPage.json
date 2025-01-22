@@ -1,0 +1,11 @@
+{
+  "cmsSettings" : { },
+  "currentThemeId" : "b695df09-91f2-4a70-abd8-a4299ed0767e",
+  "headMarkup" : "<script>\n    document.addEventListener(\"DOMContentLoaded\", function() {\n          setTimeout(changeLocation, 2000);\n          \n        function changeLocation() {\n            console.log(\"hi\");\n            let logo = document.querySelector(\".communityLogo\");\n            logo.addEventListener(\"click\", function() {\n                consoloe.log(\"clicked\");\n                //window.location.href=\"https://partners.quest.com\";\n                window.location.replace(\"https://partners.quest.com\");\n            })\n        }\n        })\n</script>",
+  "id" : "41ee606a-6732-48e8-8e93-1cc20e6e8f47",
+  "isLockerServiceEnabled" : true,
+  "isRelaxedCSPLevel" : true,
+  "label" : "main",
+  "templateName" : "PRM Community Template",
+  "type" : "appPage"
+}

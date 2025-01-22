@@ -1,0 +1,88 @@
+{
+  "appPageId" : "41ee606a-6732-48e8-8e93-1cc20e6e8f47",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "3c26e569-ab63-43a2-8e2d-734a0be978d8",
+  "label" : "Quest Partner Directory",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "3ef86d2a-85de-4b55-b63a-69e9a0e3d340",
+          "columns" : [ {
+            "UUID" : "e6a26b25-2e0b-46fa-8a01-6ae7d7e4be1a",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "3ef86d2a-85de-4b55-b63a-69e9a0e3d340",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:partnerDetailsPage",
+          "id" : "14861475-c309-4d08-8e9c-8ee7ade6bb5f",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "e6a26b25-2e0b-46fa-8a01-6ae7d7e4be1a",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "56ad1ce9-b93b-4242-8276-833bc4b6cad7",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Quest Partner Directory"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "3ef96cbc-c4fe-4204-a223-6c3ff362ec3e",
+      "renditionMap" : {
+        "fr" : "4729f380-289f-4c8b-a775-019c5da90f36",
+        "fr_ca" : "81773d23-e948-4d8d-ae7e-77c847346a37"
+      },
+      "renditions" : [ {
+        "id" : "81773d23-e948-4d8d-ae7e-77c847346a37",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Annuaire des partenaires Quest"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "4729f380-289f-4c8b-a775-019c5da90f36",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Annuaire des partenaires Quest"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "741f35fc-4e9a-46a6-9e9f-0c83fa3a66ca",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "fktYxRqBogQQaAGI7jwboBbKYrt1TH",
+  "type" : "view",
+  "viewType" : "custom-quest-partner-directory"
+}

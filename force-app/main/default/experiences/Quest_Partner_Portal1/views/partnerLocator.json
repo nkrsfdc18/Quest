@@ -1,0 +1,88 @@
+{
+  "appPageId" : "41ee606a-6732-48e8-8e93-1cc20e6e8f47",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "db27139e-e129-4c03-bc79-9a8637eabf9d",
+  "label" : "Partner Locator",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "0bd8ffc0-ee81-4607-a1aa-d092ebdc34c1",
+          "columns" : [ {
+            "UUID" : "1195bde5-ad32-442e-8824-4d2616d34de5",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "0bd8ffc0-ee81-4607-a1aa-d092ebdc34c1",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:quest_Partner_Locator",
+          "id" : "111d6867-11ae-44c8-a890-e7390288a3c0",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "1195bde5-ad32-442e-8824-4d2616d34de5",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "87c1d3b5-dcf5-4981-9d11-cfac38395c80",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Partner Locator"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "1ed286ad-8759-4feb-96f1-cecb0fe8cb00",
+      "renditionMap" : {
+        "fr" : "32aa4ade-0b0c-4b33-b43f-bc075abdd6e4",
+        "fr_ca" : "5a3d17d8-c010-41e0-afab-46c77cbb0aa0"
+      },
+      "renditions" : [ {
+        "id" : "5a3d17d8-c010-41e0-afab-46c77cbb0aa0",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Localisateur de partenaires"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "32aa4ade-0b0c-4b33-b43f-bc075abdd6e4",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Localisateur de partenaires"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "02eb5bd5-f27a-4b7d-aae3-07067b15ac85",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "fktYxRqBogQQaAGI7jwboBbKYrt1TH",
+  "type" : "view",
+  "viewType" : "custom-partner-locator"
+}

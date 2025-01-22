@@ -1,0 +1,46 @@
+{
+  "appPageId" : "b987754b-affb-4e0d-82de-c3e1b310b89f",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "7debb5fa-a36e-4d14-8eee-1efa65bfa20f",
+  "label" : "Unified Endpoint Management Services",
+  "regions" : [ {
+    "id" : "5525ab49-b07b-4436-8402-0a72b430fae4",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:unfifiedEndpoint",
+      "id" : "13b38a84-cf11-4fcc-9ad8-b40fb049733b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "16cbf5cb-7fbb-430a-bb3b-cb702d3ee1bc",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "da41c017-4af0-4353-9b1f-6c2ca5a8384a",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Unified Endpoint Management Services"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "da6a5e27-d4d1-4299-8637-76c5c57ccb3d",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ded1218b-d2f2-4381-a74d-d7f0a2efe6a2",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-unified-endpoint-management-services"
+}

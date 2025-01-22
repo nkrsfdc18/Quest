@@ -1,0 +1,179 @@
+{
+  "appPageId" : "1fc50bb0-8e65-4e9d-8fc8-e1a5c4335ed2",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "e9f18252-97dd-493c-843b-0d6631e996bf",
+  "label" : "Register",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "salesforceIdentity:communityLogo2",
+      "id" : "4eab2a76-b2ec-4f60-aa43-ef7f6fd6653a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"text-align: center;\" class=\"inverseTextColor\">Join the community to receive personalized information and customer support.</div>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "6ecb6b4a-e705-4d86-b3f9-4bcc01f9df09",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "047c29dd-78c4-4c56-8c5b-73e3ada09dfd",
+        "fr_ca" : "e77b308c-397b-40c4-8251-90175d68495d"
+      },
+      "renditions" : [ {
+        "id" : "e77b308c-397b-40c4-8251-90175d68495d",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<div style=\"text-align: center;\" class=\"inverseTextColor\">Joignez la communauté pour recevoir des informations personnalisées et du support client.</div>"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "047c29dd-78c4-4c56-8c5b-73e3ada09dfd",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<div style=\"text-align: center;\" class=\"inverseTextColor\">Joignez la communauté pour recevoir des informations personnalisées et du support client.</div>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "confirmPasswordLabel" : "Confirm Password",
+        "emailLabel" : "Email",
+        "extraFieldsFieldSet" : "",
+        "firstnameLabel" : "First Name",
+        "includePasswordField" : false,
+        "lastnameLabel" : "Last Name",
+        "passwordLabel" : "Create Password",
+        "regConfirmUrl" : "./CheckPasswordResetEmail",
+        "startUrl" : "",
+        "submitButtonLabel" : "Sign Up"
+      },
+      "componentName" : "salesforceIdentity:selfRegister2",
+      "id" : "bd0fab95-cd7d-4762-bd30-9f959cc78237",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "20663056-fb05-47b9-b1d8-122337f022cb",
+        "fr_ca" : "403f8aa2-9df6-49d3-a8fe-b4cb0b42e462"
+      },
+      "renditions" : [ {
+        "id" : "403f8aa2-9df6-49d3-a8fe-b4cb0b42e462",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "confirmPasswordLabel" : "Confirmer le mot de passe",
+            "emailLabel" : "Email",
+            "firstnameLabel" : "Prénom",
+            "lastnameLabel" : "Nom de famille",
+            "passwordLabel" : "Créer un mot de passe",
+            "submitButtonLabel" : "S'inscrire"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "20663056-fb05-47b9-b1d8-122337f022cb",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "confirmPasswordLabel" : "Confirmer le mot de passe",
+            "emailLabel" : "Email",
+            "firstnameLabel" : "Prénom",
+            "lastnameLabel" : "Nom de famille",
+            "passwordLabel" : "Créer un mot de passe",
+            "submitButtonLabel" : "S'inscrire"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "headerText" : "",
+        "showHeader" : false,
+        "useCommunityDomainSso" : true
+      },
+      "componentName" : "salesforceIdentity:socialLogin2",
+      "id" : "6a0a4614-121b-47ce-b092-94ccd5f06fe1",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"text-align: center;\"><a class=\"inverseTextColor\" href=\"./\">Already have an account?</a></div>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "34ed48b8-147f-441a-b6ed-33f0e4a82ac3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "a199c7e3-b214-44bb-bd6d-7b46fc1c3580",
+        "fr_ca" : "7f52b942-0a9d-44dc-ad95-ed5797665a4b"
+      },
+      "renditions" : [ {
+        "id" : "7f52b942-0a9d-44dc-ad95-ed5797665a4b",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<div style=\"text-align: center;\"><a class=\"inverseTextColor\" href=\"./\">Vous avez déjà un compte ?</a></div>"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "a199c7e3-b214-44bb-bd6d-7b46fc1c3580",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<div style=\"text-align: center;\"><a class=\"inverseTextColor\" href=\"./\">Vous avez déjà un compte ?</a></div>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "eb8275c7-d9ce-4da1-9853-780567484ca7",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Register"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "9977f3af-e336-4d74-839b-499a840f4372",
+      "renditionMap" : {
+        "fr" : "487019c4-f605-4538-84d5-e62c6622e911",
+        "fr_ca" : "291f8911-3a6f-405d-bdff-0abc2c9e5d97"
+      },
+      "renditions" : [ {
+        "id" : "291f8911-3a6f-405d-bdff-0abc2c9e5d97",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "title" : "Inscription"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "487019c4-f605-4538-84d5-e62c6622e911",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "title" : "Inscription"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "bd77b10f-5cc6-4892-a218-03a56f9a8fcf",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Login",
+  "type" : "view",
+  "viewType" : "self-register"
+}

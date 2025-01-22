@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "bf758419-e851-4461-8f4f-5cbb7b602441",
+  "appPageId" : "b987754b-affb-4e0d-82de-c3e1b310b89f",
+  "configurationTags" : [ ],
+  "devName" : "Microsoft_Platform_Management_Services__c",
+  "id" : "36b5cbc3-645b-4379-bfc4-7a980289e3ee",
+  "label" : "Microsoft Platform Management Services",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-microsoft-platform-management-services",
+  "type" : "route",
+  "urlPrefix" : "microsoft-platform-management-services"
+}

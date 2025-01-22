@@ -1,0 +1,140 @@
+{
+  "appPageId" : "58757871-d81a-4653-900b-de6368e512eb",
+  "componentName" : "siteforce:sldsTwoCol66Layout",
+  "dataProviders" : [ ],
+  "id" : "b0e0fad6-6576-46f7-8899-26f850c254dc",
+  "label" : "Contact Support",
+  "regions" : [ {
+    "id" : "8436d01b-13a6-4225-8128-7545f0ce008b",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "allowAttachments" : true,
+        "attachmentLabel" : "Upload File",
+        "buttonAlignment" : "center",
+        "buttonBgColor" : "",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonMaxWidth" : "",
+        "buttonRadius" : 0,
+        "buttonTextColor" : "",
+        "buttonTextHoverColor" : "",
+        "callToAction" : false,
+        "callToActionButtonText" : "",
+        "callToActionText" : "",
+        "callToActionUrl" : "",
+        "confirmationSubtext" : "We’ll get back to you soon.",
+        "confirmationText" : "Your case was created.",
+        "guestQuickActionName" : "Select or configure a global action",
+        "headerSubtitle" : "Tell us how we can help.",
+        "headerTitle" : "Contact Customer Support",
+        "isMicrobatch" : false,
+        "quickActionName" : "NewCommunityCase",
+        "requestSummaryText" : "Case summary"
+      },
+      "componentName" : "forceCommunity:contactSupportForm",
+      "id" : "ba6a26e6-357a-4422-8138-347038f93aa7",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr_ca" : "cb3db3be-1476-411a-b59f-faf326a99615"
+      },
+      "renditions" : [ {
+        "id" : "cb3db3be-1476-411a-b59f-faf326a99615",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "attachmentLabel" : "Télécharger un fichier",
+            "callToActionButtonText" : "",
+            "callToActionText" : "",
+            "confirmationSubtext" : "Nous reviendrons vers vous bientôt.",
+            "confirmationText" : "Votre cas a été créé.",
+            "headerSubtitle" : "Dites-nous comment nous pouvons vous aider.",
+            "headerTitle" : "Contacter le support client",
+            "requestSummaryText" : "Résumé du cas"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "71d8e384-f0f8-48a1-bb2a-bf0027be7fee",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "askConfirmationQuestion" : true,
+        "confirmationMessageLabel" : "Got it!",
+        "deflectionSubtitle" : "Find what you need here.",
+        "deflectionTitle" : "Need Answers Fast?",
+        "firstQuestion" : "Did this content solve your issue?",
+        "maxResults" : 6,
+        "measureDeflection" : true,
+        "redirectUrl" : "",
+        "secondQuestion" : "Stop creating your case?",
+        "showArticles" : true,
+        "showDiscussions" : false,
+        "topicId" : ""
+      },
+      "componentName" : "forceCommunity:caseDeflection",
+      "id" : "4bdb0a51-5e3f-4c01-ada6-73742bc91e98",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr_ca" : "b31a708c-8644-4ad6-8608-fc649216269d"
+      },
+      "renditions" : [ {
+        "id" : "b31a708c-8644-4ad6-8608-fc649216269d",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "confirmationMessageLabel" : "Compris !",
+            "deflectionSubtitle" : "Trouver ce dont vous avez besoin ici.",
+            "deflectionTitle" : "Besoin de réponses rapidement ?",
+            "firstQuestion" : "Ce contenu a-t-il résolu votre problème ?",
+            "secondQuestion" : "Arrêter de créer votre cas ?"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "6037c716-c668-4185-8ea6-65202316fbbb",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "b1e14af5-64cf-41a1-a243-838e9572ccc0",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Contact Support"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "298de354-561b-4ec5-9456-791ae62e2ed8",
+      "renditionMap" : {
+        "fr_ca" : "e6d1d2b9-8c42-4e89-9d68-6b2a4c7b7239"
+      },
+      "renditions" : [ {
+        "id" : "e6d1d2b9-8c42-4e89-9d68-6b2a4c7b7239",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "title" : "Contacter le support"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "e3b83b10-f8fa-4dd5-a495-8a7df5445a83",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "contactsupport"
+}

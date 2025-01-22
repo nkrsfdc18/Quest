@@ -1,0 +1,46 @@
+{
+  "appPageId" : "b987754b-affb-4e0d-82de-c3e1b310b89f",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "49b84a48-fd04-4245-9182-69a4439855fa",
+  "label" : "PerformanceMonitoringServices",
+  "regions" : [ {
+    "id" : "74d9c196-454b-4ca9-8104-c490301e5389",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:performanceMonitoringServices",
+      "id" : "a82c3a7d-7711-48c7-bab7-b237a5a1f7e1",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b5ee6664-1a84-4642-9d9d-747005a5400f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "f8062617-eb13-47b8-85f6-ca3df00059c0",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "PerformanceMonitoringServices"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "75ded4de-9126-4e77-a732-d80cf9f194b6",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4ed8a4f7-375a-4f1f-9585-e79d4fcdaa41",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-performancemonitoringservices"
+}

@@ -1,0 +1,88 @@
+{
+  "appPageId" : "41ee606a-6732-48e8-8e93-1cc20e6e8f47",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "c643eed4-3482-4079-8c78-281953589737",
+  "label" : "Partner Registration",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "47d1f6f2-7170-428c-bf20-e6257fac3a02",
+          "columns" : [ {
+            "UUID" : "828e5c94-f3a5-4581-a6a4-d402a9698bac",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "47d1f6f2-7170-428c-bf20-e6257fac3a02",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:quest_PartnerRegistrationForm",
+          "id" : "84b27118-653d-40f7-b3b8-0964a6c22cf3",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "828e5c94-f3a5-4581-a6a4-d402a9698bac",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "26705a32-a519-4abe-99a8-4163706185b6",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Partner Registration"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "3365a6be-c84a-42ba-9a49-8ca6cd82e38f",
+      "renditionMap" : {
+        "fr" : "a32f81fd-9d3d-4978-a969-ceb212fdf8ec",
+        "fr_ca" : "0a39e9c3-bb88-403f-8bfb-72b30c5b4aee"
+      },
+      "renditions" : [ {
+        "id" : "0a39e9c3-bb88-403f-8bfb-72b30c5b4aee",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Inscription du partenaire"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "a32f81fd-9d3d-4978-a969-ceb212fdf8ec",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Inscription du partenaire"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "d4378f82-38cd-4d18-8482-366d7e5ef7a6",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "fktYxRqBogQQaAGI7jwboBbKYrt1TH",
+  "type" : "view",
+  "viewType" : "custom-partner-registration"
+}

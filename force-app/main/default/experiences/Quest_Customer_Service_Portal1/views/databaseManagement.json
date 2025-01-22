@@ -1,0 +1,48 @@
+{
+  "appPageId" : "b987754b-affb-4e0d-82de-c3e1b310b89f",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "c514b2d7-3f1d-4f34-960b-ab8a75e867f3",
+  "label" : "Database Management",
+  "regions" : [ {
+    "id" : "d938bb30-e942-4605-8dd1-ffd897ec0f37",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"DataBasepage\">\n    <div class=\"breadcrumb\">\n    </div>\n\n    <div class=\"content\">\n        <div class=\"title\">\n            <h1>Database Management Services</h1>\n        </div>\n        <div class=\"BackgroundColor\">\n            <div class=\"leftSection\">\n                <div class=\"description1\">\n                    <h3>Reduce the time you spend on database management and devote <br> more time on making use of the data inside it.</h3>\n                </div>\n                <div class=\"description\">\n                    <p>Our Database Management solution is the top-ranked ISV and backed by more than 4 million data professionals. \n                        We utilize our proprietary tools and proven processes to help you achieve the outcomes you desire. \n                        Our experts will assess your database environment, identify and prioritize improvements, and make your business more efficient, \n                        flexible, and scalable. From connecting multiple data sources and bringing business intelligence to your decision making, \n                        to replication, migration and properly tuning your system, our highly-skilled team will help you optimize your database \n                        management investment.\n                    </p>\n                </div>\n                <div class=\"cta\">\n                    <button>Download Service Overview</button>\n                </div>\n            </div>\n\n            <div class=\"image-section\">\n                <img src=\"https://support.quest.com/Images/ess-cs-18.jpg\" alt=\"Database Management Services\" />\n            </div>\n        </div>\n    </div>\n\n    <div class=\"FeaturedServices\">\n        <h2 class=\"FeaturedServicesHeading\">Featured Services</h2>\n        <a class=\"see-all-services\" href=\"https://support.quest.com/professional-services-product-select\">See All Services</a>\n        <div class=\"featured-services-children\">\n            <div class=\"featured-services-tab\"><a class=\"tab-heading\" data-toggle=\"tab\" href=\"#data-base-replication-with-sharePlex\">Data Base Replication with SharePlex</a></div>\n        </div>\n        <div class=\"featured-services-tab-content\">\n            <div class=\"tab-pane fade active in\" id=\"data-base-replication-with-sharePlex\">\n                <div class=\"col-xs-12\">\n                    <div class=\"featureds-services-img-wrap\"><img src=\"https://support.quest.com/images/ess-cs-15.jpg\"></div>\n                    <div class=\"tab-subcontent\">\n                        <p>Not only do we help you implement your database replication solution, we also have the capabilities to help you identify bottlenecks. Our services consultants provide you with recommendations and institute best practices for post-queue tuning and load balancing to avoid performance degradations so your data is available when you need it most.<br>\n                            <a href=\"https://support.quest.com/shareplex/professional-services\">Learn More</a>\n                        </p>\n                        <p>Let our SharePlex services experts help you.</p><br>\n                        <form class=\"form-compressed\">\n                            <div class=\"row\">\n                                <div class=\"form-group\">\n                                    <select class=\"form-control ess-ddl feature-support-button\">\n                                        <option>Contact an Expert</option>\n                                        <option value=\"Shttps://www.quest.com/register/96862\">SharePlex – Large Preferred Production for High Availability/Disaster Recovery (HA/DR)</option>\n                                        <option value=\"https://www.quest.com/register/96869\">SharePlex – Small Preferred Production for High Availability/Disaster Recovery (HA/DR)</option>\n                                        <option value=\"https://www.quest.com/register/96863\">SharePlex – Large Preferred Production for Migrations</option>\n                                        <option value=\"https://www.quest.com/register/96867\">SharePlex – Small Preferred Production for Migrations</option>\n                                        <option value=\"https://www.quest.com/register/96864\">SharePlex – Large Preferred Production for Reporting Use Case</option>\n                                        <option value=\"https://www.quest.com/register/96867\">SharePlex – Small to Medium Preferred Production for Reporting Use Case</option>\n                                        <option value=\"https://www.quest.com/register/96861\">SharePlex – Large Non Production Jump Start for Reporting Use Case</option>\n                                        <option value=\"https://www.quest.com/register/95470\">SharePlex – Small to Medium Non Production Jump Start for Reporting Use Case</option>\n                                        <option value=\"https://www.quest.com/register/96860\">SharePlex – Large Non Production Jump Start for Reporting High Availability/Disaster Recovery (HA/DR)</option>\n                                        <option value=\"https://www.quest.com/register/96866\">Small Non Production Jump Start for Reporting High Availability/Disaster Recovery (HA/DR)</option>\n                                        <option value=\"https://www.quest.com/register/96865\">SharePlex – Small Non Production Jump Start for Migrations</option>\n                                        <option value=\"https://www.quest.com/register/96858\">SharePlex – Large Non Production Jump Start for Migrations</option>\n                                        <option value=\"https://www.quest.com/register/95159\">SharePlex - Health Check</option>\n                                        <option value=\"https://www.quest.com/register/95293\">SharePlex - Post-Performance Load-Splitting Tuning Service</option>\n                                        <option value=\"https://www.quest.com/register/95292\">SharePlex - Post-Performance Post-Queue Tuning Service</option>\n                                    </select>\n                                </div>\n                            </div>\n                        </form>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"additional-services\">\n        <h2>Additional Services</h2>\n        <div class=\"service-container\">\n            <div class=\"service-box\">\n                <img src=\"https://cdn-icons-png.flaticon.com/256/205/205826.png\" alt=\"Consulting Services Icon\">\n                <div class=\"service-box-text\">\n                    <h3>Consulting Services</h3>\n                    <p>\n                        <a href=\"#\">Microsoft Platform</a> | \n                        <a href=\"#\">Data Protection</a> | \n                        <a href=\"#\">Endpoint Systems</a> | \n                        <a href=\"#\">Performance Monitoring</a> | \n                        <a href=\"#\">Database Management</a>\n                    </p>\n                </div>\n            </div>\n            <div class=\"service-box\">\n                <img src=\"https://cdn-icons-png.freepik.com/256/15867/15867239.png\">\n                <div class=\"service-box-text\">\n                    <h3>Educational Services</h3>\n                    <p>\n                        <a href=\"#\">Training courses</a> delivered through online web-based, on-site, or virtual instructor-led.\n                    </p>\n                </div>\n            </div>\n            <div class=\"service-box\">\n                <img src=\"https://st2.depositphotos.com/4410397/7229/v/450/depositphotos_72296883-stock-illustration-wrench-icon.jpg\" alt=\"Support Services Icon\">\n                <div class = \"service-box-text\">\n                    <h3>Support Services</h3>\n                    <p>\n                        Find the <a href=\"#\">right level of support</a> to accommodate the unique needs of your organization.\n                    </p>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "8db02df0-83d7-4c6e-a88a-9f30d4eeaa0d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "051a9ff3-14fe-413d-9ed7-e25046015d21",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "96aca9af-906b-4719-a14d-b4161c6f82dd",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Database Management"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "0796e40f-dbae-448a-8478-7ea4d20a84f1",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "402f9c34-ef40-44bd-9643-b954a478bea0",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-database-management"
+}

@@ -1,0 +1,52 @@
+{
+  "appPageId" : "41ee606a-6732-48e8-8e93-1cc20e6e8f47",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "2c5abbd8-6fb9-40f0-8f5e-5c42c2b2206e",
+  "label" : "Too Many Requests",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div style='display: flex; align-items: center; flex-direction: column; margin: 60px 25px 30px 25px;'><div style='background-image: url(/sfsites/assets/Images/tooManyRequests/tooManyRequests.svg); background-size: contain; height: 350px; width: 100%; background-repeat: no-repeat; background-position: center;'></div></div><div style='margin: 0 25px; text-align: center;'><h1 class='slds-text-heading_large'>Looks like the site is experiencing higher than usual demand…</h1><p class='slds-text-heading_small'>Don't go anywhere. We'll redirect you in a moment.</p></div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "2a830aa0-fb0a-4766-92e4-f335e66dda54",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "b33db45c-2cc4-4db9-8f9c-477aba1a91d7",
+        "fr_ca" : "530ca10f-b2ae-459a-8775-9309f757aa39"
+      },
+      "renditions" : [ {
+        "id" : "530ca10f-b2ae-459a-8775-9309f757aa39",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<div style='display: flex; align-items: center; flex-direction: column; margin: 60px 25px 30px 25px;'><div style='background-image: url(/sfsites/assets/Images/tooManyRequests/tooManyRequests.svg); background-size: contain; height: 350px; width: 100%; background-repeat: no-repeat; background-position: center;'></div></div><div style='margin: 0 25px; text-align: center;'><h1 class='slds-text-heading_large'>Il semble que le site rencontre une demande plus élevée que d'habitude…</h1><p class='slds-text-heading_small'>Ne partez pas. Nous allons vous rediriger dans un instant.</p></div>"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "b33db45c-2cc4-4db9-8f9c-477aba1a91d7",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<div style='display: flex; align-items: center; flex-direction: column; margin: 60px 25px 30px 25px;'><div style='background-image: url(/sfsites/assets/Images/tooManyRequests/tooManyRequests.svg); background-size: contain; height: 350px; width: 100%; background-repeat: no-repeat; background-position: center;'></div></div><div style='margin: 0 25px; text-align: center;'><h1 class='slds-text-heading_large'>Il semble que le site rencontre une demande plus élevée que d'habitude…</h1><p class='slds-text-heading_small'>Ne partez pas. Nous allons vous rediriger dans un instant.</p></div>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "forceCommunity:autoRefresh",
+      "id" : "93b34f04-0449-4863-af30-6062506c7bbe",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5131ddd8-ff79-4478-a179-739cb0fe9294",
+    "regionName" : "content",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "ServiceNotAvailable",
+  "type" : "view",
+  "viewType" : "too-many-requests"
+}

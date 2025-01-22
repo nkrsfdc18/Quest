@@ -1,0 +1,45 @@
+{
+  "appPageId" : "41ee606a-6732-48e8-8e93-1cc20e6e8f47",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "ed222eaf-f660-4049-88d2-6730f0d5a691",
+  "label" : "Service Not Available",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div style='display: flex; align-items: center; flex-direction: column; margin: 60px 25px 40px 25px;'><div style='background: url(/sfsites/assets/Images/serviceNotAvailable/serviceNotAvailable.svg) center no-repeat; background-size: contain; height: 331px; width: 100%; max-width: 538px;'></div></div><div style='margin: 0 25px; text-align: center;'><h1><b style='font-size: 2em'>Looks like the site is temporarily unavailable</b></h1><br/><p><span style='font-size: 1.5em;'>Please try again in a bit.</span></p></div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "c13d7016-fd9a-4af5-a4c4-8383a1f5ea96",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "a09214b1-35d0-448e-a71c-ece7ac3bdb75",
+        "fr_ca" : "4938533a-d70f-4b88-899b-7e16d1eebca7"
+      },
+      "renditions" : [ {
+        "id" : "4938533a-d70f-4b88-899b-7e16d1eebca7",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<div style='display: flex; align-items: center; flex-direction: column; margin: 60px 25px 40px 25px;'><div style='background: url(/sfsites/assets/Images/serviceNotAvailable/serviceNotAvailable.svg) center no-repeat; background-size: contain; height: 331px; width: 100%; max-width: 538px;'></div></div><div style='margin: 0 25px; text-align: center;'><h1><b style='font-size: 2em'>Il semble que le site soit temporairement indisponible</b></h1><br/><p><span style='font-size: 1.5em;'>Veuillez réessayer dans un moment.</span></p></div>"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "a09214b1-35d0-448e-a71c-ece7ac3bdb75",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<div style='display: flex; align-items: center; flex-direction: column; margin: 60px 25px 40px 25px;'><div style='background: url(/sfsites/assets/Images/serviceNotAvailable/serviceNotAvailable.svg) center no-repeat; background-size: contain; height: 331px; width: 100%; max-width: 538px;'></div></div><div style='margin: 0 25px; text-align: center;'><h1><b style='font-size: 2em'>Il semble que le site soit temporairement indisponible</b></h1><br/><p><span style='font-size: 1.5em;'>Veuillez réessayer dans un moment.</span></p></div>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "9a2bf518-f9eb-4cd9-9f0e-3baebae3ebfb",
+    "regionName" : "content",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "ServiceNotAvailable",
+  "type" : "view",
+  "viewType" : "service-not-available"
+}

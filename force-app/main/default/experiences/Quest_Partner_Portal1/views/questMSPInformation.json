@@ -1,0 +1,88 @@
+{
+  "appPageId" : "41ee606a-6732-48e8-8e93-1cc20e6e8f47",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "e7cb6e76-f371-4dab-b023-cc81185eebd9",
+  "label" : "Quest MSP Information",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "3532aa30-de21-4698-a680-27130c7e5e8a",
+          "columns" : [ {
+            "UUID" : "93a52307-981c-4d18-b7ed-f0e1876a3a21",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "3532aa30-de21-4698-a680-27130c7e5e8a",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:quest_MSP_Information",
+          "id" : "1cfe0d80-1de2-408c-ae79-33a1c61b07a1",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "93a52307-981c-4d18-b7ed-f0e1876a3a21",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "fa20789c-3e75-4c7c-871e-ba379bf5d2e6",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Quest MSP Information"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "5f9da11a-901f-4704-94bf-4c1aa4703837",
+      "renditionMap" : {
+        "fr" : "4b5fde59-4dce-4fbb-81a4-efcb4fb72e9d",
+        "fr_ca" : "7c9d9bbc-b3fe-49a4-b02b-822472a387ce"
+      },
+      "renditions" : [ {
+        "id" : "7c9d9bbc-b3fe-49a4-b02b-822472a387ce",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Informations sur le fournisseur de services gérés Quest"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "4b5fde59-4dce-4fbb-81a4-efcb4fb72e9d",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Informations sur le fournisseur de services gérés Quest"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "8d6fc81a-eb98-428d-9ac3-a3c978b4e5a9",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "fktYxRqBogQQaAGI7jwboBbKYrt1TH",
+  "type" : "view",
+  "viewType" : "custom-quest-msp-information"
+}

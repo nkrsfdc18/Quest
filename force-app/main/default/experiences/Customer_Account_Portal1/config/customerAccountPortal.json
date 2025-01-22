@@ -1,0 +1,24 @@
+{
+  "forgotPasswordRouteId" : "ce1834aa-d775-4524-8134-866d26ede947",
+  "isAvailableToGuests" : true,
+  "isFilteredComponentsView" : false,
+  "isProgressiveRenderingEnabled" : false,
+  "loginAppPageId" : "8ed8a0a7-dec4-4968-a8b7-f6b8bd7e3d96",
+  "mainAppPageId" : "2ecba9c3-0b4e-4c14-b401-d2a00a22eb90",
+  "preferredDomain" : "none",
+  "selfRegistrationRouteId" : "f52b5a5e-7a07-4667-b43e-3805b8707ee3",
+  "trustedSitesForScript" : [ {
+    "id" : "ad3ffc40-5fdd-41f3-97ea-3abbfdcea6d1",
+    "isActive" : true,
+    "trustedSiteName" : "d.la12s-core1.sfdc-yfeipo.salesforceliveagent.com",
+    "trustedSiteUrl" : "https://d.la12s-core1.sfdc-yfeipo.salesforceliveagent.com/chat/rest/EmbeddedService/EmbeddedServiceConfig.jsonp",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "35d67db5-d9e2-4028-a838-1267932a9dce",
+    "isActive" : true,
+    "trustedSiteName" : "LiveChat",
+    "trustedSiteUrl" : "https://d.la12s-core1.sfdc-yfeipo.salesforceliveagent.com",
+    "type" : "trustedSitesForScripts"
+  } ],
+  "type" : "site"
+}

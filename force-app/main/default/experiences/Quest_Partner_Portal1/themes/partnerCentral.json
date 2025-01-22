@@ -1,0 +1,436 @@
+{
+  "activeBrandingSetId" : "325390a9-96e8-43dd-858e-e637c3473800",
+  "customCSS" : "/* Navigation & Dropdowns  Text Color */\n.lwc-59kp5sov61j,.lwc-44m8jpc5qct {\n    color: #fff !important;\n}\n.lwc-59kp5sov61j:hover,.lwc-44m8jpc5qct:hover,.contentTitle {\n    color: #fb4f14 !important;\n}\n\n/* Navigation Text Style */\n.lwc-59kp5sov61j {\n    font-weight: bold !important;\n    font-size: 17px !important;\n    border: none !important;\n}\n/* Navigation Menu Items Hovering */\na.lwc-59kp5sov61j:hover,button.lwc-59kp5sov61j:hover {\n    border-bottom: 4px Solid #fb4f14 !important;\n}\n\n/* Dropdown Border Style */\nul.lwc-44m8jpc5qct {\n    outline: none !important;\n}\n\n.contentCaption {\n    font-size: 60px !important; \n    font-weight: 700;\n}\n.contentTitle {\n    font-style: italic;\n    font-weight: 700;\n    margin: 0px !important;\n}\n.contentSubtitle{\n    font-size:18px !important;\n    margin: 0px !important;\n}\n.ctaButtons {\n    font-size: 18px !important;\n    font-weight: bold !important;\n}\n\n@font-face {\n    font-family: 'Noto-SansRegular';\n    src: url('/questpartnerportal/s/sfsites/c/resource/NotoSansRegular/NotoSans-Regular.ttf');\n             \n}",
+  "developerName" : "prm",
+  "id" : "df6d77a6-6e12-4710-b338-1b2a550581c5",
+  "label" : "Partner Central",
+  "layouts" : {
+    "Inner" : "7c322b0f-fdd7-4277-8403-37555cdace6a",
+    "Login" : "77a1662d-8672-4e55-96cf-ac4ad1d1f679",
+    "ServiceNotAvailable" : "b532635a-72b6-45ba-b6ac-5bf88b540b64",
+    "YllDMjhv49OvmZfRbM2SDjrKgOHEvK" : "41b9f029-0f64-4d9f-8a00-067ab80094bb"
+  },
+  "type" : "theme",
+  "views" : [ {
+    "componentAttributes" : { },
+    "componentName" : "salesforceIdentity:loginBody2",
+    "id" : "77a1662d-8672-4e55-96cf-ac4ad1d1f679",
+    "label" : "Login",
+    "regions" : [ {
+      "id" : "ff04b2ba-3a2d-4f7b-a5c5-b9c332f5c49a",
+      "regionName" : "header",
+      "type" : "region"
+    }, {
+      "id" : "beeb22dc-05dc-4ca6-a984-432ca7f60d1c",
+      "regionName" : "content",
+      "type" : "region"
+    }, {
+      "id" : "d2fc534a-b200-4f33-9cfc-16be33f8c438",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "IsDefaultHeaderHidden" : false,
+      "IsDefaultHeaderPositionFixed" : false,
+      "IsDefaultNotificationsHidden" : false,
+      "IsSearchBarHidden" : false,
+      "fixedPageWidth" : 1443,
+      "isPageWidthFixed" : false
+    },
+    "componentName" : "siteforce:prmBody",
+    "id" : "7c322b0f-fdd7-4277-8403-37555cdace6a",
+    "label" : "Default",
+    "regions" : [ {
+      "id" : "2bb4aef9-5f43-4a02-95fd-596180ed3080",
+      "regionName" : "customHeader",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "maxAutoCompleteResults" : 5,
+          "searchLabel" : "Search...",
+          "searchObjects" : ""
+        },
+        "componentName" : "forceCommunity:globalSearchInput",
+        "id" : "79a5ba78-581e-4988-be25-eb8ae71c8463",
+        "renditionMap" : {
+          "fr" : "427515a4-1508-4d17-9f8a-5dca96dc506a",
+          "fr_ca" : "612575da-c95c-4fca-9f3c-c52855032f49"
+        },
+        "renditions" : [ {
+          "id" : "612575da-c95c-4fca-9f3c-c52855032f49",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "maxAutoCompleteResults" : "5",
+              "searchLabel" : "Recherche...",
+              "searchObjects" : ""
+            }
+          },
+          "type" : "renditionComponent"
+        }, {
+          "id" : "427515a4-1508-4d17-9f8a-5dca96dc506a",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "maxAutoCompleteResults" : "5",
+              "searchLabel" : "Recherche...",
+              "searchObjects" : ""
+            }
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "component"
+      } ],
+      "id" : "038ab382-a456-46e0-8cf7-4fc672e8a2b9",
+      "regionName" : "search",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "accountManagementLabel" : "Account Management",
+          "communityBuilderLabel" : "Experience Builder",
+          "communitySetupLabel" : "Salesforce Setup",
+          "contactSupportLabel" : "Contact Support",
+          "filterName" : "MyCases",
+          "homeLabel" : "Home",
+          "includeContactSupport" : true,
+          "includeMessages" : true,
+          "loginLabel" : "Login",
+          "logoutLabel" : "Logout",
+          "myAccountLabel" : "My Account",
+          "showAccountManagement" : true,
+          "showUserSettings" : true,
+          "userSettingsLabel" : "My Settings",
+          "viewProfileLabel" : "My Profile"
+        },
+        "componentName" : "selfService:userProfileMenu",
+        "id" : "e9f82017-7a66-426b-96b5-6f3fdd85b37e",
+        "renditionMap" : {
+          "fr" : "5680d762-4d3f-491c-8413-7c4eed68bbdd",
+          "fr_ca" : "fcad4145-40fc-4529-a133-4ce9ff596ed8"
+        },
+        "renditions" : [ {
+          "id" : "fcad4145-40fc-4529-a133-4ce9ff596ed8",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "accountManagementLabel" : "Gestion de Compte",
+              "communityBuilderLabel" : "Créateur d'Expérience",
+              "communitySetupLabel" : "Configuration de Salesforce",
+              "contactSupportLabel" : "Contacter le Support",
+              "homeLabel" : "Accueil",
+              "loginLabel" : "Se Connecter",
+              "logoutLabel" : "Se Déconnecter",
+              "myAccountLabel" : "Mon Compte",
+              "userSettingsLabel" : "Mes Paramètres",
+              "viewProfileLabel" : "Mon Profil"
+            }
+          },
+          "type" : "renditionComponent"
+        }, {
+          "id" : "5680d762-4d3f-491c-8413-7c4eed68bbdd",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "accountManagementLabel" : "Gestion de Compte",
+              "communityBuilderLabel" : "Créateur d'Expérience",
+              "communitySetupLabel" : "Configuration de Salesforce",
+              "contactSupportLabel" : "Contacter le Support",
+              "homeLabel" : "Accueil",
+              "loginLabel" : "Se Connecter",
+              "logoutLabel" : "Se Déconnecter",
+              "myAccountLabel" : "Mon Compte",
+              "userSettingsLabel" : "Mes Paramètres",
+              "viewProfileLabel" : "Mon Profil"
+            }
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "component"
+      } ],
+      "id" : "a3484644-d219-46ee-af5c-701f4dcb239e",
+      "regionName" : "profileMenu",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "NavigationMenuEditorRefresh" : "Default_Navigation1",
+          "alignment" : "left",
+          "showAppLauncher" : false,
+          "showBackLabel" : false,
+          "showHomeLink" : true
+        },
+        "componentName" : "forceCommunity:multiLevelNavigationWrapper",
+        "id" : "6044c3c2-98ec-4177-92ed-87f979ad04d8",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "eb3bcae9-9c8d-4f26-9d97-73dc0c1afa29",
+      "regionName" : "navBar",
+      "type" : "region"
+    }, {
+      "id" : "90297419-271e-428d-9f54-848552ac4772",
+      "regionName" : "customRegion",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "richTextValue" : "<div style=\"text-align: center; background-color: #004a5e; color: white; padding: 20px; font-family: Arial, sans-serif;\">\n    <p>© 2024 Quest Software Inc. All Rights Reserved.</p>\n    <div style=\"margin-top: 10px;\">\n        <a href=\"https://www.linkedin.com/company/quest-software\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/linkedin.png\" alt=\"LinkedIn\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n        <a href=\"https://twitter.com/quest\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/x.png\" alt=\"X\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n        <a href=\"https://www.facebook.com/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/facebook.png\" alt=\"Facebook\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n        <a href=\"https://www.youtube.com/user/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png\" alt=\"YouTube\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n    </div>\n    <p style=\"margin-top: 10px;\">United States of America (EN)</p>\n</div>"
+        },
+        "componentName" : "forceCommunity:htmlBlock",
+        "id" : "f76601ec-fab8-407e-a989-5fba40fd640b",
+        "renditionMap" : {
+          "fr" : "87960f3e-d3b4-4a62-9e55-8a16015894c0",
+          "fr_ca" : "9c437efb-c27f-4d6f-95fa-728a6373b1f7"
+        },
+        "renditions" : [ {
+          "id" : "9c437efb-c27f-4d6f-95fa-728a6373b1f7",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "richTextValue" : "<div style=\"text-align: center; background-color: #004a5e; color: white; padding: 20px; font-family: Arial, sans-serif;\">\n\t\t\t<p>© 2024 Quest Software Inc. Tous droits réservés.</p>\n\t\t\t<div style=\"margin-top: 10px;\">\n\t\t\t\t<a href=\"https://www.linkedin.com/company/quest-software\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/linkedin.png\" alt=\"LinkedIn\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t\t<a href=\"https://twitter.com/quest\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/x.png\" alt=\"X\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t\t<a href=\"https://www.facebook.com/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/facebook.png\" alt=\"Facebook\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t\t<a href=\"https://www.youtube.com/user/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png\" alt=\"YouTube\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t</div>\n\t\t\t<p style=\"margin-top: 10px;\">États-Unis d'Amérique (EN)</p>\n\t\t</div>"
+            }
+          },
+          "type" : "renditionComponent"
+        }, {
+          "id" : "87960f3e-d3b4-4a62-9e55-8a16015894c0",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "richTextValue" : "<div style=\"text-align: center; background-color: #004a5e; color: white; padding: 20px; font-family: Arial, sans-serif;\">\n\t\t\t<p>© 2024 Quest Software Inc. Tous droits réservés.</p>\n\t\t\t<div style=\"margin-top: 10px;\">\n\t\t\t\t<a href=\"https://www.linkedin.com/company/quest-software\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/linkedin.png\" alt=\"LinkedIn\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t\t<a href=\"https://twitter.com/quest\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/x.png\" alt=\"X\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t\t<a href=\"https://www.facebook.com/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/facebook.png\" alt=\"Facebook\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t\t<a href=\"https://www.youtube.com/user/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png\" alt=\"YouTube\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t</div>\n\t\t\t<p style=\"margin-top: 10px;\">États-Unis d'Amérique (EN)</p>\n\t\t</div>"
+            }
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "component"
+      } ],
+      "id" : "804ec05e-2a3f-455f-8e63-c7fa61abb7b2",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1170,
+      "headerBgColor" : "rgba(0, 0, 0, 0)",
+      "isHeaderPinned" : false,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : true
+    },
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "b532635a-72b6-45ba-b6ac-5bf88b540b64",
+    "label" : "ServiceNotAvailable",
+    "regions" : [ {
+      "id" : "7060cd24-9ebb-445f-bc53-c52a9d983866",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "id" : "3ff459a4-ece9-47b1-88f4-f0f723a2987b",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1920,
+      "headerBgColor" : "rgba(0, 0, 0, 0)",
+      "isHeaderPinned" : true,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : true
+    },
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "41b9f029-0f64-4d9f-8a00-067ab80094bb",
+    "label" : "Quest Default Layout",
+    "regions" : [ {
+      "id" : "c2673029-05d0-4caa-ac91-158de0e7b026",
+      "regionName" : "customHeader",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "maxAutoCompleteResults" : 5,
+          "searchLabel" : "Search...",
+          "searchObjects" : ""
+        },
+        "componentName" : "forceCommunity:globalSearchInput",
+        "id" : "91454451-bac6-4f9f-a19a-8b2f3c12b3c4",
+        "renditionMap" : {
+          "fr" : "92d9732a-a68a-4324-988a-db7202a3b93a",
+          "fr_ca" : "067328a1-d5b0-4969-a9ab-a7709997d7ac"
+        },
+        "renditions" : [ {
+          "id" : "067328a1-d5b0-4969-a9ab-a7709997d7ac",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "maxAutoCompleteResults" : "5",
+              "searchLabel" : "Recherche...",
+              "searchObjects" : ""
+            }
+          },
+          "type" : "renditionComponent"
+        }, {
+          "id" : "92d9732a-a68a-4324-988a-db7202a3b93a",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "maxAutoCompleteResults" : "5",
+              "searchLabel" : "Recherche...",
+              "searchObjects" : ""
+            }
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "component"
+      } ],
+      "id" : "4ce2ee22-bba2-4cc9-9595-d2e66f0cc181",
+      "regionName" : "search",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "accountManagementLabel" : "Account Management",
+          "communityBuilderLabel" : "Experience Builder",
+          "communitySetupLabel" : "Salesforce Setup",
+          "contactSupportLabel" : "Contact Support",
+          "filterName" : "MyCases",
+          "homeLabel" : "Home",
+          "includeContactSupport" : true,
+          "includeMessages" : true,
+          "loginLabel" : "Login",
+          "logoutLabel" : "Logout",
+          "myAccountLabel" : "My Account",
+          "showAccountManagement" : true,
+          "showUserSettings" : true,
+          "userSettingsLabel" : "My Settings",
+          "viewProfileLabel" : "My Profile"
+        },
+        "componentName" : "selfService:userProfileMenu",
+        "id" : "5d83b30f-f408-4e40-abbd-3248a2eaca71",
+        "renditionMap" : {
+          "fr" : "c017e698-18d4-468b-aab1-96a2bf2a8f06",
+          "fr_ca" : "0f3ba360-9121-4abe-a74c-0dfd85ab88a5"
+        },
+        "renditions" : [ {
+          "id" : "0f3ba360-9121-4abe-a74c-0dfd85ab88a5",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "accountManagementLabel" : "Gestion de Compte",
+              "communityBuilderLabel" : "Créateur d'Expérience",
+              "communitySetupLabel" : "Configuration de Salesforce",
+              "contactSupportLabel" : "Contacter le Support",
+              "homeLabel" : "Accueil",
+              "loginLabel" : "Se Connecter",
+              "logoutLabel" : "Se Déconnecter",
+              "myAccountLabel" : "Mon Compte",
+              "userSettingsLabel" : "Mes Paramètres",
+              "viewProfileLabel" : "Mon Profil"
+            }
+          },
+          "type" : "renditionComponent"
+        }, {
+          "id" : "c017e698-18d4-468b-aab1-96a2bf2a8f06",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "accountManagementLabel" : "Gestion de Compte",
+              "communityBuilderLabel" : "Créateur d'Expérience",
+              "communitySetupLabel" : "Configuration de Salesforce",
+              "contactSupportLabel" : "Contacter le Support",
+              "homeLabel" : "Accueil",
+              "loginLabel" : "Se Connecter",
+              "logoutLabel" : "Se Déconnecter",
+              "myAccountLabel" : "Mon Compte",
+              "userSettingsLabel" : "Mes Paramètres",
+              "viewProfileLabel" : "Mon Profil"
+            }
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "component"
+      } ],
+      "id" : "40d06feb-5b27-4c1e-ab20-d78eb4c60758",
+      "regionName" : "profileMenu",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "NavigationMenuEditorRefresh" : "Default_Navigation1",
+          "alignment" : "left",
+          "showAppLauncher" : false,
+          "showBackLabel" : false,
+          "showHomeLink" : true
+        },
+        "componentName" : "forceCommunity:multiLevelNavigationWrapper",
+        "id" : "8f78a0ac-9e98-4713-baa4-352f23934db5",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "a5729f8b-eaed-47aa-9551-0afcfd7c8520",
+      "regionName" : "navBar",
+      "type" : "region"
+    }, {
+      "id" : "052b41a4-a965-4ea7-9fe7-22874e5e2512",
+      "regionName" : "customRegion",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "richTextValue" : "<div style=\"text-align: center; background-color: #004a5e; color: white; padding: 20px; font-family: Arial, sans-serif;\">\n    <p>© 2024 Quest Software Inc. All Rights Reserved.</p>\n    <div style=\"margin-top: 10px;\">\n        <a href=\"https://www.linkedin.com/company/quest-software\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/linkedin.png\" alt=\"LinkedIn\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n        <a href=\"https://twitter.com/quest\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/x.png\" alt=\"X\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n        <a href=\"https://www.facebook.com/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/facebook.png\" alt=\"Facebook\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n        <a href=\"https://www.youtube.com/user/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png\" alt=\"YouTube\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n    </div>\n    <p style=\"margin-top: 10px;\">United States of America (EN)</p>\n</div>"
+        },
+        "componentName" : "forceCommunity:htmlBlock",
+        "id" : "c61a3829-17bc-4d3b-8737-d5b05f5ae313",
+        "renditionMap" : {
+          "fr" : "2c6448a5-957a-4819-8523-1e197022c396",
+          "fr_ca" : "31040082-d19b-49ff-a88a-81abe7b72634"
+        },
+        "renditions" : [ {
+          "id" : "31040082-d19b-49ff-a88a-81abe7b72634",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "richTextValue" : "<div style=\"text-align: center; background-color: #004a5e; color: white; padding: 20px; font-family: Arial, sans-serif;\">\n\t\t\t<p>© 2024 Quest Software Inc. Tous droits réservés.</p>\n\t\t\t<div style=\"margin-top: 10px;\">\n\t\t\t\t<a href=\"https://www.linkedin.com/company/quest-software\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/linkedin.png\" alt=\"LinkedIn\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t\t<a href=\"https://twitter.com/quest\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/x.png\" alt=\"X\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t\t<a href=\"https://www.facebook.com/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/facebook.png\" alt=\"Facebook\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t\t<a href=\"https://www.youtube.com/user/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png\" alt=\"YouTube\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t</div>\n\t\t\t<p style=\"margin-top: 10px;\">États-Unis d'Amérique (EN)</p>\n\t\t</div>"
+            }
+          },
+          "type" : "renditionComponent"
+        }, {
+          "id" : "2c6448a5-957a-4819-8523-1e197022c396",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "richTextValue" : "<div style=\"text-align: center; background-color: #004a5e; color: white; padding: 20px; font-family: Arial, sans-serif;\">\n\t\t\t<p>© 2024 Quest Software Inc. Tous droits réservés.</p>\n\t\t\t<div style=\"margin-top: 10px;\">\n\t\t\t\t<a href=\"https://www.linkedin.com/company/quest-software\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/linkedin.png\" alt=\"LinkedIn\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t\t<a href=\"https://twitter.com/quest\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/x.png\" alt=\"X\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t\t<a href=\"https://www.facebook.com/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/facebook.png\" alt=\"Facebook\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t\t<a href=\"https://www.youtube.com/user/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png\" alt=\"YouTube\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t</div>\n\t\t\t<p style=\"margin-top: 10px;\">États-Unis d'Amérique (EN)</p>\n\t\t</div>"
+            }
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "component"
+      } ],
+      "id" : "81b65d03-2e92-4f9b-841d-94e34751d8f8",
+      "regionName" : "footer",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : { },
+        "componentName" : "c:quest_Default_Navbar",
+        "id" : "15550fe0-207f-4bcb-8e1b-4afb74157cb1",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "3d9b4fb9-66f4-4b5d-b82f-9afb5fbd4cde",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "id" : "eca6e2d8-08dc-400b-a4de-707a56e3787b",
+      "regionName" : "themeHero",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : { },
+        "componentName" : "c:quest_Default_Footer",
+        "id" : "c6734cc8-e75c-4159-81cd-e8614067b383",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "20cd222b-7f81-46c0-ac8b-7fe96eb38e50",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  } ]
+}

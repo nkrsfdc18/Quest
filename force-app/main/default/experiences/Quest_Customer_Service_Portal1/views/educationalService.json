@@ -1,0 +1,48 @@
+{
+  "appPageId" : "b987754b-affb-4e0d-82de-c3e1b310b89f",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "a2b3b298-81d9-452c-a80f-3ca0b566377f",
+  "label" : "Educational Service",
+  "regions" : [ {
+    "id" : "4a4482b9-ba56-4a90-bbfd-05a6adb28fdc",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"padding-top:135px;\">\n</div>\n\n<div style=\"background-color: #333; color: white;height: 65px; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center;\">\n    <div style=\"font-size: 18px; font-weight: bold;\">Support Portal</div>\n    <div style=\"font-size: 14px;\">My Downloads (0)</div>\n</div>\n\n<div style=\"display: flex;\">\n    <div style=\"width: 270px; background-color: #f4f4f4; padding: 20px; \">\n        <div style=\"font-size: 20px; line-height:1.5;font-weight: bold; margin-bottom: 10px; margin-top: 45px;\">Services</div>\n        <div style=\"margin-bottom: 10px;font-size: 16px;\">Consulting Services</div>\n        <div style=\"margin-bottom: 10px;font-size: 16px;\">Educational Services</div>\n        <div style=\"margin-bottom: 20px;font-size: 16px;\">Support Services</div>\n        <div style=\"font-size: 20px; font-weight: bold; margin-bottom: 10px; margin-top: 34px;\">Self Service Tools</div>\n        <div style=\"margin-bottom: 10px;font-size: 16px;\">Knowledge Base</div>\n        <div style=\"margin-bottom: 10px;font-size: 16px;\">My Account</div>\n        <div style=\"margin-bottom: 10px;font-size: 16px;\">Notifications & Alerts</div>\n        <div style=\"margin-bottom: 10px;font-size: 16px;\">Product Support</div>\n        <div style=\"margin-bottom: 10px;font-size: 16px;\">Software Downloads</div>\n        <div style=\"margin-bottom: 10px;font-size: 16px;\">Technical Documentation</div>\n        <div style=\"margin-bottom: 10px;font-size: 16px;\">User Forums</div>\n        <div style=\"margin-bottom: 10px;font-size: 16px;\">Video Tutorials</div>\n\n        <div style=\"font-size: 20px; font-weight: bold; margin-bottom: 10px; margin-top: 34px;\">Support Essentials</div>\n        <div style=\"margin-bottom: 10px;font-size: 16px;\">Awards and Testimonials</div>\n        <div style=\"margin-bottom: 10px;font-size: 16px;\">Getting Started</div>\n        <div style=\"margin-bottom: 10px;font-size: 16px;\">License Agreement</div>\n        <div style=\"margin-bottom: 10px;font-size: 16px;\">Support Guide</div>\n    </div>\n\n\n    <div style=\"flex: 1; padding: 20px;\">\n        <div style=\"font-size: 32px; font-weight: 700; margin-bottom: 10px;text-align: center; margin: 20px auto 25px;margin-top:50px;font-style: italic;\">Educational Services</div>\n        <div style=\"padding-left:37px; line-height: 35px;font-size: 18px; margin-bottom: 10px;font-size: 31.2px;font-style: italic;padding-top:.5em;font-family: \"Open Sans\", \"Noto Sans\", \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif;\n\">Optimize your enterprise with <br> Quest Training and Certifications</div>\n        <div style=\"font-size: 14px; margin-bottom: 20px;font-size: 18.8px; margin-top:20px;margin-left:40.8px;font-style: italic; font-family: \"Noto Sans\", \"Open Sans\";\">\n            Take advantage of our training courses <br> to increase productivity and operational efficiency\n        </div>\n        <div style=\"border-top: 1px solid #ccc; margin: 20px 0; margin-left:36px; margin-top:20px; margin-bottom:35px;height:4px;\"></div>\n        <div style=\"background-color: #f4f4f4; padding: 20px; border: 1px solid #ccc; margin-left:40.8px; \">\n            <div style=\"font-size: 14px; margin-bottom: 10px;\">\n                Filter By: <a href=\"javascript:void(0);\" style=\"color: #007bff; text-decoration: none;\">(Clear Filters)</a>\n            </div>\n            <div style=\"display: flex; gap: 10px; margin-bottom: 25px;\theight: 36px;\">\n                \n                <input type=\"text\" placeholder=\"-- Keyword in Title --\" style=\"padding: 5px; width: 40%; border: 1px solid #ccc; border-radius: 4px;\">\n                <button style=\"padding: 5px 10px; margin: 0px 0px 0px -10px; background-color: #016A9C; color: white; border: none; border-radius: 4px;\">Search</button>\n            </div>\n            <div style=\"display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 25px;\">\n                <select style=\"padding: 5px; width: 32%; border: 1px solid #ccc; border-radius: 4px;height: 36px;font-style: italic;\">\n                    <option>-- Product --</option>\n                </select>\n                <select style=\"padding: 5px; width: 32%; border: 1px solid #ccc; border-radius: 4px;height: 36px;font-style: italic;\">\n                    <option>-- Solution --</option>\n                </select>\n                <select style=\"padding: 5px; width: 32%; border: 1px solid #ccc; border-radius: 4px;height: 36px;font-style: italic;\">\n                    <option>-- Former Brands --</option>\n                </select>\n            </div>\n            <div style=\"display: flex; gap: 10px; flex-wrap: wrap;\">\n                <select style=\"padding: 5px; width: 32%; border: 1px solid #ccc; border-radius: 4px;height: 36px;font-style: italic;\">\n                    <option>-- Recently Added Courses --</option>\n                </select>\n                <select style=\"padding: 5px; width: 32%; border: 1px solid #ccc; border-radius: 4px;height: 36px;font-style: italic;\">\n                    <option>-- Delivery Format --</option>\n                </select>\n            </div>\n        </div>\n       \n         <div style=\"text-align: left; font-size: 12px; margin-left:30px; font-style: italic; padding: 10px; margin-top:10px;margin-bottom:30px;\">1 - 20 of 93</div>\n                    <div style=\"background-color: #f9f9f9; padding: 15px;  margin-left:40px; font-style: italic;\">\n            <div class=\"paraHeading\">ControlPoint Tech Fundamentals</div>\n            <div class=\"paraText\">\n                This fully graded certification training series focuses on the robust functionality available with ControlPoint and is intended to maximize your efficiency in...\n                <span style=\"color: #007bff; cursor: pointer;\">read more</span>\n            </div>\n            <div Class=\"footertext\">\n                <strong>Product:</strong> ControlPoint<br>\n                <strong>Duration:</strong> Product Training - CP301\n                <button Class=\"Buttons\">Launch Course</button>\n            </div>\n\n        </div>\n\n        <!-- Course 2 -->\n        <div style=\"background-color: #eee; padding: 15px;margin-left:40px; font-style: italic;\">\n            <div class=\"paraHeading\">DM01 erwin Data Modeler v12 - Basic Modeling - Free</div>\n            <div class=\"paraText\";\">Course description</div>\n            <div Class=\"footertext\">\n                <strong>Product:</strong> erwin Data Modeler<br>\n                <strong>Duration:</strong> 40 minutes\n                 <button Class=\"Buttons\">Launch Course</button>\n            </div>\n            \n        </div>\n\n        <!-- Course 3 -->\n        <div style=\"background-color: #f9f9f9;  padding: 15px; margin-bottom: 10px;margin-left:40px; font-style: italic;\">\n            <div class=\"paraHeading\">erwin Data Modeler ER360 Administrator</div>\n            <div class=\"paraText\">\n                This course covers the following erwin Data Modeler ER360 Administrative tasks - ER360 Home Page - User Setup - Profile Management - Assigning Permission, access...\n                <span style=\"color: #007bff; cursor: pointer;\">read more</span>\n            </div>\n              \n            \n                <div Class=\"footertext\">\n                    <strong>Product:</strong> erwin Data Modeler<br>\n                    <strong>Duration:</strong> 1 hour\n                      <button Class=\"Buttons\">Launch Course</button>          \n                </div>\n             <!--   <div style=\"float: right padding-right:20px;\">\n                     <button Class=\"Buttons\">Launch Course</button>\n                </div> -->\n             </div>                                                                                                                  \n        </div>\n    </div>\n    </div>\n\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "aa0680a7-a1b2-4239-9148-9bb187536bac",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "82a34e82-de35-4f34-a0c9-106c83b44ecf",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "58ff55d6-fd0b-4a46-aa9e-04103ddcc311",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Educational Service"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "5eeaeebf-627b-4860-ac25-bf660ff36969",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6d73e3f2-e3a5-4607-988d-dd90d35ac7fc",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-educational-service"
+}

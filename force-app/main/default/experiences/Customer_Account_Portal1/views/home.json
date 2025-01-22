@@ -1,0 +1,156 @@
+{
+  "appPageId" : "2ecba9c3-0b4e-4c14-b401-d2a00a22eb90",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "0e15303b-4140-4bf8-8be6-7d63478518fb",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"display: flex; align-items: center; justify-content: center; background-color: #f3f3f3; padding: 40px;\">\n    <!-- Quest Logo and Tagline -->\n    <div style=\"text-align: center; flex: 1; padding-right: 60px; padding-left:150px; padding-top: 40px;\">\n        <img src=\"https://www.quest.com/images/patterns/ZigZag/6-column/quest-logo-tagline.svg\">\n    </div>\n    \n    <!-- Purpose & Vision Section -->\n    <div style=\"flex: 2; max-width: 600px; padding: 20px; text-align: left;\">\n        <h3 style=\"color: #00556c; font-size: 30px; font-weight: bold;\">Purpose & Vision</h3><br>\n        <p style=\"color: #333; font-size: 22px; line-height: 1.6;\">\n            Our purpose, vision, philosophy, and values form the foundation of Quest.\n        </p><br>\n        <ul style=\"list-style-type: disc; padding-left: 20px; color: #333; font-size: 20px; line-height: 1.6;\">\n            <li>\n                <strong>Purpose:</strong> We solve complex problems with simple software solutions.\n            </li>\n            <li>\n                <strong>Philosophy:</strong> We provide great products, backed by great service, and we make it simple to do business with us.\n            </li>\n            <li>\n                <strong>Vision:</strong> We deliver technology that eliminates the need to choose between efficiency and effectiveness.\n            </li>\n        </ul>\n    </div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "5231d4b4-8a87-4b93-ab55-06d004d748f5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "maxWidth" : 100,
+        "overlayColor" : "rgba(0,0,0,0.6)",
+        "overlayHoverColor" : "",
+        "radius" : 0,
+        "showTitle" : true,
+        "textAlignment" : "center",
+        "textBgColor" : "rgba(0,0,0,0)",
+        "textBgHoverColor" : "rgba(0,0,0,0)",
+        "textColor" : "",
+        "textHoverColor" : "",
+        "textPosition" : "center center",
+        "title" : "Featured Topics"
+      },
+      "componentName" : "forceTopic:featuredTopics",
+      "id" : "20b0c963-227c-4e21-812b-44e15fc85a2c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "bannerBackgroundColor" : "",
+        "bannerPosition" : "top",
+        "bannerSizePercent" : 35,
+        "borderRadius" : 20,
+        "boxShadow" : true,
+        "haveBanner" : false,
+        "iconBackgroundColor" : "rgb(255,255,255)",
+        "iconSize" : "medium",
+        "noImageColor" : "rgb(116,116,116)",
+        "overlay" : "rgba(0,0,0,0.01)",
+        "templateType" : "default",
+        "tileMenuEditor" : "Default_Navigation3",
+        "titleColor" : "",
+        "titleFontSize" : "medium",
+        "titleHorizontalAlign" : "center"
+      },
+      "componentName" : "community_navigation:tileMenu",
+      "id" : "c85db528-bd91-4f3e-8dcd-72101fa6e207",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "58210e71-5637-40dc-90db-c8b78488210b",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "enableInlineEdit" : true,
+        "filterName" : "MyOpenCases",
+        "layout" : "STANDARD",
+        "pageSize" : 5,
+        "scope" : "Case",
+        "showActionBar" : true,
+        "showChartsPanel" : true,
+        "showDisplay" : "showall",
+        "showFilterPanel" : true,
+        "showImageIcon" : true,
+        "showManualRefreshButton" : true,
+        "showObjectName" : true,
+        "showPinnedList" : true,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "36c88b95-d2ab-4f42-b7a9-53346a97afac",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "86a5243d-944c-43d4-85f7-d603fd4e0bb7",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><strong style=\"font-size: 16px;\">Quick Links</strong></p><p><br></p><p><a href=\"https://www.quest.com\" rel=\"noopener noreferrer\" target=\"_blank\">Quest</a></p><p><br></p><p><a href=\"http://www.salesforce.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Link 2</a></p><p><br></p><p><a href=\"http://www.salesforce.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Link 3</a></p><p><br></p><p><a href=\"http://www.salesforce.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Link 4</a></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "3475911c-fa18-4f0a-aa16-daa2ff51c3fd",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a49bc1ba-49b9-4961-a219-3d9e13f0f9bd",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "buttonAlignment" : "center",
+        "buttonBgColor" : "",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonMaxWidth" : 12,
+        "buttonRadius" : 0,
+        "buttonTextColor" : "",
+        "buttonTextHoverColor" : "",
+        "label" : "Contact Support"
+      },
+      "componentName" : "forceCommunity:contactSupportButton",
+      "id" : "7cda6da0-c6f7-481e-8884-46130ccb32c9",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "label" : "Preferred Language",
+        "pickerAlignment" : "center"
+      },
+      "componentName" : "forceCommunity:languageSelector43",
+      "id" : "0f3012c2-ad7c-46fd-9309-48aefef00eec",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "40db5702-eae4-4de4-b9a5-c81226678c5b",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "1e0df8c2-4273-4e8d-8b7c-7eb50a3bf1aa",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9e64962e-e159-493e-b46b-d32d0f22b640",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

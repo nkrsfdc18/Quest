@@ -1,0 +1,92 @@
+{
+  "appPageId" : "41ee606a-6732-48e8-8e93-1cc20e6e8f47",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "010fef63-9bf3-428e-8553-cdc2baf1afc2",
+  "label" : "Record Detail",
+  "regions" : [ {
+    "id" : "e48fb7ca-d6f0-4828-8e9c-b22dffa6323c",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "5042b4ff-ddd6-49e0-8574-ef275a02e92a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "detailsTabLabel" : "Details",
+        "discussionsTabLabel" : "Feed",
+        "recordId" : "{!recordId}",
+        "relatedTabLabel" : "Related",
+        "showLegacyActivityComposer" : false,
+        "tab1Type" : "details",
+        "tab2Type" : "related",
+        "tab3Type" : "none",
+        "tab4Type" : "timeline",
+        "timelineTabLabel" : "Activity"
+      },
+      "componentName" : "forceCommunity:recordHomeTabs",
+      "id" : "6b798481-f2bc-4090-92f6-8e52c7eeb9f0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "4d016487-dbcc-49d1-b451-41631c8f7f62",
+        "fr_ca" : "afb8a2f3-5aa5-4b52-ba51-39a3bee058c7"
+      },
+      "renditions" : [ {
+        "id" : "afb8a2f3-5aa5-4b52-ba51-39a3bee058c7",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "detailsTabLabel" : "Détails",
+            "discussionsTabLabel" : "Fil",
+            "relatedTabLabel" : "En rapport",
+            "timelineTabLabel" : "Activité"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "4d016487-dbcc-49d1-b451-41631c8f7f62",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "detailsTabLabel" : "Détails",
+            "discussionsTabLabel" : "Fil",
+            "relatedTabLabel" : "En rapport",
+            "timelineTabLabel" : "Activité"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "63150be7-6d54-426a-b40d-c16bee23d839",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "b068fcad-2602-438e-9f02-a299e6763ba3",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "0417f301-1332-48ac-9a7f-8633045c51d5",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c22150c8-c58a-46f4-90ed-a868cb7b858b",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail"
+}

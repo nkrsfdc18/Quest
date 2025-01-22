@@ -1,0 +1,114 @@
+{
+  "appPageId" : "41ee606a-6732-48e8-8e93-1cc20e6e8f47",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "bbd2f8bf-5696-442a-a042-0c9d0c83a45d",
+  "label" : "User Settings",
+  "regions" : [ {
+    "id" : "b2c14b23-616b-4f49-822c-6c462f7788c4",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "accountSectionTitle" : "Account",
+        "accountTabName" : "Account Management",
+        "connectedSourcesTabName" : "Connected Sources",
+        "deleteAccountButtonTitle" : "Deactivate My Account",
+        "deleteAccountConfirmationPopupBody" : "After you deactivate your account, you'll lose access to this site.",
+        "deleteAccountConfirmationPopupButtonTitle" : "Got It",
+        "deleteAccountConfirmationPopupTitle" : "Deactivate your account?",
+        "deleteAccountErrorMessage" : "Something went wrong. Contact your site administrator.",
+        "deleteAccountSectionTitle" : "Deactivate Account",
+        "emailNotificationsTitle" : "Email Notifications",
+        "emailSectionDescText" : "When email notifications are enabled, email me when someone:",
+        "hideAccountDeleteSection" : true,
+        "hideChatterNotificationSettings" : false,
+        "hideConnectedSources" : false,
+        "hideEmailNotificationSettings" : false,
+        "hideProfileVisibilitySettings" : false,
+        "id" : "{!recordId}",
+        "locationTitle" : "Location",
+        "profileSectionDescText" : "Customize who is able to see what on your profile page",
+        "profileSectionToolTipText" : "Restricted: Visible to the employees of the company that created the site. Members: Visible to logged-in members. Public: Visible to anyone viewing pages that don't require login.",
+        "profileVisibilityTitle" : "Profile Visibility",
+        "settingsPageTitle" : "My Settings"
+      },
+      "componentName" : "forceCommunity:userSettingsCustomizable",
+      "id" : "58f2d97c-720b-474d-9a5d-6215311075a0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "63f6c49f-39a8-4fb0-913a-865ad0de7eca",
+        "fr_ca" : "7d3eca53-9add-4c66-9a98-143cbbe92c99"
+      },
+      "renditions" : [ {
+        "id" : "7d3eca53-9add-4c66-9a98-143cbbe92c99",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "accountSectionTitle" : "Compte",
+            "accountTabName" : "Gestion du compte",
+            "connectedSourcesTabName" : "Sources connectées",
+            "deleteAccountButtonTitle" : "Désactiver mon compte",
+            "deleteAccountConfirmationPopupBody" : "Après avoir désactivé votre compte, vous perdrez l'accès à ce site.",
+            "deleteAccountConfirmationPopupButtonTitle" : "D'accord",
+            "deleteAccountConfirmationPopupTitle" : "Désactiver votre compte ?",
+            "deleteAccountErrorMessage" : "Quelque chose a mal tourné. Contactez l'administrateur de votre site.",
+            "deleteAccountSectionTitle" : "Désactiver le compte",
+            "emailNotificationsTitle" : "Notifications par email",
+            "emailSectionDescText" : "Lorsque les notifications par email sont activées, envoyez-moi un email lorsqu'une personne :",
+            "hideAccountDeleteSection" : "true",
+            "hideChatterNotificationSettings" : "false",
+            "hideConnectedSources" : "false",
+            "hideEmailNotificationSettings" : "false",
+            "hideProfileVisibilitySettings" : "false",
+            "locationTitle" : "Emplacement",
+            "profileSectionDescText" : "Personnalisez les personnes qui peuvent voir quoi sur votre page de profil",
+            "profileSectionToolTipText" : "Restreint : Visible uniquement aux employés de l'entreprise qui a créé le site. Membres : Visible aux membres connectés. Public : Visible à toute personne visualisant des pages ne nécessitant pas de connexion.",
+            "profileVisibilityTitle" : "Visibilité du profil",
+            "settingsPageTitle" : "Mes paramètres"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "63f6c49f-39a8-4fb0-913a-865ad0de7eca",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "accountSectionTitle" : "Compte",
+            "accountTabName" : "Gestion du compte",
+            "connectedSourcesTabName" : "Sources connectées",
+            "deleteAccountButtonTitle" : "Désactiver mon compte",
+            "deleteAccountConfirmationPopupBody" : "Après avoir désactivé votre compte, vous perdrez l'accès à ce site.",
+            "deleteAccountConfirmationPopupButtonTitle" : "D'accord",
+            "deleteAccountConfirmationPopupTitle" : "Désactiver votre compte ?",
+            "deleteAccountErrorMessage" : "Quelque chose a mal tourné. Contactez l'administrateur de votre site.",
+            "deleteAccountSectionTitle" : "Désactiver le compte",
+            "emailNotificationsTitle" : "Notifications par email",
+            "emailSectionDescText" : "Lorsque les notifications par email sont activées, envoyez-moi un email lorsqu'une personne :",
+            "hideAccountDeleteSection" : "true",
+            "hideChatterNotificationSettings" : "false",
+            "hideConnectedSources" : "false",
+            "hideEmailNotificationSettings" : "false",
+            "hideProfileVisibilitySettings" : "false",
+            "locationTitle" : "Emplacement",
+            "profileSectionDescText" : "Personnalisez les personnes qui peuvent voir quoi sur votre page de profil",
+            "profileSectionToolTipText" : "Restreint : Visible uniquement aux employés de l'entreprise qui a créé le site. Membres : Visible aux membres connectés. Public : Visible à toute personne visualisant des pages ne nécessitant pas de connexion.",
+            "profileVisibilityTitle" : "Visibilité du profil",
+            "settingsPageTitle" : "Mes paramètres"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "8ab732fa-8bee-46e7-a704-2e4ca7564a5c",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "b9854ae6-549c-4021-9009-31feb3630bfd",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "usersettings"
+}

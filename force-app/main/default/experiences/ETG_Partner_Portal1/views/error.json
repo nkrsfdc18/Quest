@@ -1,0 +1,72 @@
+{
+  "appPageId" : "58757871-d81a-4653-900b-de6368e512eb",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "0e1e4f22-4d77-47a3-94b7-cd4ef797fcd4",
+  "label" : "Error",
+  "regions" : [ {
+    "id" : "7c48986c-41b7-41c7-a90d-e489d9ed2021",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div class='slds-grid slds-grid--vertical slds-align--absolute-center slds-container--large'>   <div class='slds-align-middle slds-m-bottom--xx-large slds-m-top--xx-large' alt='Page not available'>      <img src='/sfsites/c/img/community/slds/messaging/illustration-page-not-found.png' class='slds-p-horizontal--large'/>   </div>   <h4 class='slds-text-align--center slds-text-heading--large slds-text-color--weak slds-m-bottom--small'>Page not available</h4>    <p class='slds-text-align--center slds-text-heading--medium slds-text-color--weak'>Maybe the page was deleted, the URL is incorrect, or something else went wrong. If you know the page exists but you still can’t get to it, please ask the community administrator for help.</p>  </div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "541efefa-9ab6-49ce-8d38-f4184266202b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr_ca" : "db27d73a-b2dd-4de4-ab7a-a9b3bac2c378"
+      },
+      "renditions" : [ {
+        "id" : "db27d73a-b2dd-4de4-ab7a-a9b3bac2c378",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<div class='slds-grid slds-grid--vertical slds-align--absolute-center slds-container--large'>   \n\t\t\t\t<div class='slds-align-middle slds-m-bottom--xx-large slds-m-top--xx-large' alt='Page non disponible'>      \n\t\t\t\t\t<img src='/sfsites/c/img/community/slds/messaging/illustration-page-not-found.png' class='slds-p-horizontal--large'/>   \n\t\t\t\t</div>   \n\t\t\t\t<h4 class='slds-text-align--center slds-text-heading--large slds-text-color--weak slds-m-bottom--small'>Page non disponible</h4>    \n\t\t\t\t<p class='slds-text-align--center slds-text-heading--medium slds-text-color--weak'>Peut-être que la page a été supprimée, l'URL est incorrecte ou quelque chose s'est mal passé. Si vous savez que la page existe mais que vous ne pouvez toujours pas y accéder, veuillez demander l'aide de l'administrateur de la communauté.</p>  \n\t\t\t</div>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "5daba533-9025-4502-829c-c7bc42048c94",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "6cd10027-4cbc-4d97-9eac-0174b0a8cfbf",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Error"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "133b21be-1815-4c6f-9b93-1e47822e3823",
+      "renditionMap" : {
+        "fr_ca" : "1ece929f-8545-4440-b167-86d357770e0a"
+      },
+      "renditions" : [ {
+        "id" : "1ece929f-8545-4440-b167-86d357770e0a",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "title" : "Erreur"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "e49e019c-b4a6-4c57-9dd6-c26d99c8dd6a",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "error"
+}

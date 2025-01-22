@@ -1,0 +1,46 @@
+{
+  "appPageId" : "b987754b-affb-4e0d-82de-c3e1b310b89f",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "4643401c-774d-402e-bfcc-81b75e6978bf",
+  "label" : "Support Services",
+  "regions" : [ {
+    "id" : "5db329be-4268-4a7d-a434-1b3b54546daa",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:overviewOfServices",
+      "id" : "58d84696-a568-4bf2-8455-6e9cb053019d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2f48637c-5e96-4d19-9ec7-76c5057d81e3",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "cb7e6c60-9049-43be-b3f0-c9dc9f33cc95",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Support Services"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "a8368c94-d760-4381-bb4d-027744badd90",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7e6f69d6-1ac9-4638-a25d-09acfbcfee79",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-support-services"
+}

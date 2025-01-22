@@ -1,0 +1,18 @@
+{
+  "forgotPasswordRouteId" : "a3e64425-b4db-4b6d-bf14-e3f7f1e2379d",
+  "isAvailableToGuests" : true,
+  "isFilteredComponentsView" : true,
+  "isProgressiveRenderingEnabled" : false,
+  "loginAppPageId" : "1fc50bb0-8e65-4e9d-8fc8-e1a5c4335ed2",
+  "mainAppPageId" : "41ee606a-6732-48e8-8e93-1cc20e6e8f47",
+  "preferredDomain" : "none",
+  "selfRegistrationRouteId" : "13c09c95-ae5b-40ba-a9a7-ff2e20f4a758",
+  "trustedSitesForScript" : [ {
+    "id" : "8172ff85-d84a-44d3-ad15-bccffb534009",
+    "isActive" : true,
+    "trustedSiteName" : "Maps",
+    "trustedSiteUrl" : "https://maps.a.forceusercontent.com",
+    "type" : "trustedSitesForScripts"
+  } ],
+  "type" : "site"
+}

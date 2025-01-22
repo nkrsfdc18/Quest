@@ -1,0 +1,119 @@
+{
+  "appPageId" : "41ee606a-6732-48e8-8e93-1cc20e6e8f47",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "daa1bd37-7181-4c4e-a236-7e7935c5c9e4",
+  "label" : "My Account",
+  "regions" : [ {
+    "id" : "60e083c0-1ccc-400c-9758-6f0439c0cd51",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "4e4151ea-4ef4-4a4e-85ce-78a59e378682",
+          "columns" : [ {
+            "UUID" : "53201def-f6f5-4e6d-b0f9-3839a03e98d1",
+            "columnKey" : "col1",
+            "columnName" : "column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ {
+              "attributes" : {
+                "recordId" : "{!CurrentUser.accountId}",
+                "sfdc:identifier" : "forceCommunity_recordHeadline"
+              },
+              "fqn" : "forceCommunity:recordHeadline"
+            }, {
+              "attributes" : {
+                "recordId" : "{!CurrentUser.accountId}",
+                "sfdc:identifier" : "forceCommunity_recordHomeTabs"
+              },
+              "fqn" : "forceCommunity:recordHomeTabs"
+            } ]
+          } ]
+        },
+        "sectionHeight" : 32
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "4e4151ea-4ef4-4a4e-85ce-78a59e378682",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!CurrentUser.accountId}"
+          },
+          "componentName" : "forceCommunity:recordHeadline",
+          "id" : "58636425-b91f-495b-a448-46cf5eaf3a42",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "detailsTabLabel" : "Details",
+            "discussionsTabLabel" : "Feed",
+            "recordId" : "{!CurrentUser.accountId}",
+            "relatedTabLabel" : "Related",
+            "showLegacyActivityComposer" : false,
+            "tab1Type" : "details",
+            "tab2Type" : "related",
+            "tab3Type" : "chatter",
+            "tab4Type" : "none",
+            "timelineTabLabel" : "Activity"
+          },
+          "componentName" : "forceCommunity:recordHomeTabs",
+          "id" : "3b68a3a3-27d0-455f-ae1f-0fa001ccff04",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "fr" : "39404b55-b013-49f3-a141-88011751ea13",
+            "fr_ca" : "4850c029-864b-46f3-b97a-07c9ff04fbd1"
+          },
+          "renditions" : [ {
+            "id" : "4850c029-864b-46f3-b97a-07c9ff04fbd1",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "detailsTabLabel" : "Détails",
+                "discussionsTabLabel" : "Fil",
+                "relatedTabLabel" : "Associé",
+                "timelineTabLabel" : "Activité"
+              }
+            },
+            "type" : "renditionComponent"
+          }, {
+            "id" : "39404b55-b013-49f3-a141-88011751ea13",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "detailsTabLabel" : "Détails",
+                "discussionsTabLabel" : "Fil",
+                "relatedTabLabel" : "Associé",
+                "timelineTabLabel" : "Activité"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "53201def-f6f5-4e6d-b0f9-3839a03e98d1",
+        "regionLabel" : "column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "980daca4-ed11-4da2-a2b5-83a5b349f82f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "dfb95827-de47-438b-9a56-b7700456f165",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "my-account"
+}

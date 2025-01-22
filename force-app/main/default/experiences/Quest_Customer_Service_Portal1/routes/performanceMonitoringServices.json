@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "49b84a48-fd04-4245-9182-69a4439855fa",
+  "appPageId" : "b987754b-affb-4e0d-82de-c3e1b310b89f",
+  "configurationTags" : [ ],
+  "devName" : "PerformanceMonitoringServices__c",
+  "id" : "4cfb8448-47a6-4ba9-8877-e6d013e0506e",
+  "label" : "PerformanceMonitoringServices",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-performancemonitoringservices",
+  "type" : "route",
+  "urlPrefix" : "performancemonitoringservices"
+}

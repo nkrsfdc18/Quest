@@ -1,0 +1,164 @@
+{
+  "appPageId" : "b987754b-affb-4e0d-82de-c3e1b310b89f",
+  "componentName" : "siteforce:sldsTwoCol84SidebarFeaturedLayout",
+  "dataProviders" : [ ],
+  "id" : "33a5f48b-7f51-42f4-bfc8-7c904db7b419",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"display: flex; align-items: center; justify-content: space-between;  padding-left:150px; padding-right:150px;  padding-bottom:100px; padding-top:100px; background-color: #fff; flex-wrap: wrap;\">\n  <!-- Left Content -->\n  <div style=\"flex: 1; padding: 20px; min-width: 250px;\">\n    <h2 style=\"font-size: 48px; color: #006f78; margin-bottom: 10px;\">Services</h2>\n    <p style=\"font-size: 20px; color: #333; line-height: 1.6;\">\n      From evaluation to purchase to implementation, Quest <br>services are available to help you move, manage,<br> secure, and protect your IT infrastructure – today and <br>tomorrow. Take advantage of our consulting, <br>education, and support services so that you are ready <br> for what’s next.\n    </p>\n  </div>\n\n\n  <!-- Center Image -->\n  <div style=\"flex: 1; display: flex; justify-content: center; align-items: center; min-width: 250px; margin-top:100px\">\n    <img \n      src=\"https://www.quest.com/images/patterns/ZigZag/6-column/services-hero.svg\" \n      alt=\"Customer Support Image\" \n      style=\"width: 100%;height: auto;\" \n    />\n  </div>\n</div>\n\n<div style=\"text-align: center; padding: 100px; padding-bottom: 0; background-color: #f8f9fa ;min-width: 300px;\">\n  <h2 style=\"font-size: 36px; color: #006f78;\">Consulting Services</h2>\n  <p style=\"font-size: 20px; color: #555; line-height: 1.6; max-width: 800px; margin: 0 auto;\">\n    Quest consulting services help you tackle whatever IT challenge comes next so you can move to productivity quickly and achieve your next IT goal now, and in the future. You can trust our expert consultants to help you simplify and automate service delivery, lower risk and increase time to value for your business.\n  </p>\n  \n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "5652a025-f75e-4d36-a0b7-bd6eb04bf61e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:serviceCarousel",
+      "id" : "3c29fd97-7b8a-418c-bde8-d1a6e97e9f64",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"text-align: center; padding: 40px; background-color: #ffffff; font-family: Arial, sans-serif;\">\n    <h2 style=\"color: #005c75; font-size: 32px; font-weight: bold; margin-bottom: 20px;\">\n        Educational Services\n    </h2>\n    <div style=\"display: flex; justify-content: flex-start; align-items: center; gap: 40px; flex-wrap: wrap;\">\n        <!-- Text Section (Left) -->\n        <div style=\"max-width: 500px; text-align: left; margin-left: 10%;\">\n            <p style=\"color: #6c757d; font-size: 20px; line-height: 1.8; margin-top:40px; margin-bottom: 20px;\">\n                Increase productivity and efficiency through online training courses designed to give you a deeper \n                understanding of your Quest product. Earn certifications and become your organization’s Quest expert.\n            </p>\n            <a href=\"/educational-service\" \n               style=\"display: inline-block; padding: 14px 30px; background-color: #ff5722; color: #ffffff; \n                      text-decoration: none; font-weight: bold; \n                      transition: background-color 0.3s ease; font-size: 16px;\">\n                Learn More\n            </a>\n        </div>\n        \n        <div style=\"flex: 1; max-width: 600px; text-align: center; margin-left: 0;\">\n    <img src=\"https://www.quest.com/images/patterns/ZigZag/6-column/educational-services.svg\" \n         alt=\"Educational Services Illustration\" \n         style=\"width: 100%; height: auto; max-height: 350px;\" />\n</div>\n\n    </div>\n</div>\n\n\n<div style=\"text-align: center; padding: 40px; background-color: #f9f9f9; font-family: Arial, sans-serif;\">\n    <h2 style=\"color: #005c75; font-size: 32px; font-weight: bold; margin-bottom: 40px;\">\n        Support Services\n    </h2>\n    <div style=\"display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap;\">\n        <div style=\"flex: 1; min-width: 300px; max-width: 600px; text-align: center;\">\n            <img src=\"https://www.quest.com/images/patterns/ZigZag/6-column/support-services.svg\" \n                 alt=\"Support Services Illustration\" \n                 style=\"max-width: 100%; height: auto;\" />\n        </div>\n        <div style=\"flex: 1; min-width: 300px; max-width: 500px; text-align: left;\">\n            <p style=\"color: #6c757d; font-size: 18px; line-height: 1.8; margin-bottom: 20px;\">\n                Our award-winning support team provides deep product knowledge as well as extensive domain expertise. \n                Their expert technical assistance saves you time so you can focus on what’s important to your business.\n            </p>\n            <a href=\"/CustomerServicePortalVersion2/s/support-service\" \n               style=\"display: inline-block; padding: 15px 30px; background-color: #ff5722; color: #ffffff; \n                      text-decoration: none; font-weight: bold; border-radius: 6px; \n                      transition: background-color 0.3s ease; font-size: 16px;\">\n                Learn More\n            </a>\n        </div>\n    </div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "1b7167ac-7919-4d5c-ab0d-7f20327c26e8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "161ccbd5-2237-4969-96b2-089dedeffb0b",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "a6fe68f8-7e26-4b57-90b7-0064b4b57249",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "id" : "aedfad8e-d561-45ba-adb8-49d488043cbf",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "display" : "LEVELS_POINTS",
+        "excludeInternalUsers" : false,
+        "knowledgeLabel" : "Knows about",
+        "numberOfUsers" : 5,
+        "showContextUser" : false,
+        "showTooltip" : false,
+        "showUserRank" : false,
+        "title" : "Leaderboard",
+        "tooltipText" : "Earn points and climb to new levels when you contribute in the experience!"
+      },
+      "componentName" : "forceCommunity:reputationLeaderboard42",
+      "id" : "2fb98f52-4038-4f2d-91b4-2b919e9c0927",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a3fd99b1-817f-4152-9c72-a901b487e746",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "askCommunityLabel" : "Ask a Question",
+        "buttonBgColor" : "",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonRadius" : 0,
+        "buttonTextColor" : "",
+        "buttonTextHoverColor" : "",
+        "buttonTwoBgColor" : "",
+        "buttonTwoBgHoverColor" : "",
+        "buttonTwoBorderColor" : "",
+        "buttonTwoRadius" : 0,
+        "buttonTwoTextColor" : "",
+        "buttonTwoTextHoverColor" : "",
+        "confirmationMessage" : "Got it!",
+        "contactSupportLabel" : "Contact Support",
+        "followUpPromptLabel" : "Can we close your question?",
+        "headerLabel" : "Don't see what you're looking for?",
+        "isAskFollowPromptEnabled" : true,
+        "isIncludeArticlesEnabled" : false,
+        "isIncludeDiscussionsEnabled" : true,
+        "isInitialSatisfactionPromptEnabled" : true,
+        "isPublisherDeflectionEnabled" : true,
+        "maxSuggestions" : 5,
+        "satisfactionPromptLabel" : "Did we help to answer your question?",
+        "showDetails" : false,
+        "showTopics" : true
+      },
+      "componentName" : "siteforce:napiliFooter",
+      "id" : "e464f79a-175d-47cb-a9ee-d3ee4772bb03",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "allowPrepopulatePrechatFields" : true,
+        "avatarImgURL" : "",
+        "codeSettingsName" : "",
+        "defaultMinimizedText" : "Chat with an Expert",
+        "displayHelpButton" : true,
+        "eswConfigurationJSON" : {
+          "baseCoreURL" : "https://force-innovation-984--expsync.sandbox.my.salesforce.com",
+          "baseLiveAgentContentURL" : "https://c.la12s-core1.sfdc-yfeipo.salesforceliveagent.com/content",
+          "baseLiveAgentURL" : "https://d.la12s-core1.sfdc-yfeipo.salesforceliveagent.com/chat",
+          "buttonId" : "573O3000000zVgP",
+          "deploymentId" : "572O3000003VXIv",
+          "enabledFeatures" : [ "LiveAgent" ],
+          "entryFeature" : "LiveAgent",
+          "eswConfigDevName" : "Quest_Chat_Group",
+          "eswConfigId" : "04IO30000034C0rMAE",
+          "eswLiveAgentDevName" : "Quest_Chat_Group",
+          "gslbBaseURL" : "https://service.force.com",
+          "isOfflineCasesEnabled" : "0",
+          "orgId" : "00DO300000805Sv"
+        },
+        "externalScripts" : "",
+        "externalStyles" : "",
+        "fallbackRouting" : "",
+        "offlineSupportMinimizedText" : "Contact Us",
+        "offlineText" : "Agent Offline",
+        "onlineLoadingText" : "Loading",
+        "prechatBackgroundImgURL" : "",
+        "smallCompanyLogoImgURL" : "",
+        "snippetSettingsFile" : "",
+        "storageDomain" : "",
+        "waitingStateBackgroundImgURL" : ""
+      },
+      "componentName" : "forceCommunity:embeddedService",
+      "id" : "68cf1f4d-1450-4bd7-a062-2b9b823a4173",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "899160ce-b8a2-4f26-8d99-b22e909ebdc5",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "1e4f50ad-d5cf-4918-a480-e7bd9d425eda",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2468fa5d-dc7d-4a70-8d01-597f0ab699c1",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

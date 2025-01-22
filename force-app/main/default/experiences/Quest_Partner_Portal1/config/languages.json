@@ -1,0 +1,31 @@
+{
+  "defaultCode" : "en_US",
+  "defaultLabel" : "English (US)",
+  "id" : "f4858d99-aa5c-4d55-b415-6ca1c932a356",
+  "languages" : [ {
+    "countryCode" : "CA",
+    "fallbackLanguageId" : null,
+    "id" : "6da3f61b-8867-4c96-9410-82244a701ffc",
+    "isActive" : false,
+    "label" : "French (Canadian) (CA)",
+    "languageCode" : "fr",
+    "type" : "language"
+  }, {
+    "countryCode" : "",
+    "fallbackLanguageId" : null,
+    "id" : "9f14a57f-bbf0-4f63-b4bc-3a3a7de833d0",
+    "isActive" : true,
+    "label" : "French",
+    "languageCode" : "fr",
+    "type" : "language"
+  }, {
+    "countryCode" : "BR",
+    "fallbackLanguageId" : null,
+    "id" : "1e8b6438-216d-4817-9e01-8e3b4b668a2f",
+    "isActive" : true,
+    "label" : "Portuguese (Brazil) (BR)",
+    "languageCode" : "pt",
+    "type" : "language"
+  } ],
+  "type" : "languageContainer"
+}

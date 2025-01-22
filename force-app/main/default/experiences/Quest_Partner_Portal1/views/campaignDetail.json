@@ -1,0 +1,92 @@
+{
+  "appPageId" : "41ee606a-6732-48e8-8e93-1cc20e6e8f47",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "72dc0051-e04a-4e25-bb70-6258fbef52bf",
+  "label" : "Campaign Detail",
+  "regions" : [ {
+    "id" : "39d9b0ac-5742-40c9-a927-0cde421af7b4",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "ed3f1a27-0024-4907-a660-40c21ef050bf",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "detailsTabLabel" : "Details",
+        "discussionsTabLabel" : "Feed",
+        "recordId" : "{!recordId}",
+        "relatedTabLabel" : "Related",
+        "showLegacyActivityComposer" : false,
+        "tab1Type" : "details",
+        "tab2Type" : "related",
+        "tab3Type" : "chatter",
+        "tab4Type" : "none",
+        "timelineTabLabel" : "Activity"
+      },
+      "componentName" : "forceCommunity:recordHomeTabs",
+      "id" : "a0bb76a2-3a5b-4f5a-8e84-9da9ef97437f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "7784a617-aa10-48d9-9f37-2c9c50d23665",
+        "fr_ca" : "df766c03-6ce7-42c5-880b-fafaa1c0b85e"
+      },
+      "renditions" : [ {
+        "id" : "df766c03-6ce7-42c5-880b-fafaa1c0b85e",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "detailsTabLabel" : "Détails",
+            "discussionsTabLabel" : "Flux",
+            "relatedTabLabel" : "Associés",
+            "timelineTabLabel" : "Activité"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "7784a617-aa10-48d9-9f37-2c9c50d23665",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "detailsTabLabel" : "Détails",
+            "discussionsTabLabel" : "Flux",
+            "relatedTabLabel" : "Associés",
+            "timelineTabLabel" : "Activité"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "36f1208e-e887-430b-a173-2d0136ea0c84",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "e746726d-d874-42b7-9cd8-7f8c004f4e53",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "ab747f80-9106-4adb-a4ba-a0b570956265",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b32e3c4e-c0f2-4423-b8a6-09e864dc465c",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-701"
+}

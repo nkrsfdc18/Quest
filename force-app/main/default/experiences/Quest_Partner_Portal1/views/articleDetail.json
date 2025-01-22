@@ -1,0 +1,157 @@
+{
+  "appPageId" : "41ee606a-6732-48e8-8e93-1cc20e6e8f47",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "248b02d0-e654-4611-aa10-c4e93ec60fc8",
+  "label" : "Article Detail",
+  "regions" : [ {
+    "id" : "c216746b-6816-4fb0-b92f-d094de1ca193",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "uniqueNameOrId" : "{!urlName}"
+      },
+      "componentName" : "forceCommunity:breadcrumbs",
+      "id" : "d6d5dccf-3836-49dc-990f-c03e1e9dab01",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "enableVoting" : true,
+        "recordId" : "{!recordId}",
+        "showTitleInArticleHeader" : true,
+        "showTopicPills" : true,
+        "urlName" : "{!urlName}"
+      },
+      "componentName" : "selfService:singleArticleView",
+      "id" : "20f9d16f-3a75-4af7-aa4d-90d480e7f4f3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "context" : "RECORD",
+        "recordId" : "{!recordId}",
+        "width" : "WIDE"
+      },
+      "componentName" : "forceCommunity:feedPublisher",
+      "id" : "1b61a03a-23e9-4428-9ec1-308e14788afb",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "bcc78356-57e2-40cc-bac8-e0e89af85115",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "buttonAlignment" : "center",
+        "buttonBgColor" : "",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonMaxWidth" : 100,
+        "buttonRadius" : 0,
+        "buttonTextColor" : "",
+        "buttonTextHoverColor" : "",
+        "recordId" : "{!recordId}",
+        "showNotificationMenu" : false
+      },
+      "componentName" : "forceCommunity:follow",
+      "id" : "585d2606-3d64-4949-a148-66b6e79c9459",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "numberOfItems" : 5,
+        "showViewCounts" : true,
+        "title" : "Related Articles"
+      },
+      "componentName" : "selfService:similarArticles42",
+      "id" : "1d5e8a7d-3401-4e95-bb8e-41b2f336e476",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "be53bf1d-5f36-482a-827c-fc2f56b1a3c4",
+        "fr_ca" : "99d6595f-17ce-4bfc-ab67-1c2b85827a75"
+      },
+      "renditions" : [ {
+        "id" : "99d6595f-17ce-4bfc-ab67-1c2b85827a75",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Articles Associés"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "be53bf1d-5f36-482a-827c-fc2f56b1a3c4",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Articles Associés"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "numberOfArticles" : 5,
+        "title" : "Trending Articles",
+        "topicId" : "{!topicId}"
+      },
+      "componentName" : "selfService:topicTrendingArticles42",
+      "id" : "10f177be-73b3-4e77-bdb7-0ea342baec2d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "e653e1b0-79c4-4506-be48-bc81476288e2",
+        "fr_ca" : "d40e76b5-b94b-421d-823f-f74c2d55700f"
+      },
+      "renditions" : [ {
+        "id" : "d40e76b5-b94b-421d-823f-f74c2d55700f",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Articles Tendances"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "e653e1b0-79c4-4506-be48-bc81476288e2",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Articles Tendances"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "eaf3f7b2-e0fb-4396-ad14-29bd49d4ab11",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "99e7d217-f73d-40f1-b184-3c941214838c",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "{!Record.Summary}",
+        "title" : "{!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "c2dd7087-8920-416a-9940-1d355b7e245b",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4ff17d74-4e88-45c4-b776-f310403a84c8",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "article"
+}

@@ -1,0 +1,1354 @@
+{
+  "activeBrandingSetId" : "8bde6428-3193-4645-882c-48a0e4d7817a",
+  "customCSS" : "/* Quest Standard Font for: Banner, Navigation */\n.contentCaption,.contentTitle,.contentSubtitle,.lwc-59kp5sov61j,.ctaButtons {\n    font-family: \"Noto Sans\", sans-serif !important;\n}\n\n/* Navigation & Dropdowns  Text Color */\n.lwc-59kp5sov61j,.lwc-44m8jpc5qct {\n    color: #00556c !important;\n}\n.lwc-59kp5sov61j:hover,.lwc-44m8jpc5qct:hover,.contentTitle {\n    color: #fb4f14 !important;\n}\n\n/* Navigation Text Style */\n.lwc-59kp5sov61j {\n    font-weight: bold !important;\n    font-size: 17px !important;\n    border: none !important;\n}\n/* Navigation Menu Items Hovering */\na.lwc-59kp5sov61j:hover,button.lwc-59kp5sov61j:hover {\n    border-bottom: 4px Solid #fb4f14 !important;\n}\n\n/* Dropdown Border Style */\nul.lwc-44m8jpc5qct {\n    outline: none !important;\n}\n\n.contentCaption {\n    font-size: 60px !important; \n    font-weight: 700;\n}\n.contentTitle {\n    font-style: italic;\n    font-weight: 700;\n    margin: 0px !important;\n}\n.contentSubtitle{\n    font-size:18px !important;\n    margin: 0px !important;\n}\n.ctaButtons {\n    font-size: 18px !important;\n    font-weight: bold !important;\n}\n\n.slds-map_container {\n    height: 300px!important;\n}\n\n/* Login brand image */\n.salesforceIdentityLoginBody2 .cCenterPanel .slds-col--padded .ui-widget {\n    margin: 20px 0px !important;\n}\n\n/*Login Button*/\n.salesforceIdentityLoginForm2 .uiButton {\n    background-color: #016A9C !important;\n    border: 1px solid #015983 !important;\n}\n\n.salesforceIdentityLoginForm2 .inverseTextColor, \n.salesforceIdentityEmployeeLoginLink2.employeeLoginLink a.inverseTextColor{\n    color: #016A9C !important;\n}\n\n@font-face {\n    font-family: 'Noto-SansRegular';\n    src: url('/questpartnerportal/s/sfsites/c/resource/NotoSansRegular/NotoSans-Regular.ttf');\n             \n}\n\n/* Removing Padding from the Custom Pages*/\n.comm-layout-column {\n    padding: 0 !important\n}\n.forceCommunitySection .cb-section_column {\n    padding: 0 !important;\n}\n\n/*related topics*/\n.forceCommunityRelatedTopics{\n    padding-left:30px;\n}\n\n/*chatter */\n.forceActionsContainer{\n    padding-left:30px;\n}\n\n/*Pipeline Inspection Height*/\n.runtime_pipeline_inspectorPipelineInspectorHomeExperienceContainer .commonListContainer {\n    min-height: 350px !important;\n}\n\n/* Article and Discussion padding */\n.siteforceSldsTwoCol84Layout {\n    padding-left: 10px;\n    padding-right: 10px;\n}",
+  "developerName" : "jepson",
+  "id" : "b695df09-91f2-4a70-abd8-a4299ed0767e",
+  "label" : "Jepson",
+  "layouts" : {
+    "0fZfZKnZLp0LkokFc7Y8ur69wejAA6" : "bf67b302-a869-451b-8588-749a4dc81c3e",
+    "Home" : "0c42c34c-a500-4ac7-abd9-a3df9077572a",
+    "Inner" : "80b8b3ca-4c17-4b1a-9dea-06625d47024f",
+    "Login" : "352b1bb0-bc3c-417f-9498-095af9e79d6d",
+    "ServiceNotAvailable" : "2c722a85-e6fb-4de4-a214-602cbbd08db4",
+    "fktYxRqBogQQaAGI7jwboBbKYrt1TH" : "74a970e8-2fee-4a07-ac35-0d8d74fe0d57"
+  },
+  "type" : "theme",
+  "views" : [ {
+    "componentAttributes" : { },
+    "componentName" : "salesforceIdentity:loginBody2",
+    "id" : "352b1bb0-bc3c-417f-9498-095af9e79d6d",
+    "label" : "Login",
+    "regions" : [ {
+      "id" : "803b904d-36a8-4f55-b972-878ee9e1e662",
+      "regionName" : "header",
+      "type" : "region"
+    }, {
+      "id" : "e3941e41-371b-4fda-8438-fc22bf81f750",
+      "regionName" : "content",
+      "type" : "region"
+    }, {
+      "id" : "7aa3d8b8-2dda-4335-bb4a-7b7caffcaf03",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1920,
+      "headerBgColor" : "rgba(255, 255, 255, 0.8)",
+      "isHeaderPinned" : false,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : false
+    },
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "80b8b3ca-4c17-4b1a-9dea-06625d47024f",
+    "label" : "Default",
+    "regions" : [ {
+      "components" : [ {
+        "componentAttributes" : {
+          "background" : "background: #FFFFFF",
+          "backgroundOverlayColor" : "rgba(0, 0, 0, 0.3)",
+          "borderBottomColor" : "rgba(0, 0, 0, 0.5)",
+          "centerAlignLogo" : false,
+          "collapseNavMenu" : false,
+          "containHeader" : true,
+          "containHeaderWidth" : 1440,
+          "dropdownBackgroundColor" : "#FFFFFF",
+          "dropdownBackgroundHoverColor" : "",
+          "dropdownBorderColor" : "#F0F0F0",
+          "dropdownTextColor" : "",
+          "dropdownTextHoverColor" : "",
+          "headerHeight" : 16,
+          "linkActiveBorderColor" : "",
+          "linkColor" : "rgba(0, 0, 0, 0.8)",
+          "linkHoverColor" : "rgba(0, 0, 0, 0.7)",
+          "linkTextShadowColor" : "rgba(255, 255, 255, 0)",
+          "logoWidth" : 150,
+          "searchStyle" : "expanded",
+          "showAppLauncher" : false,
+          "showNavMenuOnLeft" : true,
+          "showNotifications" : true,
+          "showProfileMenu" : true,
+          "showSearch" : true
+        },
+        "componentName" : "forceCommunity:themeHeaderCompact",
+        "id" : "198c48b5-697f-4768-a746-06232c536789",
+        "regions" : [ {
+          "components" : [ {
+            "componentAttributes" : {
+              "buttonBackgroundColor" : "",
+              "buttonBackgroundHoverColor" : "",
+              "buttonBorderColor" : "rgba(0, 0, 0, 0)",
+              "buttonBorderRadius" : 15,
+              "buttonText" : "Log in",
+              "buttonTextColor" : "",
+              "buttonTextHoverColor" : "",
+              "customizableUserProfileMenuEditor" : "Default_User_Profile_Menu2",
+              "menuStyleSettings" : "{\"selectedMenuStyleSetting\":\"iconOnly\",\"selectedIconSetting\":\"userAvatar\",\"includeCompanyName\":false,\"selectedTextOrientationSetting\":\"right\"}"
+            },
+            "componentName" : "forceCommunity:customizableUserProfileMenu",
+            "id" : "04830cee-05ee-4f14-b8f6-be98cee48fae",
+            "renditionMap" : {
+              "fr" : "02350f32-6f61-4466-a814-99adf9a66e55",
+              "fr_ca" : "b1a7d4db-155a-4332-ad1f-a67854ae79fa"
+            },
+            "renditions" : [ {
+              "id" : "b1a7d4db-155a-4332-ad1f-a67854ae79fa",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "buttonText" : "Se connecter"
+                }
+              },
+              "type" : "renditionComponent"
+            }, {
+              "id" : "02350f32-6f61-4466-a814-99adf9a66e55",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "buttonText" : "Se connecter"
+                }
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "component"
+          } ],
+          "id" : "13525716-dda2-4677-889e-23c6a26ededb",
+          "regionName" : "themeHeaderProfileMenu",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "backgroundColor" : "#FFFFFF",
+              "borderColor" : "rgba(0, 0, 0, 0.8)",
+              "borderRadius" : 20,
+              "borderStyle" : "outline",
+              "buttonColor" : "",
+              "buttonHoverColor" : "",
+              "crossObjectTypeaheadApiNames" : "",
+              "iconColor" : "rgba(0, 0, 0, 0.8)",
+              "placeholderText" : "Search...",
+              "placeholderTextColor" : "rgba(0, 0, 0, 0.6)",
+              "showInputFocusOutline" : true,
+              "showSearchButton" : false,
+              "textColor" : "rgba(0, 0, 0, 0.8)",
+              "typeaheadResultMax" : 5,
+              "useTypeahead" : true
+            },
+            "componentName" : "forceCommunity:themeSearch",
+            "id" : "9c17a52b-938a-480b-8635-00eab6bab5f6",
+            "renditionMap" : {
+              "fr" : "af9b32a3-5fb5-4435-89e2-64110190dc68",
+              "fr_ca" : "fa1ddbc2-dfad-4093-9632-44c729407844"
+            },
+            "renditions" : [ {
+              "id" : "fa1ddbc2-dfad-4093-9632-44c729407844",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "placeholderText" : "Recherche..."
+                }
+              },
+              "type" : "renditionComponent"
+            }, {
+              "id" : "af9b32a3-5fb5-4435-89e2-64110190dc68",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "placeholderText" : "Recherche..."
+                }
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "component"
+          } ],
+          "id" : "a2ef34e8-e1cc-4c5c-b9d9-2f20b569e0c9",
+          "regionName" : "search",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "NavigationMenuEditorRefresh" : "Default_Navigation1",
+              "alignment" : "left",
+              "showAppLauncher" : false,
+              "showBackLabel" : false,
+              "showHomeLink" : true
+            },
+            "componentName" : "forceCommunity:multiLevelNavigationWrapper",
+            "id" : "5f1f71ea-266f-450b-827c-8526ada071d5",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "4173fa74-bef6-4818-b541-157e40e52353",
+          "regionName" : "nav",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "cartCountType" : "TotalProductCount"
+            },
+            "componentName" : "b2b_buyer_builder:cartBadge",
+            "id" : "cf66212b-b3ab-4ab0-9304-4127be780ac7",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "ede29f0a-dc52-4d14-bde6-65062fcfbf21",
+          "regionName" : "cartIcon",
+          "type" : "region"
+        } ],
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "37571f49-1880-4ae0-b44a-43281ae33d32",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "bgImage" : "background: #FFFFFF url(/sfsites/assets/themes/jepson-background.jpg) top center /cover",
+          "bgOverlayColor" : "rgba(255, 255, 255, 0.20)",
+          "captionText" : "Our Mission",
+          "captionTextColor" : "rgba(0, 0, 0, 0.8)",
+          "captionTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "contentAlignment" : "right",
+          "contentWidth" : 45,
+          "ctaBtnOneBgColor" : "",
+          "ctaBtnOneBgHoverColor" : "",
+          "ctaBtnOneBorderColor" : "rgba(10, 50, 198, 0)",
+          "ctaBtnOneOpenNewTab" : false,
+          "ctaBtnOneText" : "Our Projects",
+          "ctaBtnOneTextColor" : "",
+          "ctaBtnOneTextHoverColor" : "",
+          "ctaBtnOneUrl" : "",
+          "ctaBtnRadius" : 25,
+          "ctaBtnTwoBgColor" : "rgba(255, 255, 255, 0)",
+          "ctaBtnTwoBgHoverColor" : "rgba(255, 255, 255, 0.9)",
+          "ctaBtnTwoBorderColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoOpenNewTab" : false,
+          "ctaBtnTwoText" : "Contact Us",
+          "ctaBtnTwoTextColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoTextHoverColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoUrl" : "",
+          "ctaShowBtnOne" : true,
+          "ctaShowBtnTwo" : true,
+          "fixedHeroWidth" : true,
+          "heroHeight" : 162,
+          "heroWidth" : 1440,
+          "showCaption" : true,
+          "showSubtitle" : true,
+          "showTitle" : true,
+          "subtitleText" : "We specialize in the construction of unique and exclusive properties.  We deliver outstanding quality and design for leading architects and private clients around the world.",
+          "subtitleTextColor" : "rgba(0, 0, 0, 0.8)",
+          "subtitleTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "titleText" : "Your Dream Home",
+          "titleTextColor" : "rgba(0, 0, 0, 0.8)",
+          "titleTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "type" : "callToAction"
+        },
+        "componentName" : "forceCommunity:themeHeroStarter",
+        "id" : "284c88b1-191d-4a45-a4e8-f84da270343d",
+        "regions" : [ {
+          "components" : [ {
+            "componentAttributes" : {
+              "backgroundColor" : "#FFFFFF",
+              "borderColor" : "rgba(0, 0, 0, 0)",
+              "borderRadius" : 25,
+              "borderStyle" : "outline",
+              "buttonColor" : "",
+              "buttonHoverColor" : "",
+              "crossObjectTypeaheadApiNames" : "",
+              "iconColor" : "#FFFFFF",
+              "placeholderText" : "Ask a question...",
+              "placeholderTextColor" : "rgba(0, 0, 0, 0.6)",
+              "publicDropdownBackgroundColor" : "#FFFFFF",
+              "publicDropdownBackgroundHoverColor" : "",
+              "publicDropdownBorderColor" : "#F0F0F0",
+              "publicDropdownTextColor" : "",
+              "publicDropdownTextHoverColor" : "",
+              "showInputFocusOutline" : true,
+              "showSearchButton" : true,
+              "textColor" : "rgba(0, 0, 0, 0.8)",
+              "typeaheadResultMax" : 6,
+              "useTypeahead" : true
+            },
+            "componentName" : "forceCommunity:themeSearchHero",
+            "id" : "8982e462-080c-40a3-8959-019a67c32842",
+            "renditionMap" : {
+              "fr" : "f22ee4d1-ec12-46ca-a354-975fcea0ba11",
+              "fr_ca" : "207ae0b6-51ad-4989-88ab-bd7a90d230f7"
+            },
+            "renditions" : [ {
+              "id" : "207ae0b6-51ad-4989-88ab-bd7a90d230f7",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "placeholderText" : "Posez une question..."
+                }
+              },
+              "type" : "renditionComponent"
+            }, {
+              "id" : "f22ee4d1-ec12-46ca-a354-975fcea0ba11",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "placeholderText" : "Posez une question..."
+                }
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "component"
+          } ],
+          "id" : "7e6d86b8-2d3b-4366-b908-aabd51c8fff9",
+          "regionName" : "search",
+          "type" : "region"
+        } ],
+        "renditionMap" : {
+          "fr" : "9d12075a-a544-4861-9917-d7e5ef7800f7",
+          "fr_ca" : "b83f5585-62e6-446b-9ad5-5d94d142a505"
+        },
+        "renditions" : [ {
+          "id" : "b83f5585-62e6-446b-9ad5-5d94d142a505",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "captionText" : "Notre Mission",
+              "ctaBtnOneText" : "Nos Projets",
+              "ctaBtnOneUrl" : "",
+              "ctaBtnTwoText" : "Contactez-Nous",
+              "ctaBtnTwoUrl" : "",
+              "subtitleText" : "Nous nous spécialisons dans la construction de propriétés uniques et exclusives. Nous offrons une qualité et un design exceptionnels pour les architectes de premier plan et les clients privés à travers le monde.",
+              "titleText" : "Votre Maison de Rêve"
+            }
+          },
+          "type" : "renditionComponent"
+        }, {
+          "id" : "9d12075a-a544-4861-9917-d7e5ef7800f7",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "captionText" : "Notre Mission",
+              "ctaBtnOneText" : "Nos Projets",
+              "ctaBtnOneUrl" : "",
+              "ctaBtnTwoText" : "Contactez-Nous",
+              "ctaBtnTwoUrl" : "",
+              "subtitleText" : "Nous nous spécialisons dans la construction de propriétés uniques et exclusives. Nous offrons une qualité et un design exceptionnels pour les architectes de premier plan et les clients privés à travers le monde.",
+              "titleText" : "Votre Maison de Rêve"
+            }
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "component"
+      } ],
+      "id" : "4e364a64-c3c2-42e7-a587-92d09b635941",
+      "regionName" : "themeHero",
+      "type" : "region"
+    }, {
+      "id" : "ca068108-ef9e-406f-8eed-15420415416d",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1920,
+      "headerBgColor" : "rgba(255, 255, 255, 0.8)",
+      "isHeaderPinned" : false,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : true
+    },
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "0c42c34c-a500-4ac7-abd9-a3df9077572a",
+    "label" : "Home",
+    "regions" : [ {
+      "components" : [ {
+        "componentAttributes" : {
+          "background" : "background: #FFFFFF",
+          "backgroundOverlayColor" : "rgba(0, 0, 0, 0.3)",
+          "borderBottomColor" : "rgba(0, 0, 0, 0.5)",
+          "centerAlignLogo" : false,
+          "collapseNavMenu" : false,
+          "containHeader" : true,
+          "containHeaderWidth" : 1440,
+          "dropdownBackgroundColor" : "#FFFFFF",
+          "dropdownBackgroundHoverColor" : "",
+          "dropdownBorderColor" : "#F0F0F0",
+          "dropdownTextColor" : "",
+          "dropdownTextHoverColor" : "",
+          "headerHeight" : 16,
+          "linkActiveBorderColor" : "",
+          "linkColor" : "rgba(0, 0, 0, 0.8)",
+          "linkHoverColor" : "rgba(0, 0, 0, 0.7)",
+          "linkTextShadowColor" : "rgba(255, 255, 255, 0)",
+          "logoWidth" : 150,
+          "searchStyle" : "expanded",
+          "showAppLauncher" : false,
+          "showNavMenuOnLeft" : true,
+          "showNotifications" : true,
+          "showProfileMenu" : true,
+          "showSearch" : true
+        },
+        "componentName" : "forceCommunity:themeHeaderCompact",
+        "id" : "37608713-4eee-4316-909c-3e4eb7a67bdc",
+        "regions" : [ {
+          "components" : [ {
+            "componentAttributes" : {
+              "buttonBackgroundColor" : "",
+              "buttonBackgroundHoverColor" : "",
+              "buttonBorderColor" : "rgba(0, 0, 0, 0)",
+              "buttonBorderRadius" : 15,
+              "buttonText" : "Log in",
+              "buttonTextColor" : "",
+              "buttonTextHoverColor" : "",
+              "customizableUserProfileMenuEditor" : "Default_User_Profile_Menu2",
+              "menuStyleSettings" : "{\"selectedMenuStyleSetting\":\"iconOnly\",\"selectedIconSetting\":\"userAvatar\",\"includeCompanyName\":false,\"selectedTextOrientationSetting\":\"right\"}"
+            },
+            "componentName" : "forceCommunity:customizableUserProfileMenu",
+            "id" : "9fc4abb4-8346-4552-901c-fc0a2d30664f",
+            "renditionMap" : {
+              "fr" : "3b000379-fd58-48bc-9f0b-a7bf891c4ece",
+              "fr_ca" : "98bfc877-9538-4c96-bbe6-e4af8f4af65c"
+            },
+            "renditions" : [ {
+              "id" : "98bfc877-9538-4c96-bbe6-e4af8f4af65c",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "buttonText" : "Se connecter"
+                }
+              },
+              "type" : "renditionComponent"
+            }, {
+              "id" : "3b000379-fd58-48bc-9f0b-a7bf891c4ece",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "buttonText" : "Se connecter"
+                }
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "component"
+          } ],
+          "id" : "3b3d0004-3f8e-4b88-bdc2-14234bb4b96d",
+          "regionName" : "themeHeaderProfileMenu",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "backgroundColor" : "#FFFFFF",
+              "borderColor" : "rgba(0, 0, 0, 0.8)",
+              "borderRadius" : 20,
+              "borderStyle" : "outline",
+              "buttonColor" : "rgb(0, 85, 108)",
+              "buttonHoverColor" : "rgb(251, 79, 20)",
+              "crossObjectTypeaheadApiNames" : [ {
+                "isPublic" : true,
+                "name" : "FeedItem"
+              } ],
+              "iconColor" : "rgba(0, 0, 0, 0.8)",
+              "placeholderText" : "Search...",
+              "placeholderTextColor" : "rgba(0, 0, 0, 0.6)",
+              "showInputFocusOutline" : true,
+              "showSearchButton" : true,
+              "textColor" : "rgba(0, 0, 0, 0.8)",
+              "typeaheadResultMax" : 5,
+              "useTypeahead" : true
+            },
+            "componentName" : "forceCommunity:themeSearch",
+            "id" : "f1a59d01-24f9-428a-968d-2ac551762d97",
+            "renditionMap" : {
+              "fr" : "8a53e1e1-e77b-4ef7-bf2d-2ee6cd8102c4",
+              "fr_ca" : "ee234e0e-7a54-434b-8bfc-543409eb0100"
+            },
+            "renditions" : [ {
+              "id" : "ee234e0e-7a54-434b-8bfc-543409eb0100",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "placeholderText" : "Recherche..."
+                }
+              },
+              "type" : "renditionComponent"
+            }, {
+              "id" : "8a53e1e1-e77b-4ef7-bf2d-2ee6cd8102c4",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "placeholderText" : "Recherche..."
+                }
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "component"
+          } ],
+          "id" : "0bf34a9e-894b-4b4c-966b-14ad8e9001f8",
+          "regionName" : "search",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "NavigationMenuEditorRefresh" : "Default_Navigation1",
+              "alignment" : "left",
+              "showAppLauncher" : false,
+              "showBackLabel" : false,
+              "showHomeLink" : true
+            },
+            "componentName" : "forceCommunity:multiLevelNavigationWrapper",
+            "id" : "c48add25-61e0-4948-992e-97537152c23a",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "3923bfc5-78ed-42f1-b565-5f1e29e39637",
+          "regionName" : "nav",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "cartCountType" : "TotalProductCount"
+            },
+            "componentName" : "b2b_buyer_builder:cartBadge",
+            "id" : "6ed02256-3477-4bc9-87f7-f8d480dbfd1e",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "320ad991-ae45-4277-801a-8ec4b1a5d3d0",
+          "regionName" : "cartIcon",
+          "type" : "region"
+        } ],
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "b09d8440-6d4b-4f89-a120-ee0a14218427",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "bgImage" : "background: rgb(255,255,255)",
+          "bgOverlayColor" : "rgba(255, 255, 255, 0)",
+          "captionText" : "The brilliance of IT",
+          "captionTextColor" : "rgba(0, 0, 0, 0.8)",
+          "captionTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "contentAlignment" : "left",
+          "contentWidth" : 25,
+          "ctaBtnOneBgColor" : "rgb(255, 249, 244)",
+          "ctaBtnOneBgHoverColor" : "rgb(251, 79, 20)",
+          "ctaBtnOneBorderColor" : "rgb(251, 79, 20)",
+          "ctaBtnOneOpenNewTab" : true,
+          "ctaBtnOneText" : "Contact Us",
+          "ctaBtnOneTextColor" : "rgb(251, 79, 20)",
+          "ctaBtnOneTextHoverColor" : "",
+          "ctaBtnOneUrl" : "https://force-innovation-984--expsync.sandbox.my.site.com/s",
+          "ctaBtnRadius" : 25,
+          "ctaBtnTwoBgColor" : "rgba(255, 255, 255, 0)",
+          "ctaBtnTwoBgHoverColor" : "rgba(255, 255, 255, 0.9)",
+          "ctaBtnTwoBorderColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoOpenNewTab" : false,
+          "ctaBtnTwoText" : "Contact Us",
+          "ctaBtnTwoTextColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoTextHoverColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoUrl" : "",
+          "ctaShowBtnOne" : false,
+          "ctaShowBtnTwo" : false,
+          "fixedHeroWidth" : false,
+          "heroHeight" : 0,
+          "heroWidth" : 1257,
+          "showCaption" : false,
+          "showSubtitle" : false,
+          "showTitle" : false,
+          "subtitleText" : "Quest Software delivers cybersecurity, data performance, directory and identity, and modernization solutions that simplify enterprise IT management. Business challenges, stormy economies and market changes are going to happen. But, it’s how your organization prepares, withstands and responds that makes the difference. See how our portfolio can elevate your IT resilience.",
+          "subtitleTextColor" : "rgba(0, 0, 0, 0.8)",
+          "subtitleTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "titleText" : "resilience",
+          "titleTextColor" : "rgba(0, 0, 0, 0.8)",
+          "titleTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "type" : "callToAction"
+        },
+        "componentName" : "forceCommunity:themeHeroStarter",
+        "id" : "a94ff368-d760-4987-a4cd-c15414dc55b1",
+        "regions" : [ {
+          "components" : [ {
+            "componentAttributes" : {
+              "backgroundColor" : "#FFFFFF",
+              "borderColor" : "rgba(0, 0, 0, 0)",
+              "borderRadius" : 25,
+              "borderStyle" : "outline",
+              "buttonColor" : "",
+              "buttonHoverColor" : "",
+              "crossObjectTypeaheadApiNames" : "",
+              "iconColor" : "#FFFFFF",
+              "placeholderText" : "Ask a question...",
+              "placeholderTextColor" : "rgba(0, 0, 0, 0.6)",
+              "publicDropdownBackgroundColor" : "#FFFFFF",
+              "publicDropdownBackgroundHoverColor" : "",
+              "publicDropdownBorderColor" : "#F0F0F0",
+              "publicDropdownTextColor" : "",
+              "publicDropdownTextHoverColor" : "",
+              "showInputFocusOutline" : true,
+              "showSearchButton" : true,
+              "textColor" : "rgba(0, 0, 0, 0.8)",
+              "typeaheadResultMax" : 6,
+              "useTypeahead" : true
+            },
+            "componentName" : "forceCommunity:themeSearchHero",
+            "id" : "3e253cf8-41ab-4f83-b9a6-f68b15167ba3",
+            "renditionMap" : {
+              "fr" : "b6b9b4a2-f6f9-4117-97e2-70f98f2525fe",
+              "fr_ca" : "298f1252-ad3a-47b3-8be4-03dd5ea064b0"
+            },
+            "renditions" : [ {
+              "id" : "298f1252-ad3a-47b3-8be4-03dd5ea064b0",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "placeholderText" : "Posez une question..."
+                }
+              },
+              "type" : "renditionComponent"
+            }, {
+              "id" : "b6b9b4a2-f6f9-4117-97e2-70f98f2525fe",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "placeholderText" : "Posez une question..."
+                }
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "component"
+          } ],
+          "id" : "b99df074-a7d4-4686-bb22-654a2d71695d",
+          "regionName" : "search",
+          "type" : "region"
+        } ],
+        "renditionMap" : {
+          "fr" : "898b14b0-6272-4a5a-8553-99df0f5b7750",
+          "fr_ca" : "ed0f5e10-f739-45b8-a0c7-be5ebd04294a"
+        },
+        "renditions" : [ {
+          "id" : "ed0f5e10-f739-45b8-a0c7-be5ebd04294a",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "captionText" : "La brillance des TI",
+              "ctaBtnOneText" : "Contactez-Nous",
+              "ctaBtnOneUrl" : "https://force-innovation-984--expsync.sandbox.my.site.com/s",
+              "ctaBtnTwoText" : "Contactez-Nous",
+              "ctaBtnTwoUrl" : "",
+              "subtitleText" : "Quest Software fournit des solutions de cybersécurité, de performance des données, de gestion des annuaires et des identités, ainsi que des solutions de modernisation qui simplifient la gestion des TI en entreprise. Les défis commerciaux, les économies turbulentes et les changements du marché vont se produire. Mais, c'est la façon dont votre organisation se prépare, résiste et réagit qui fait la différence. Découvrez comment notre portefeuille peut améliorer votre résilience en TI.",
+              "titleText" : "résilience"
+            }
+          },
+          "type" : "renditionComponent"
+        }, {
+          "id" : "898b14b0-6272-4a5a-8553-99df0f5b7750",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "captionText" : "La brillance des TI",
+              "ctaBtnOneText" : "Contactez-Nous",
+              "ctaBtnOneUrl" : "https://force-innovation-984--expsync.sandbox.my.site.com/s",
+              "ctaBtnTwoText" : "Contactez-Nous",
+              "ctaBtnTwoUrl" : "",
+              "subtitleText" : "Quest Software fournit des solutions de cybersécurité, de performance des données, de gestion des annuaires et des identités, ainsi que des solutions de modernisation qui simplifient la gestion des TI en entreprise. Les défis commerciaux, les économies turbulentes et les changements du marché vont se produire. Mais, c'est la façon dont votre organisation se prépare, résiste et réagit qui fait la différence. Découvrez comment notre portefeuille peut améliorer votre résilience en TI.",
+              "titleText" : "résilience"
+            }
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "component"
+      } ],
+      "id" : "e134d020-175a-4734-8503-904506395800",
+      "regionName" : "themeHero",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "richTextValue" : "<div style=\"text-align: center; background-color: #004a5e; color: white; padding: 20px; font-family: Arial, sans-serif;\">\n    <p>© 2024 Quest Software Inc. All Rights Reserved.</p>\n    <div style=\"margin-top: 10px;\">\n        <a href=\"https://www.linkedin.com/company/quest-software\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/linkedin.png\" alt=\"LinkedIn\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n        <a href=\"https://twitter.com/quest\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/x.png\" alt=\"X\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n        <a href=\"https://www.facebook.com/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/facebook.png\" alt=\"Facebook\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n        <a href=\"https://www.youtube.com/user/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png\" alt=\"YouTube\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n    </div>\n    <p style=\"margin-top: 10px;\">United States of America (EN)</p>\n</div>"
+        },
+        "componentName" : "forceCommunity:htmlBlock",
+        "id" : "3a307ef0-6125-4e93-90c4-85e1522ac190",
+        "renditionMap" : {
+          "fr" : "653a9c10-a975-4a83-9c88-e37511671c2b",
+          "fr_ca" : "20d98af8-78f1-49d1-b884-c5be6f7379d8"
+        },
+        "renditions" : [ {
+          "id" : "20d98af8-78f1-49d1-b884-c5be6f7379d8",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "richTextValue" : "<div style=\"text-align: center; background-color: #004a5e; color: white; padding: 20px; font-family: Arial, sans-serif;\">\n\t\t\t<p>© 2024 Quest Software Inc. Tous droits réservés.</p>\n\t\t\t<div style=\"margin-top: 10px;\">\n\t\t\t\t<a href=\"https://www.linkedin.com/company/quest-software\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/linkedin.png\" alt=\"LinkedIn\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t\t<a href=\"https://twitter.com/quest\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/x.png\" alt=\"X\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t\t<a href=\"https://www.facebook.com/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/facebook.png\" alt=\"Facebook\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t\t<a href=\"https://www.youtube.com/user/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png\" alt=\"YouTube\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t</div>\n\t\t\t<p style=\"margin-top: 10px;\">États-Unis d'Amérique (EN)</p>\n\t\t</div>"
+            }
+          },
+          "type" : "renditionComponent"
+        }, {
+          "id" : "653a9c10-a975-4a83-9c88-e37511671c2b",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "richTextValue" : "<div style=\"text-align: center; background-color: #004a5e; color: white; padding: 20px; font-family: Arial, sans-serif;\">\n\t\t\t<p>© 2024 Quest Software Inc. Tous droits réservés.</p>\n\t\t\t<div style=\"margin-top: 10px;\">\n\t\t\t\t<a href=\"https://www.linkedin.com/company/quest-software\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/linkedin.png\" alt=\"LinkedIn\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t\t<a href=\"https://twitter.com/quest\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/x.png\" alt=\"X\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t\t<a href=\"https://www.facebook.com/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/facebook.png\" alt=\"Facebook\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t\t<a href=\"https://www.youtube.com/user/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png\" alt=\"YouTube\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n\t\t\t</div>\n\t\t\t<p style=\"margin-top: 10px;\">États-Unis d'Amérique (EN)</p>\n\t\t</div>"
+            }
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "component"
+      } ],
+      "id" : "5b3bfb5c-de4d-4849-83ae-f56843ca56c5",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1440,
+      "headerBgColor" : "rgba(0, 0, 0, 0)",
+      "isHeaderPinned" : false,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : true
+    },
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "2c722a85-e6fb-4de4-a214-602cbbd08db4",
+    "label" : "ServiceNotAvailable",
+    "regions" : [ {
+      "id" : "6e471cd7-2a2e-41a6-adfe-3bba9e668ae5",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "id" : "58322a2a-afd5-444d-b160-3ba49316b11c",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : { },
+    "componentName" : "c:QuestCustomThemeLayout",
+    "id" : "74a970e8-2fee-4a07-ac35-0d8d74fe0d57",
+    "label" : "Quest Custom Theme",
+    "regions" : [ {
+      "components" : [ {
+        "componentAttributes" : {
+          "background" : "background: #FFFFFF",
+          "backgroundOverlayColor" : "rgba(0, 0, 0, 0.3)",
+          "borderBottomColor" : "rgba(0, 0, 0, 0.5)",
+          "centerAlignLogo" : false,
+          "collapseNavMenu" : true,
+          "containHeader" : true,
+          "containHeaderWidth" : 1440,
+          "dropdownBackgroundColor" : "#FFFFFF",
+          "dropdownBackgroundHoverColor" : "",
+          "dropdownBorderColor" : "#F0F0F0",
+          "dropdownTextColor" : "",
+          "dropdownTextHoverColor" : "",
+          "headerHeight" : 16,
+          "linkActiveBorderColor" : "",
+          "linkColor" : "rgba(0, 0, 0, 0.8)",
+          "linkHoverColor" : "rgba(0, 0, 0, 0.7)",
+          "linkTextShadowColor" : "rgba(255, 255, 255, 0)",
+          "logoWidth" : 150,
+          "searchStyle" : "expanded",
+          "showAppLauncher" : false,
+          "showNavMenuOnLeft" : true,
+          "showNotifications" : true,
+          "showProfileMenu" : true,
+          "showSearch" : true
+        },
+        "componentName" : "forceCommunity:themeHeaderCompact",
+        "id" : "bd9e09a2-96d9-46b8-a364-f3cc3e2613ff",
+        "regions" : [ {
+          "components" : [ {
+            "componentAttributes" : {
+              "buttonBackgroundColor" : "",
+              "buttonBackgroundHoverColor" : "",
+              "buttonBorderColor" : "rgba(0, 0, 0, 0)",
+              "buttonBorderRadius" : 15,
+              "buttonText" : "Log in",
+              "buttonTextColor" : "",
+              "buttonTextHoverColor" : "",
+              "customizableUserProfileMenuEditor" : "Default_User_Profile_Menu2",
+              "menuStyleSettings" : "{\"selectedMenuStyleSetting\":\"iconOnly\",\"selectedIconSetting\":\"userAvatar\",\"includeCompanyName\":false,\"selectedTextOrientationSetting\":\"right\"}"
+            },
+            "componentName" : "forceCommunity:customizableUserProfileMenu",
+            "id" : "d12f3c9a-02fb-4a33-8d5b-d3273bee2e1c",
+            "renditionMap" : {
+              "fr" : "4b10fc6c-fcdf-46d7-ad06-ae7da8e4e381",
+              "fr_ca" : "31f6e12e-b250-4186-9a4b-d2290d287062"
+            },
+            "renditions" : [ {
+              "id" : "31f6e12e-b250-4186-9a4b-d2290d287062",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "buttonText" : "Se connecter"
+                }
+              },
+              "type" : "renditionComponent"
+            }, {
+              "id" : "4b10fc6c-fcdf-46d7-ad06-ae7da8e4e381",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "buttonText" : "Se connecter"
+                }
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "component"
+          } ],
+          "id" : "4218f57b-40c6-4e81-b79f-4a9f18d567d8",
+          "regionName" : "themeHeaderProfileMenu",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "backgroundColor" : "#FFFFFF",
+              "borderColor" : "rgba(0, 0, 0, 0.8)",
+              "borderRadius" : 20,
+              "borderStyle" : "outline",
+              "buttonColor" : "",
+              "buttonHoverColor" : "",
+              "crossObjectTypeaheadApiNames" : "",
+              "iconColor" : "rgba(0, 0, 0, 0.8)",
+              "placeholderText" : "Search...",
+              "placeholderTextColor" : "rgba(0, 0, 0, 0.6)",
+              "showInputFocusOutline" : true,
+              "showSearchButton" : false,
+              "textColor" : "rgba(0, 0, 0, 0.8)",
+              "typeaheadResultMax" : 5,
+              "useTypeahead" : true
+            },
+            "componentName" : "forceCommunity:themeSearch",
+            "id" : "fdb22490-2c96-40ac-af77-767b76ad7966",
+            "renditionMap" : {
+              "fr" : "10f88377-87b7-4bdc-a93c-b07835064aba",
+              "fr_ca" : "e871548c-d926-48c2-87ce-77a4bd08ad9e"
+            },
+            "renditions" : [ {
+              "id" : "e871548c-d926-48c2-87ce-77a4bd08ad9e",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "placeholderText" : "Rechercher..."
+                }
+              },
+              "type" : "renditionComponent"
+            }, {
+              "id" : "10f88377-87b7-4bdc-a93c-b07835064aba",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "placeholderText" : "Rechercher..."
+                }
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "component"
+          } ],
+          "id" : "a4bee992-3103-4125-93a4-8f546b65eba4",
+          "regionName" : "search",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "NavigationMenuEditorRefresh" : "",
+              "alignment" : "left",
+              "showAppLauncher" : false,
+              "showBackLabel" : false,
+              "showHomeLink" : true
+            },
+            "componentName" : "forceCommunity:multiLevelNavigationWrapper",
+            "id" : "7eda9091-5cc3-4f33-a4ab-1c4e81631bb7",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "67453b90-dbc1-419a-929f-b03c8e4db06e",
+          "regionName" : "nav",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "cartCountType" : "TotalProductCount"
+            },
+            "componentName" : "b2b_buyer_builder:cartBadge",
+            "id" : "5b9c4587-a5ec-4ba3-9639-c32947a6fdc2",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "a41ef925-9dfa-4fd0-8c99-b39ee4d44f69",
+          "regionName" : "cartIcon",
+          "type" : "region"
+        } ],
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "7735b5d5-b469-4c1c-9555-dfc3a490c505",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "bgImage" : "background: #FFFFFF url(/sfsites/assets/themes/jepson-background.jpg) top center /cover",
+          "bgOverlayColor" : "rgba(255, 255, 255, 0.20)",
+          "captionText" : "Our Mission",
+          "captionTextColor" : "rgba(0, 0, 0, 0.8)",
+          "captionTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "contentAlignment" : "right",
+          "contentWidth" : 45,
+          "ctaBtnOneBgColor" : "",
+          "ctaBtnOneBgHoverColor" : "",
+          "ctaBtnOneBorderColor" : "rgba(10, 50, 198, 0)",
+          "ctaBtnOneOpenNewTab" : false,
+          "ctaBtnOneText" : "Our Projects",
+          "ctaBtnOneTextColor" : "",
+          "ctaBtnOneTextHoverColor" : "",
+          "ctaBtnOneUrl" : "",
+          "ctaBtnRadius" : 25,
+          "ctaBtnTwoBgColor" : "rgba(255, 255, 255, 0)",
+          "ctaBtnTwoBgHoverColor" : "rgba(255, 255, 255, 0.9)",
+          "ctaBtnTwoBorderColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoOpenNewTab" : false,
+          "ctaBtnTwoText" : "Contact Us",
+          "ctaBtnTwoTextColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoTextHoverColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoUrl" : "",
+          "ctaShowBtnOne" : true,
+          "ctaShowBtnTwo" : true,
+          "fixedHeroWidth" : true,
+          "heroHeight" : 162,
+          "heroWidth" : 1440,
+          "showCaption" : true,
+          "showSubtitle" : true,
+          "showTitle" : true,
+          "subtitleText" : "We specialize in the construction of unique and exclusive properties.  We deliver outstanding quality and design for leading architects and private clients around the world.",
+          "subtitleTextColor" : "rgba(0, 0, 0, 0.8)",
+          "subtitleTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "titleText" : "Your Dream Home",
+          "titleTextColor" : "rgba(0, 0, 0, 0.8)",
+          "titleTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "type" : "callToAction"
+        },
+        "componentName" : "forceCommunity:themeHeroStarter",
+        "id" : "042b34e1-e4e9-4217-9f23-bc9afa086211",
+        "regions" : [ {
+          "components" : [ {
+            "componentAttributes" : {
+              "backgroundColor" : "#FFFFFF",
+              "borderColor" : "rgba(0, 0, 0, 0)",
+              "borderRadius" : 25,
+              "borderStyle" : "outline",
+              "buttonColor" : "",
+              "buttonHoverColor" : "",
+              "crossObjectTypeaheadApiNames" : "",
+              "iconColor" : "#FFFFFF",
+              "placeholderText" : "Ask a question...",
+              "placeholderTextColor" : "rgba(0, 0, 0, 0.6)",
+              "publicDropdownBackgroundColor" : "#FFFFFF",
+              "publicDropdownBackgroundHoverColor" : "",
+              "publicDropdownBorderColor" : "#F0F0F0",
+              "publicDropdownTextColor" : "",
+              "publicDropdownTextHoverColor" : "",
+              "showInputFocusOutline" : true,
+              "showSearchButton" : true,
+              "textColor" : "rgba(0, 0, 0, 0.8)",
+              "typeaheadResultMax" : 6,
+              "useTypeahead" : true
+            },
+            "componentName" : "forceCommunity:themeSearchHero",
+            "id" : "cbc1937b-b85a-4111-aa9a-d03886b3d152",
+            "renditionMap" : {
+              "fr" : "8cc21943-3c19-4a05-9fa7-bd8ee58bc6f8",
+              "fr_ca" : "b8ed72d4-2183-4e09-809d-3389474a201e"
+            },
+            "renditions" : [ {
+              "id" : "b8ed72d4-2183-4e09-809d-3389474a201e",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "placeholderText" : "Posez une question..."
+                }
+              },
+              "type" : "renditionComponent"
+            }, {
+              "id" : "8cc21943-3c19-4a05-9fa7-bd8ee58bc6f8",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "placeholderText" : "Posez une question..."
+                }
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "component"
+          } ],
+          "id" : "775a7abe-dad2-4dec-af6a-35cb3a0d4930",
+          "regionName" : "search",
+          "type" : "region"
+        } ],
+        "renditionMap" : {
+          "fr" : "a3c54f23-634e-47c4-9512-df0955eba272",
+          "fr_ca" : "599f84c4-7a16-4a8f-8ffa-15e350995fc1"
+        },
+        "renditions" : [ {
+          "id" : "599f84c4-7a16-4a8f-8ffa-15e350995fc1",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "captionText" : "Notre Mission",
+              "ctaBtnOneText" : "Nos Projets",
+              "ctaBtnOneUrl" : "",
+              "ctaBtnTwoText" : "Contactez-Nous",
+              "ctaBtnTwoUrl" : "",
+              "subtitleText" : "Nous nous spécialisons dans la construction de propriétés uniques et exclusives. Nous offrons une qualité et un design exceptionnels pour les architectes de premier plan et les clients privés à travers le monde.",
+              "titleText" : "Votre Maison de Rêve"
+            }
+          },
+          "type" : "renditionComponent"
+        }, {
+          "id" : "a3c54f23-634e-47c4-9512-df0955eba272",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "captionText" : "Notre Mission",
+              "ctaBtnOneText" : "Nos Projets",
+              "ctaBtnOneUrl" : "",
+              "ctaBtnTwoText" : "Contactez-Nous",
+              "ctaBtnTwoUrl" : "",
+              "subtitleText" : "Nous nous spécialisons dans la construction de propriétés uniques et exclusives. Nous offrons une qualité et un design exceptionnels pour les architectes de premier plan et les clients privés à travers le monde.",
+              "titleText" : "Votre Maison de Rêve"
+            }
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "component"
+      } ],
+      "id" : "f3ec0a51-2a1f-4885-b870-17150d0fede6",
+      "regionName" : "themeHero",
+      "type" : "region"
+    }, {
+      "id" : "9d05a2cb-4869-4d5a-95a4-aa6681ca559c",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : { },
+        "componentName" : "c:quest_Default_Navbar",
+        "id" : "3b9babff-00ba-4004-86ba-aeff0ed0529a",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "7c401035-5e2f-4eaf-8e8f-13b519d2f11f",
+      "regionName" : "TemplateHeader",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : { },
+        "componentName" : "c:quest_Default_Footer",
+        "id" : "91b61708-cf05-4682-9e8e-3979a7857205",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "6d7ce9ef-1479-40fb-93ad-1ee50727567d",
+      "regionName" : "TemplateFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1920,
+      "headerBgColor" : "rgba(255, 255, 255, 0.8)",
+      "isHeaderPinned" : false,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : false
+    },
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "bf67b302-a869-451b-8588-749a4dc81c3e",
+    "label" : "Quest Theme Layout Starter",
+    "regions" : [ {
+      "components" : [ {
+        "componentAttributes" : {
+          "background" : "background: #FFFFFF",
+          "backgroundOverlayColor" : "rgba(0, 0, 0, 0.3)",
+          "borderBottomColor" : "rgba(0, 0, 0, 0.5)",
+          "centerAlignLogo" : false,
+          "collapseNavMenu" : false,
+          "containHeader" : true,
+          "containHeaderWidth" : 1440,
+          "dropdownBackgroundColor" : "#FFFFFF",
+          "dropdownBackgroundHoverColor" : "",
+          "dropdownBorderColor" : "#F0F0F0",
+          "dropdownTextColor" : "",
+          "dropdownTextHoverColor" : "",
+          "headerHeight" : 16,
+          "linkActiveBorderColor" : "",
+          "linkColor" : "rgba(0, 0, 0, 0.8)",
+          "linkHoverColor" : "rgba(0, 0, 0, 0.7)",
+          "linkTextShadowColor" : "rgba(255, 255, 255, 0)",
+          "logoWidth" : 150,
+          "searchStyle" : "expanded",
+          "showAppLauncher" : false,
+          "showNavMenuOnLeft" : true,
+          "showNotifications" : true,
+          "showProfileMenu" : true,
+          "showSearch" : true
+        },
+        "componentName" : "forceCommunity:themeHeaderCompact",
+        "id" : "fe245a16-f775-404c-84d7-7f9e3c3997c3",
+        "regions" : [ {
+          "components" : [ {
+            "componentAttributes" : {
+              "buttonBackgroundColor" : "",
+              "buttonBackgroundHoverColor" : "",
+              "buttonBorderColor" : "rgba(0, 0, 0, 0)",
+              "buttonBorderRadius" : 15,
+              "buttonText" : "Log in",
+              "buttonTextColor" : "",
+              "buttonTextHoverColor" : "",
+              "customizableUserProfileMenuEditor" : "Default_User_Profile_Menu2",
+              "menuStyleSettings" : "{\"selectedMenuStyleSetting\":\"iconOnly\",\"selectedIconSetting\":\"userAvatar\",\"includeCompanyName\":false,\"selectedTextOrientationSetting\":\"right\"}"
+            },
+            "componentName" : "forceCommunity:customizableUserProfileMenu",
+            "id" : "2a2d34b8-48bb-4a01-a713-4a7161e23366",
+            "renditionMap" : {
+              "fr" : "9c42190c-8753-4595-bc59-1be2dff6f932",
+              "fr_ca" : "6e9877c9-8750-453a-aecd-9c5495443d39"
+            },
+            "renditions" : [ {
+              "id" : "6e9877c9-8750-453a-aecd-9c5495443d39",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "buttonText" : "Se connecter"
+                }
+              },
+              "type" : "renditionComponent"
+            }, {
+              "id" : "9c42190c-8753-4595-bc59-1be2dff6f932",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "buttonText" : "Se connecter"
+                }
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "component"
+          } ],
+          "id" : "d984a2e2-a9ed-4ba7-af94-3d5f16cdc323",
+          "regionName" : "themeHeaderProfileMenu",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "backgroundColor" : "#FFFFFF",
+              "borderColor" : "rgba(0, 0, 0, 0.8)",
+              "borderRadius" : 20,
+              "borderStyle" : "outline",
+              "buttonColor" : "",
+              "buttonHoverColor" : "",
+              "crossObjectTypeaheadApiNames" : "",
+              "iconColor" : "rgba(0, 0, 0, 0.8)",
+              "placeholderText" : "Search...",
+              "placeholderTextColor" : "rgba(0, 0, 0, 0.6)",
+              "showInputFocusOutline" : true,
+              "showSearchButton" : false,
+              "textColor" : "rgba(0, 0, 0, 0.8)",
+              "typeaheadResultMax" : 5,
+              "useTypeahead" : true
+            },
+            "componentName" : "forceCommunity:themeSearch",
+            "id" : "99d0af8e-3a4b-4245-ad26-10876d50b693",
+            "renditionMap" : {
+              "fr" : "3cae9fbc-98f1-47c6-b6fe-56ec3c8ccbbf",
+              "fr_ca" : "02ec3d20-f604-4c67-8818-80facfc88eae"
+            },
+            "renditions" : [ {
+              "id" : "02ec3d20-f604-4c67-8818-80facfc88eae",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "placeholderText" : "Recherche..."
+                }
+              },
+              "type" : "renditionComponent"
+            }, {
+              "id" : "3cae9fbc-98f1-47c6-b6fe-56ec3c8ccbbf",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "placeholderText" : "Recherche..."
+                }
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "component"
+          } ],
+          "id" : "4f02ec49-c734-490a-8e9d-54b9f00dd398",
+          "regionName" : "search",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "NavigationMenuEditorRefresh" : "Navigation_Menu_Customers",
+              "alignment" : "left",
+              "showAppLauncher" : false,
+              "showBackLabel" : false,
+              "showHomeLink" : true
+            },
+            "componentName" : "forceCommunity:multiLevelNavigationWrapper",
+            "id" : "079214fe-2740-433e-98a0-62ac81f810a1",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "f41bd9a1-8589-4dda-9d02-a481191e61e2",
+          "regionName" : "nav",
+          "type" : "region"
+        }, {
+          "components" : [ {
+            "componentAttributes" : {
+              "cartCountType" : "TotalProductCount"
+            },
+            "componentName" : "b2b_buyer_builder:cartBadge",
+            "id" : "d3b70d29-c950-45bd-8d3e-4b2a8448db31",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "3c17addc-583f-4c78-a2ec-b71b7907997a",
+          "regionName" : "cartIcon",
+          "type" : "region"
+        } ],
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "50b4b9d3-09b1-4d11-a056-9c4c96f6c0ab",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "bgImage" : "background: #FFFFFF url(/sfsites/assets/themes/jepson-background.jpg) top center /cover",
+          "bgOverlayColor" : "rgba(255, 255, 255, 0.20)",
+          "captionText" : "Our Mission",
+          "captionTextColor" : "rgba(0, 0, 0, 0.8)",
+          "captionTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "contentAlignment" : "right",
+          "contentWidth" : 45,
+          "ctaBtnOneBgColor" : "",
+          "ctaBtnOneBgHoverColor" : "",
+          "ctaBtnOneBorderColor" : "rgba(10, 50, 198, 0)",
+          "ctaBtnOneOpenNewTab" : false,
+          "ctaBtnOneText" : "Our Projects",
+          "ctaBtnOneTextColor" : "",
+          "ctaBtnOneTextHoverColor" : "",
+          "ctaBtnOneUrl" : "",
+          "ctaBtnRadius" : 25,
+          "ctaBtnTwoBgColor" : "rgba(255, 255, 255, 0)",
+          "ctaBtnTwoBgHoverColor" : "rgba(255, 255, 255, 0.9)",
+          "ctaBtnTwoBorderColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoOpenNewTab" : false,
+          "ctaBtnTwoText" : "Contact Us",
+          "ctaBtnTwoTextColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoTextHoverColor" : "rgba(0, 0, 0, 0.8)",
+          "ctaBtnTwoUrl" : "",
+          "ctaShowBtnOne" : true,
+          "ctaShowBtnTwo" : true,
+          "fixedHeroWidth" : true,
+          "heroHeight" : 162,
+          "heroWidth" : 1440,
+          "showCaption" : true,
+          "showSubtitle" : true,
+          "showTitle" : true,
+          "subtitleText" : "We specialize in the construction of unique and exclusive properties.  We deliver outstanding quality and design for leading architects and private clients around the world.",
+          "subtitleTextColor" : "rgba(0, 0, 0, 0.8)",
+          "subtitleTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "titleText" : "Your Dream Home",
+          "titleTextColor" : "rgba(0, 0, 0, 0.8)",
+          "titleTextShadowColor" : "rgba(0, 0, 0, 0)",
+          "type" : "callToAction"
+        },
+        "componentName" : "forceCommunity:themeHeroStarter",
+        "id" : "247feb58-43e4-4d1f-a118-05f87ed8e23b",
+        "regions" : [ {
+          "components" : [ {
+            "componentAttributes" : {
+              "backgroundColor" : "#FFFFFF",
+              "borderColor" : "rgba(0, 0, 0, 0)",
+              "borderRadius" : 25,
+              "borderStyle" : "outline",
+              "buttonColor" : "",
+              "buttonHoverColor" : "",
+              "crossObjectTypeaheadApiNames" : "",
+              "iconColor" : "#FFFFFF",
+              "placeholderText" : "Ask a question...",
+              "placeholderTextColor" : "rgba(0, 0, 0, 0.6)",
+              "publicDropdownBackgroundColor" : "#FFFFFF",
+              "publicDropdownBackgroundHoverColor" : "",
+              "publicDropdownBorderColor" : "#F0F0F0",
+              "publicDropdownTextColor" : "",
+              "publicDropdownTextHoverColor" : "",
+              "showInputFocusOutline" : true,
+              "showSearchButton" : true,
+              "textColor" : "rgba(0, 0, 0, 0.8)",
+              "typeaheadResultMax" : 6,
+              "useTypeahead" : true
+            },
+            "componentName" : "forceCommunity:themeSearchHero",
+            "id" : "6697a9f9-0c98-4945-8337-bf4cd8e6fd67",
+            "renditionMap" : {
+              "fr" : "fb5a7398-104f-48e7-974f-7d10191da0f1",
+              "fr_ca" : "349654a5-2f13-48a6-b787-59d04061cca0"
+            },
+            "renditions" : [ {
+              "id" : "349654a5-2f13-48a6-b787-59d04061cca0",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "placeholderText" : "Posez une question..."
+                }
+              },
+              "type" : "renditionComponent"
+            }, {
+              "id" : "fb5a7398-104f-48e7-974f-7d10191da0f1",
+              "renditionValue" : {
+                "componentAttributes" : {
+                  "placeholderText" : "Posez une question..."
+                }
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "component"
+          } ],
+          "id" : "9ffd76d1-07c9-45ad-bd00-490dc928f2a4",
+          "regionName" : "search",
+          "type" : "region"
+        } ],
+        "renditionMap" : {
+          "fr" : "9b02e266-1271-4f34-9c69-a1ca72e7c3da",
+          "fr_ca" : "a2b3c0ec-ff9e-4596-951b-17ca6e3113d4"
+        },
+        "renditions" : [ {
+          "id" : "a2b3c0ec-ff9e-4596-951b-17ca6e3113d4",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "captionText" : "Notre Mission",
+              "ctaBtnOneText" : "Nos Projets",
+              "ctaBtnOneUrl" : "",
+              "ctaBtnTwoText" : "Contactez-Nous",
+              "ctaBtnTwoUrl" : "",
+              "subtitleText" : "Nous nous spécialisons dans la construction de propriétés uniques et exclusives. Nous offrons une qualité et un design exceptionnels pour les architectes de premier plan et les clients privés à travers le monde.",
+              "titleText" : "Votre Maison de Rêve"
+            }
+          },
+          "type" : "renditionComponent"
+        }, {
+          "id" : "9b02e266-1271-4f34-9c69-a1ca72e7c3da",
+          "renditionValue" : {
+            "componentAttributes" : {
+              "captionText" : "Notre Mission",
+              "ctaBtnOneText" : "Nos Projets",
+              "ctaBtnOneUrl" : "",
+              "ctaBtnTwoText" : "Contactez-Nous",
+              "ctaBtnTwoUrl" : "",
+              "subtitleText" : "Nous nous spécialisons dans la construction de propriétés uniques et exclusives. Nous offrons une qualité et un design exceptionnels pour les architectes de premier plan et les clients privés à travers le monde.",
+              "titleText" : "Votre Maison de Rêve"
+            }
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "component"
+      } ],
+      "id" : "6bfa698b-e989-42f5-b6bc-85d0a76a391c",
+      "regionName" : "themeHero",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "richTextValue" : "<div style=\"text-align: center; background-color: #004a5e; color: white; padding: 20px; font-family: Arial, sans-serif;\">\n    <p>© 2024 Quest Software Inc. All Rights Reserved.</p>\n    <div style=\"margin-top: 10px;\">\n        <a href=\"https://www.linkedin.com/company/quest-software\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/linkedin.png\" alt=\"LinkedIn\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n        <a href=\"https://twitter.com/quest\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/x.png\" alt=\"X\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n        <a href=\"https://www.facebook.com/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/facebook.png\" alt=\"Facebook\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n        <a href=\"https://www.youtube.com/user/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png\" alt=\"YouTube\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n    </div>\n    <p style=\"margin-top: 10px;\">United States of America (EN)</p>\n</div>"
+        },
+        "componentName" : "forceCommunity:htmlBlock",
+        "id" : "86b1cdb1-8695-4cdd-ac33-9778cde2a302",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "8cca3a69-2fa8-4739-8ac1-0abeb72167ad",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  } ]
+}

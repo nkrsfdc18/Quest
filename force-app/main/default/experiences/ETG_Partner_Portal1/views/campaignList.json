@@ -1,0 +1,160 @@
+{
+  "appPageId" : "58757871-d81a-4653-900b-de6368e512eb",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "ae22de62-d93c-4fa0-aec4-06a1730b0ca7",
+  "label" : "Campaign List",
+  "regions" : [ {
+    "id" : "722ab0f7-609b-4b5c-9d03-233898657a31",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "2c18f4c2-76f9-41f1-b929-36d08be7442e",
+          "activeTab" : "tab1",
+          "tabs" : [ {
+            "UUID" : "e6233ffb-ac8b-46db-9342-9588e228ab78",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : {
+                "richTextValue" : "                                  <p><br/></p>                                <p style=&quot;text-align:left;&quot;>                                     Use these campaigns to generate leads and grow your business                                 </p>                       "
+              },
+              "fqn" : "forceCommunity:richTextInline"
+            }, {
+              "attributes" : { },
+              "fqn" : "forceCommunity:campaignTileList"
+            } ],
+            "tabKey" : "tab1",
+            "tabName" : "Campaign Marketplace"
+          }, {
+            "UUID" : "75bc751e-b370-4e64-af14-ffaf498f6052",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : {
+                "filterName" : "Recent",
+                "scope" : "Campaign"
+              },
+              "fqn" : "forceCommunity:objectHome"
+            } ],
+            "tabKey" : "tab2",
+            "tabName" : "All Campaigns"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabLayout",
+      "id" : "2c18f4c2-76f9-41f1-b929-36d08be7442e",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p><br/></p>                                <p style=&quot;text-align:left;&quot;>                                     Use these campaigns to generate leads and grow your business                                 </p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "d8c037f3-b8fb-4bad-87d6-22250e5192e0",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "fr_ca" : "9bbce030-232f-4923-a9cb-3d0c3c5a90ec"
+          },
+          "renditions" : [ {
+            "id" : "9bbce030-232f-4923-a9cb-3d0c3c5a90ec",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<p><br/></p>                                <p style=\"text-align:left;\">                                     Utilisez ces campagnes pour générer des prospects et développer votre entreprise                                 </p>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "bodyField" : "Description",
+            "categoryField" : "Type",
+            "dataFieldsConfig" : "",
+            "highlight" : "__",
+            "highlightColor" : "#007DB8",
+            "listLabel" : "",
+            "listViewName" : "AllActiveCampaigns",
+            "showImage" : true,
+            "sortBy" : "Name",
+            "sortOrder" : "Ascending",
+            "titleField" : "Name"
+          },
+          "componentName" : "forceCommunity:campaignTileList",
+          "id" : "e599592f-a1f1-4390-b70b-fa5c89d97554",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "e6233ffb-ac8b-46db-9342-9588e228ab78",
+        "regionLabel" : "Campaign Marketplace",
+        "regionName" : "tab1",
+        "renditionMap" : {
+          "fr_ca" : "e42109fe-42e0-4d54-ab53-7b63366ec5e1"
+        },
+        "renditions" : [ {
+          "id" : "e42109fe-42e0-4d54-ab53-7b63366ec5e1",
+          "renditionValue" : {
+            "regionLabel" : "Marché des campagnes"
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableInlineEdit" : true,
+            "filterName" : "Recent",
+            "layout" : "FULL",
+            "pageSize" : 25,
+            "scope" : "Campaign",
+            "showActionBar" : true,
+            "showChartsPanel" : true,
+            "showDisplay" : "showall",
+            "showFilterPanel" : true,
+            "showImageIcon" : true,
+            "showManualRefreshButton" : true,
+            "showObjectName" : true,
+            "showPinnedList" : true,
+            "showSearchBar" : true
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "e98cc897-5235-4a99-9ee7-23892cda3242",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "75bc751e-b370-4e64-af14-ffaf498f6052",
+        "regionLabel" : "All Campaigns",
+        "regionName" : "tab2",
+        "renditionMap" : {
+          "fr_ca" : "88c9eafa-4e2b-4b79-8d20-ae7476a86e7a"
+        },
+        "renditions" : [ {
+          "id" : "88c9eafa-4e2b-4b79-8d20-ae7476a86e7a",
+          "renditionValue" : {
+            "regionLabel" : "Toutes les campagnes"
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b3d0466a-3fb7-4381-8ae2-25d716488383",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "af54d090-4b8c-4c80-8f6a-8c4a7f639711",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-701"
+}

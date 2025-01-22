@@ -1,0 +1,92 @@
+{
+  "appPageId" : "1fc50bb0-8e65-4e9d-8fc8-e1a5c4335ed2",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "fe9d77dd-c106-4cad-9a52-0092299bc967",
+  "label" : "Login Error",
+  "regions" : [ {
+    "id" : "f326ee0d-5f5b-454a-912f-096428f10e06",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"inverseTextColor\" style=\"text-align: center;\">Invalid Page</div>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "3f78b8a3-ba2a-4e66-8b29-08e242024520",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "47d694d7-28be-4d0e-bc34-49175a0c4523",
+        "fr_ca" : "e5347df4-6922-4b85-bf88-e52f3528b530"
+      },
+      "renditions" : [ {
+        "id" : "e5347df4-6922-4b85-bf88-e52f3528b530",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"inverseTextColor\" style=\"text-align: center;\">Page invalide</div>"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "47d694d7-28be-4d0e-bc34-49175a0c4523",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"inverseTextColor\" style=\"text-align: center;\">Page invalide</div>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "8f32c749-b442-438a-82b7-53fd6071140c",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "06ea07af-cf4d-4697-9656-19cb81228af7",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Login Error"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "b82b68c7-d609-496b-9d32-2f3462908bd7",
+      "renditionMap" : {
+        "fr" : "8cfa3fa4-608f-473c-a83e-19cc0c4ac91c",
+        "fr_ca" : "52f9b9e3-132b-445d-9132-122d3a86c650"
+      },
+      "renditions" : [ {
+        "id" : "52f9b9e3-132b-445d-9132-122d3a86c650",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "title" : "Erreur de connexion"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "8cfa3fa4-608f-473c-a83e-19cc0c4ac91c",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "title" : "Erreur de connexion"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "b6f7a701-c00c-47c3-b82c-267f7ed72ac4",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Login",
+  "type" : "view",
+  "viewType" : "login-error"
+}

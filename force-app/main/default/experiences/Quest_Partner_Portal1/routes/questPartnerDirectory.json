@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "3c26e569-ab63-43a2-8e2d-734a0be978d8",
+  "appPageId" : "41ee606a-6732-48e8-8e93-1cc20e6e8f47",
+  "configurationTags" : [ ],
+  "devName" : "QuestPartnerDirectory__c",
+  "id" : "0b7a2f46-ee8e-4355-99f2-b1457e8a2382",
+  "label" : "Quest Partner Directory",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-quest-partner-directory",
+  "type" : "route",
+  "urlPrefix" : "quest-partner-directory"
+}

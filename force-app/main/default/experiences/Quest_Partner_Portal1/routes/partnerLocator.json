@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "db27139e-e129-4c03-bc79-9a8637eabf9d",
+  "appPageId" : "41ee606a-6732-48e8-8e93-1cc20e6e8f47",
+  "configurationTags" : [ ],
+  "devName" : "partner_locator__c",
+  "id" : "b0cff7a9-c312-4ced-892a-e2a8b011b0e3",
+  "label" : "Partner Locator",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-partner-locator",
+  "type" : "route",
+  "urlPrefix" : "partner-locator"
+}

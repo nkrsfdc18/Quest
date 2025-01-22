@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "7debb5fa-a36e-4d14-8eee-1efa65bfa20f",
+  "appPageId" : "b987754b-affb-4e0d-82de-c3e1b310b89f",
+  "configurationTags" : [ ],
+  "devName" : "Unified_Endpoint_Management_Services__c",
+  "id" : "c2907698-62c5-4cbf-a0a7-0502aa70e79e",
+  "label" : "Unified Endpoint Management Services",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-unified-endpoint-management-services",
+  "type" : "route",
+  "urlPrefix" : "unified-endpoint-management-services"
+}

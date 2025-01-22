@@ -1,0 +1,112 @@
+{
+  "appPageId" : "41ee606a-6732-48e8-8e93-1cc20e6e8f47",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "3626939c-b369-4213-801b-0d97fe1a0faa",
+  "label" : "Topic Catalog",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "Topics",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "2c9bc901-3534-4901-bf9b-242588cf37bd",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "a2a0c917-2d7d-4d5e-8de4-ee510a8c179b",
+        "fr_ca" : "a7322344-b0f1-41b4-b672-053274b3685f"
+      },
+      "renditions" : [ {
+        "id" : "a7322344-b0f1-41b4-b672-053274b3685f",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "bannerText" : "",
+            "bannerTextWithKnowledge" : "Explorez d'autres <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> et <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> sur ce sujet.",
+            "bannerTextWithoutKnowledge" : "Explorez d'autres <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> sur ce sujet.",
+            "title" : "Sujets"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "a2a0c917-2d7d-4d5e-8de4-ee510a8c179b",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "bannerText" : "",
+            "bannerTextWithKnowledge" : "Explorez d'autres <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> et <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> sur ce sujet.",
+            "bannerTextWithoutKnowledge" : "Explorez d'autres <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> sur ce sujet.",
+            "title" : "Sujets"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "05f0bc7b-b9f5-47f2-af33-c8dcfa55cd39",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "forceCommunity:topicCatalog",
+      "id" : "fabee6ac-24fc-44fe-8ed0-76715df3f750",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e07f9f92-2862-4720-83e1-8af6849217a5",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "078fc900-76d0-4330-b63b-ff1260d80d87",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Topic Catalog"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "6a158d6a-fbda-432e-b677-131c5430ee6c",
+      "renditionMap" : {
+        "fr" : "4aeaaa24-c82c-43cd-8859-3c2da3c7a1b4",
+        "fr_ca" : "2354f20d-999f-4bff-8d38-960635e7c296"
+      },
+      "renditions" : [ {
+        "id" : "2354f20d-999f-4bff-8d38-960635e7c296",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "title" : "Catalogue des sujets"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "4aeaaa24-c82c-43cd-8859-3c2da3c7a1b4",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "title" : "Catalogue des sujets"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "42c6c207-1f5e-424f-b971-08f6eee1f5d5",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "topic-catalog"
+}

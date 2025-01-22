@@ -1,0 +1,253 @@
+{
+  "appPageId" : "41ee606a-6732-48e8-8e93-1cc20e6e8f47",
+  "componentName" : "siteforce:sldsTwoCol66Layout",
+  "dataProviders" : [ ],
+  "id" : "d87ddc60-ed53-4ea2-a822-b34e60beb6c1",
+  "label" : "Contact Support",
+  "regions" : [ {
+    "id" : "d9378b84-120e-480e-9955-d3f0ec330c0a",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "allowAttachments" : true,
+        "attachmentLabel" : "Upload File",
+        "buttonAlignment" : "center",
+        "buttonBgColor" : "",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonMaxWidth" : "",
+        "buttonRadius" : 0,
+        "buttonTextColor" : "",
+        "buttonTextHoverColor" : "",
+        "callToAction" : true,
+        "callToActionButtonText" : "",
+        "callToActionText" : "",
+        "callToActionUrl" : "",
+        "confirmationSubtext" : "We’ll get back to you soon.",
+        "confirmationText" : "Your case was created.",
+        "guestQuickActionName" : "Select or configure a global action",
+        "headerSubtitle" : "Tell us how we can help.",
+        "headerTitle" : "Contact Customer Support",
+        "isMicrobatch" : false,
+        "quickActionName" : "NewCommunityCase",
+        "requestSummaryText" : "Case summary"
+      },
+      "componentName" : "forceCommunity:contactSupportForm",
+      "id" : "d59e7d29-f837-41ce-b2da-d3fc6700231e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "c41d25a0-c1ca-4ba9-8de8-9509220130eb",
+        "fr_ca" : "0ba5a9f8-d219-40ee-8c03-6a3ab48ff0c4"
+      },
+      "renditions" : [ {
+        "id" : "0ba5a9f8-d219-40ee-8c03-6a3ab48ff0c4",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "attachmentLabel" : "Télécharger le fichier",
+            "callToActionButtonText" : "",
+            "callToActionText" : "",
+            "confirmationSubtext" : "Nous reviendrons vers vous bientôt.",
+            "confirmationText" : "Votre cas a été créé.",
+            "headerSubtitle" : "Dites-nous comment nous pouvons vous aider.",
+            "headerTitle" : "Contacter le support client",
+            "requestSummaryText" : "Résumé du cas"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "c41d25a0-c1ca-4ba9-8de8-9509220130eb",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "attachmentLabel" : "Télécharger le fichier",
+            "callToActionButtonText" : "",
+            "callToActionText" : "",
+            "confirmationSubtext" : "Nous reviendrons vers vous bientôt.",
+            "confirmationText" : "Votre cas a été créé.",
+            "headerSubtitle" : "Dites-nous comment nous pouvons vous aider.",
+            "headerTitle" : "Contacter le support client",
+            "requestSummaryText" : "Résumé du cas"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "2470b0e3-caf8-4ce5-842d-b67a71c87b78",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "buttonAlignment" : "center",
+        "buttonBgColor" : "",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonMaxWidth" : 100,
+        "buttonRadius" : 0,
+        "buttonTextColor" : "",
+        "buttonTextHoverColor" : "",
+        "confirmationMessage" : "Got it!",
+        "followUpPromptLabel" : "Can we close your question?",
+        "isAskFollowPromptEnabled" : true,
+        "isIncludeArticlesEnabled" : false,
+        "isIncludeDiscussionsEnabled" : true,
+        "isInitialSatisfactionPromptEnabled" : true,
+        "isPublisherDeflectionEnabled" : true,
+        "label" : "Ask a Question",
+        "maxSuggestions" : 5,
+        "satisfactionPromptLabel" : "Did we help to answer your question?",
+        "showDetails" : false,
+        "showTopics" : true,
+        "uneditableTopics" : false
+      },
+      "componentName" : "forceCommunity:askCommunity",
+      "id" : "ea97f0a3-247e-4982-ab05-d3e35d2dd94f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "174e340e-d32d-4583-a567-1eda1f8bbf22",
+        "fr_ca" : "2a9d2b17-381b-4055-a904-eef1ffb5ae1f"
+      },
+      "renditions" : [ {
+        "id" : "2a9d2b17-381b-4055-a904-eef1ffb5ae1f",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "confirmationMessage" : "Compris !",
+            "followUpPromptLabel" : "Pouvons-nous clôturer votre question ?",
+            "isAskFollowPromptEnabled" : "true",
+            "isIncludeArticlesEnabled" : "false",
+            "isIncludeDiscussionsEnabled" : "true",
+            "isInitialSatisfactionPromptEnabled" : "true",
+            "isPublisherDeflectionEnabled" : "true",
+            "label" : "Poser une question",
+            "maxSuggestions" : "5",
+            "satisfactionPromptLabel" : "Avons-nous répondu à votre question ?",
+            "showDetails" : "false",
+            "showTopics" : "true",
+            "uneditableTopics" : "false"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "174e340e-d32d-4583-a567-1eda1f8bbf22",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "confirmationMessage" : "Compris !",
+            "followUpPromptLabel" : "Pouvons-nous clôturer votre question ?",
+            "isAskFollowPromptEnabled" : "true",
+            "isIncludeArticlesEnabled" : "false",
+            "isIncludeDiscussionsEnabled" : "true",
+            "isInitialSatisfactionPromptEnabled" : "true",
+            "isPublisherDeflectionEnabled" : "true",
+            "label" : "Poser une question",
+            "maxSuggestions" : "5",
+            "satisfactionPromptLabel" : "Avons-nous répondu à votre question ?",
+            "showDetails" : "false",
+            "showTopics" : "true",
+            "uneditableTopics" : "false"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "askConfirmationQuestion" : true,
+        "confirmationMessageLabel" : "Got it!",
+        "deflectionSubtitle" : "Find what you need here.",
+        "deflectionTitle" : "Need Answers Fast?",
+        "firstQuestion" : "Did this content solve your issue?",
+        "maxResults" : 6,
+        "measureDeflection" : true,
+        "redirectUrl" : "",
+        "secondQuestion" : "Stop creating your case?",
+        "showArticles" : true,
+        "showDiscussions" : false,
+        "topicId" : ""
+      },
+      "componentName" : "forceCommunity:caseDeflection",
+      "id" : "a885e1c3-6e4f-405f-9176-25a74def62de",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "21b2334f-0111-47c9-8cb3-b2a024231215",
+        "fr_ca" : "643544fa-be15-4729-ba1f-aaadfe88be81"
+      },
+      "renditions" : [ {
+        "id" : "643544fa-be15-4729-ba1f-aaadfe88be81",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "confirmationMessageLabel" : "Compris !",
+            "deflectionSubtitle" : "Trouvez ce dont vous avez besoin ici.",
+            "deflectionTitle" : "Besoin de réponses rapidement ?",
+            "firstQuestion" : "Ce contenu a-t-il résolu votre problème ?",
+            "secondQuestion" : "Arrêter de créer votre dossier ?"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "21b2334f-0111-47c9-8cb3-b2a024231215",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "confirmationMessageLabel" : "Compris !",
+            "deflectionSubtitle" : "Trouvez ce dont vous avez besoin ici.",
+            "deflectionTitle" : "Besoin de réponses rapidement ?",
+            "firstQuestion" : "Ce contenu a-t-il résolu votre problème ?",
+            "secondQuestion" : "Arrêter de créer votre dossier ?"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "a996758d-a5c1-4fe3-a40e-c53e26a2994e",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "aacc4079-147d-420c-bfea-730bc247ae72",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Contact Support"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "07047f5b-5ef5-488c-944e-d01cffc16a70",
+      "renditionMap" : {
+        "fr" : "d321eaf4-ee51-4c2a-a070-a82ff44eda8e",
+        "fr_ca" : "7b91231b-3618-4ed2-be8b-ba486ada2aca"
+      },
+      "renditions" : [ {
+        "id" : "7b91231b-3618-4ed2-be8b-ba486ada2aca",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "title" : "Contacter le support"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "d321eaf4-ee51-4c2a-a070-a82ff44eda8e",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "title" : "Contacter le support"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "73d43ba4-1ee3-451c-8aeb-5afd2ebbedc3",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "contactsupport"
+}

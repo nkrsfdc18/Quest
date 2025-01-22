@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "e7cb6e76-f371-4dab-b023-cc81185eebd9",
+  "appPageId" : "41ee606a-6732-48e8-8e93-1cc20e6e8f47",
+  "configurationTags" : [ ],
+  "devName" : "quest_msp_information__c",
+  "id" : "8d1ba5ef-3ea4-4fef-8829-51e4e3d2d5c5",
+  "label" : "Quest MSP Information",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-quest-msp-information",
+  "type" : "route",
+  "urlPrefix" : "quest-msp-information"
+}

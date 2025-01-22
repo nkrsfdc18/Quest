@@ -1,0 +1,46 @@
+{
+  "appPageId" : "b987754b-affb-4e0d-82de-c3e1b310b89f",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "449ecf99-45b4-489d-8399-84fbd3338f2d",
+  "label" : "Data Protection Services",
+  "regions" : [ {
+    "id" : "da526a35-1f12-4197-955f-179091f44c8c",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:dataProtection",
+      "id" : "574c2743-4d7d-45fc-a54c-8d475196dbcf",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "232f3438-5468-4a8e-92b8-9c06db001683",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "9d974618-7be8-4240-a080-3b04a65a0f9f",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Data Protection Services"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "32c3c271-0a00-4ee0-a233-5f02afce3348",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "50da9034-afd9-48a0-a4d2-00d45c251972",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-data-protection-services"
+}

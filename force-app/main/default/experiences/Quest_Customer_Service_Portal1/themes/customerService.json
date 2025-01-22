@@ -1,0 +1,167 @@
+{
+  "activeBrandingSetId" : "d9f261a4-a5aa-4d29-868c-f911cf488cf8",
+  "customCSS" : ".forceCommunityGlobalNavigation .slds-list__item a, \n.forceCommunityGlobalNavigation .slds-list__item button {\n    color:#00556c  !important; \n    font-size: 18px !important; \n    font-weight: bold !important;\n    font-family: Arial, sans-serif !important; \n    text-align: center !important; \n    font-weight: bold !important;\n}\n.forceCommunityGlobalNavigation .slds-list__item {\n    border-bottom: 4px solid transparent; \n    transition: color 0.3s, border-color 0.3s; \n}\n\n.forceCommunityGlobalNavigation .slds-list__item a:hover {\n    background-color:white !important;\n    color: #fb4f14 !important;\n    border-bottom: 2px solid #fb4f14 !important;\n\n}\n\n.siteforceServiceBody .cHeaderOverlay {\n    background: none;\n    background-color:white !important;\n}\n\n.forceCommunityEmbeddedServiceHelpButton .flatButton {\n    background-color: rgb(48 47 201 / 98%) !important;\n\n}\n\n#header {\n    position: fixed;\n    top: 0;\n    background: white;\n    border-bottom: 1px solid #eff1f1;\n    z-index: 9999;\n}\n.ui-widget.siteforceDesignTimeComponent{\n    margin-bottom: 0 !important;\n}\n.siteforceContentArea .comm-layout-column .ui-widget:not(:last-child),\n.siteforceContentArea .cb-section_column .ui-widget:not(:last-child) {\n    margin-bottom: var(--lwc-uiWidgetMarginBottom, 0) !important;\n}\n.paraHeading {\n    background-color: #00000000;\n    color: #016a9c;\n    font-family: \"Noto Sans\", \"Open Sans\", \"Segoe UI\", \"Helvetica Neue\", \"MS P Gothic\", \"Meiryo UI\", \"Meiryo UI Reg\", \"メイリオ Reg\", \"MS UI Gothic Reg\", \"Hiragino Kaku Gothic Reg\", \"ヒラギノ角ゴ Pro W3 Reg\", \"Microsoft YaHei\", \"微软雅黑\", \"Hiragino Sans GB\", \"Microsoft JhengHei\", \"微軟正黑體\", \"Malgun Gothic\", Gulim, Tahoma, \"Arial Unicode\", sans-serif;\n    font-size: 16px;\n    line-height: 1.5;\n    padding : 20px 15px 20px 15px;\n\n\n}\n.paraText {\n    color: #333;\n    font-family: \"Noto Sans\", \"Open Sans\", \"Segoe UI\", \"Helvetica Neue\", \"MS P Gothic\", \"Meiryo UI\", \"Meiryo UI Reg\", \"メイリオ Reg\", \"MS UI Gothic Reg\", \"Hiragino Kaku Gothic Reg\", \"ヒラギノ角ゴ Pro W3 Reg\", \"Microsoft YaHei\", \"微软雅黑\", \"Hiragino Sans GB\", \"Microsoft JhengHei\", \"微軟正黑體\", \"Malgun Gothic\", Gulim, Tahoma, \"Arial Unicode\", sans-serif;\n    font-size: 16px;\n    line-height: 1.5;\n    padding : 0 15px 20px 15px;\n}\n.footertext{\n    color: #333;\n    font-family: \"Noto Sans\", \"Open Sans\", \"Segoe UI\", \"Helvetica Neue\", \"MS P Gothic\", \"Meiryo UI\", \"Meiryo UI Reg\", \"メイリオ Reg\", \"MS UI Gothic Reg\", \"Hiragino Kaku Gothic Reg\", \"ヒラギノ角ゴ Pro W3 Reg\", \"Microsoft YaHei\", \"微软雅黑\", \"Hiragino Sans GB\", \"Microsoft JhengHei\", \"微軟正黑體\", \"Malgun Gothic\", Gulim, Tahoma, \"Arial Unicode\", sans-serif;\n    font-size: 16px;\n    line-height: 1.5;\n    padding : 20px 15px 10px 15px;\n}\n.Buttons{\n\n    color: #fff;\n    background-color: #016a9c;\n    border-color: #016a9c;\n    cursor: pointer;\n    float: right;\n    text-align: right;\n    margin-bottom: 1em;\n    padding: 6px 12px;\n    font-size: 14px;\n    line-height: 1.428571429;\n    font-family: inherit;\n\n\n}\n\n\n\n\n.breadcrumb {\n\n    padding: 10px;\n    font-size: 14px;\n}\n.breadcrumb a {\n    text-decoration: none;\n    color: #007bff;\n}\n\n.title h1 {\n    color: #333;\n    padding-top:50px;\n    font-size: 32px;\n    line-height: 40px;\n    padding-bottom:30px;\n}\n.description p {\n    font-size: 16px;\n    line-height: 1.5;\n    color: #555;\n    display: flex;\n    width: 49%;\n    padding-left: 1em;\n    padding-right: 1em;\n    margin-bottom: 10px;\n\n}\n.description1 h3 {\n    font-size: 20px;\n    line-height: 24px;\n    Margin:0 0 10px 0;\n    color :#333333;\n    padding-left: 1em;\n    padding-right: 1em;\n    padding-top: 1em;\n    font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', 'MS P Gothic', 'Meiryo UI', 'Meiryo UI Reg', 'メイリオ Reg', 'MS UI Gothic Reg', 'Hiragino Kaku Gothic Reg', 'ヒラギノ角ゴ Pro W3 Reg', 'Microsoft YaHei', '微软雅黑', 'Hiragino Sans GB', 'Microsoft JhengHei', '微軟正黑體', 'Malgun Gothic', Gulim, Tahoma, 'Arial Unicode', sans-serif;\n}\n.cta button {\n    background-color: #016a9c;\n    border: 1px solid transparent;\n    border-color: #016a9c;\n    color: #fff;\n    cursor: pointer;\n    font-size: 14px;\n    font-weight: normal;\n    height: 35px;\n    line-height: 1.428571429;\n    margin-top: 30px;\n    text-align: center;\n\n}\n.cta{\n    padding-left: 1em;\n    padding-right:1em;\n}\n.cta button:hover {\n    background-color: #0056b3;\n}\n.image-section {\n    padding: 20px;\n    text-align: center;\n\n\n}\n.image-section img {\n    background-color: #f5f5f5;\n    float: right;\n    height: auto;\n    margin-top: -340px !important;\n    max-width: 100%;\n}\n.BackgroundColor{\n    background-color: #f5f5f5;\n    height: 366px;\n\n}\n.cCenterPanel{\n    padding-top:145PX;\n}\n\n/* featured servises styles */\n.FeaturedServicesHeading {\n    font-size: 28px !important;\n    font-weight: normal !important;\n    font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', 'MS P Gothic', 'Meiryo UI', 'Meiryo UI Reg', 'メイリオ Reg', 'MS UI Gothic Reg', 'Hiragino Kaku Gothic Reg', 'ヒラギノ角ゴ Pro W3 Reg', 'Microsoft YaHei', '微软雅黑', 'Hiragino Sans GB', 'Microsoft JhengHei', '微軟正黑體', 'Malgun Gothic', Gulim, Tahoma, 'Arial Unicode', sans-serif;\n    line-height: 32px;\n    margin: 60px 0 0 0;\n    /*  padding: .7em 0; */\n}\n\n.see-all-services{\n   \n    background-color: transparent;\n    color: #016a9c !important;\n    float: right;\n    font-size: 14px;\n    top: 3.25em;\n    position: relative;\n    padding-top: 7px;\n    padding-bottom: 7px;\n}\n\n.featured-services-children {\n    border-bottom: 1px solid #ccc;\n    margin-bottom: 10px;\n    padding-left: 0;\n    list-style: none;\n    margin-top: 0;\n    font-family: 'Noto Sans';\n    font-size: 14px;\n    color: #333;\n    line-height: 1.428571429;\n    content: \" \";\n    display: table;\n    clear: both;\n    width: 100% !important;\n}\n\n.featured-services-tab {\n    color: #444;\n    background: #fff;\n    border-bottom-color: transparent !important;\n    overflow: hidden;\n    margin-left: 0;\n    float: left;\n    border: 1px solid #ccc;\n    margin-bottom: -1px;\n    height: auto;\n    position: relative;\n    display: block;\n    font-family: 'Noto Sans';\n    font-size: 14px;\n}\n\n.tab-heading {\n    color: #444 !important;\n    background-color: #fff !important;\n    border: 1px solid #016a9c;\n    cursor: default;\n    border-color: transparent;\n    width: 110%;\n    margin-left: -1px;\n    padding-left: 16px !important;\n    border-top: 4px solid #016a9c;\n    padding-top: 6px !important;\n    padding-bottom: 9px !important;\n    line-height: 1.428571429;\n    border-radius: 1px 1px 0 0;\n    background: none;\n    position: relative;\n    display: block;\n    padding: 10px 15px;\n    text-decoration: none;\n    font-family: 'Noto Sans';\n    font-size: 14px;\n    list-style: none !important;\n\n}\n\n.image-with-text{\n    display:flex;\n}\n\n/*data protection service*/\n.slds-card{\n    border:none;\n}\n\n.slds-tabs_default__item {\n    border: 1px solid black;\n    background-color: #f4f6f9; /* Default background */\n    font-size: 16px;\n    transition: all 0.3s ease-in-out;\n}\n\n.slds-tabs_default__item:hover {\n    cursor: pointer;\n}\n\n/* Style for the selected tab */\n\n\n\n\n/*end of data protection*/\n.col-xs-12{\n    display: flex;\n    padding-left:15px;\n}\n.featureds-services-img-wrap{\n    width:100%;\n}\n.featureds-services-img-wrap img{\n    width:100% !important;\n}\n.tab-subcontent{\n    width:100%;\n    font-size: 14px;\n    padding-left: 15px;\n    padding-right:30px;\n    width: 84%;\n    line-height: 1.428571429;\n    /* font-family: 'Noto Sans'; */\n    font-size: 15px;\n\n}\n.DataBasepage{\n    margin: 0 auto !important;\n    max-width: 1350px !important;\n}\n.feature-support-button{\n    width: 250px;\n    height: 37px;\n    background-color: #016a9c;\n    color: #fff;\n}\n\n/* Additional Services */\nbody {\n    font-family: Arial, sans-serif;\n    margin: 0;\n    padding: 0;\n    background-color: #f5f5f5;\n}\n\n.additional-services {\n    background-color: #f9f9f9;\n    margin-top: 80px;\n    margin-bottom: 60px;\n    padding: 20px 40px;\n    text-align: center;\n   \n}\n\n.additional-services h2 {\n    padding-top: .5em;\n    font-size: 28px !important;\n    line-height: 32px;\n    margin: 0 0 10px 0;\n    text-align: left;\n    font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', 'MS P Gothic', 'Meiryo UI', 'Meiryo UI Reg', 'メイリオ Reg', 'MS UI Gothic Reg', 'Hiragino Kaku Gothic Reg', 'ヒラギノ角ゴ Pro W3 Reg', 'Microsoft YaHei', '微软雅黑', 'Hiragino Sans GB', 'Microsoft JhengHei', '微軟正黑體', 'Malgun Gothic', Gulim, Tahoma, 'Arial Unicode', sans-serif;\n    font-weight: normal !important;\n}\n\n.service-container {\n    display: flex;\n    justify-content: space-around;\n    gap: 20px;\n}\n\n.service-box {  \n    display: flex;\n    text-align: center;\n    width: 30%;\n}\n\n.service-box img {\n    height: 40px;\n    margin-bottom: 15px;\n    width: 40px;\n}\n\n.service-box h3 {\n    font-size: 18px;\n    margin-bottom: 10px;\n}\n\n.service-box p {\n    color: #666;\n    font-size: 14px;\n    line-height: 1.6;\n}\n\n.service-box a {\n    color: #007bff;\n    text-decoration: none;\n}\n\n.service-box a:hover {\n    text-decoration: underline;\n}\n\n.service-box-text {\n  /*  padding: 0 38px; */\n    text-align: left;\n    margin-left: 30px;\n    \n}",
+  "developerName" : "service",
+  "id" : "1990eff1-49e0-4b9d-b558-6ffcf0be7486",
+  "label" : "Customer Service",
+  "layouts" : {
+    "Inner" : "8beead29-2a54-44d8-bd3d-29d7d6250a28",
+    "Login" : "e9447f04-00eb-4f19-a469-8e0637de1a7b",
+    "ServiceNotAvailable" : "c309d67c-7267-4122-a9c8-3495abeed0cb"
+  },
+  "type" : "theme",
+  "views" : [ {
+    "componentAttributes" : { },
+    "componentName" : "salesforceIdentity:loginBody2",
+    "id" : "e9447f04-00eb-4f19-a469-8e0637de1a7b",
+    "label" : "Login",
+    "regions" : [ {
+      "id" : "c71080ee-ab68-4ffd-a821-fb313b881efc",
+      "regionName" : "header",
+      "type" : "region"
+    }, {
+      "id" : "bdff60a2-7649-4eff-863a-627a810c2fb3",
+      "regionName" : "content",
+      "type" : "region"
+    }, {
+      "id" : "efe0d7c8-5f37-4070-b65d-b45baea5882a",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "IsDefaultHeaderHidden" : false,
+      "IsDefaultNotificationsHidden" : false,
+      "fixedPageWidth" : 1140,
+      "isPageWidthFixed" : false
+    },
+    "componentName" : "siteforce:serviceBody",
+    "id" : "8beead29-2a54-44d8-bd3d-29d7d6250a28",
+    "label" : "Default",
+    "regions" : [ {
+      "id" : "ed84ab4b-6635-4891-a47d-acaac42cb1cc",
+      "regionName" : "customHeader",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "contineActionLabel" : "Ask the community",
+          "continueLabel" : "Don’t see it?",
+          "crossObjectTypeaheadApiNames" : [ {
+            "isPublic" : true,
+            "name" : "KnowledgeArticleVersion"
+          }, {
+            "isPublic" : true,
+            "name" : "FeedItem"
+          }, {
+            "isPublic" : false,
+            "name" : "Case"
+          }, {
+            "isPublic" : true,
+            "name" : "CollaborationGroup"
+          } ],
+          "disableCrossObjectRelevance" : false,
+          "enableAutocomplete" : true,
+          "maxNumberOfResults" : 6,
+          "placeholder" : "Search...",
+          "questionResultsFirst" : false,
+          "showContinueAction" : true,
+          "showDetails" : false,
+          "showTopics" : true,
+          "signInActionLabel" : "Sign in to ask the community"
+        },
+        "componentName" : "forceCommunity:searchBox",
+        "id" : "1b52409b-612e-4d8c-92ea-db2869a86c72",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "c88faee1-6e8e-444b-8707-139dde188a29",
+      "regionName" : "search",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "accountManagementLabel" : "Account Management",
+          "communityBuilderLabel" : "Experience Builder",
+          "communitySetupLabel" : "Salesforce Setup",
+          "contactSupportLabel" : "Contact Support",
+          "filterName" : "MyCases",
+          "homeLabel" : "Home",
+          "includeContactSupport" : true,
+          "includeMessages" : false,
+          "loginLabel" : "Login",
+          "logoutLabel" : "Logout",
+          "myAccountLabel" : "My Account",
+          "showAccountManagement" : true,
+          "showUserSettings" : true,
+          "userSettingsLabel" : "My Settings",
+          "viewProfileLabel" : "My Profile"
+        },
+        "componentName" : "selfService:userProfileMenu",
+        "id" : "18f7080d-5ce3-4fa4-864d-4d1b749e6d5a",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "c5190bd4-7611-4ad6-b93e-1347dd18a620",
+      "regionName" : "profileMenu",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "NavigationMenuEditorRefresh" : "Default_Navigation2",
+          "hideAppLauncher" : false,
+          "hideHomeText" : false
+        },
+        "componentName" : "forceCommunity:globalNavigation",
+        "id" : "e3570926-2f80-4daa-9f6c-bdf2ba4d9850",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "b6b90948-7b77-471e-8c88-70b817f0a153",
+      "regionName" : "navBar",
+      "type" : "region"
+    }, {
+      "id" : "b3262a9c-d0ef-44ac-b04a-2b9fa8e787df",
+      "regionName" : "customRegion",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "richTextValue" : "<div style=\"text-align: center; background-color: #004a5e; color: white; padding: 20px; font-family: Arial, sans-serif;\">\n    <h2>Quest</h2>\n    <p>© 2024 Quest Software Inc. All Rights Reserved.</p>\n    <p>\n        <a href=\"/legal\" style=\"color: white; text-decoration: none; margin: 0 10px;\">Legal</a> | \n        <a href=\"/terms\" style=\"color: white; text-decoration: none; margin: 0 10px;\">Terms of Use</a> | \n        <a href=\"/privacy\" style=\"color: white; text-decoration: none; margin: 0 10px;\">Privacy Policy</a> | \n        <a href=\"/choices\" style=\"color: white; text-decoration: none; margin: 0 10px;\">Your Privacy Choices</a> | \n        <a href=\"/cookie\" style=\"color: white; text-decoration: none; margin: 0 10px;\">Cookie Use Policy</a> | \n        <a href=\"/accessibility\" style=\"color: white; text-decoration: none; margin: 0 10px;\">Accessibility</a>\n    </p>\n    <div style=\"margin-top: 10px;\">\n        <a href=\"https://www.linkedin.com/company/quest-software\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/linkedin.png\" alt=\"LinkedIn\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n        <a href=\"https://twitter.com/quest\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/x.png\" alt=\"X\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n        <a href=\"https://www.facebook.com/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/facebook.png\" alt=\"Facebook\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n        <a href=\"https://www.youtube.com/user/questsoftware\" target=\"_blank\"><img src=\"https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png\" alt=\"YouTube\" style=\"width: 24px; height: 24px; margin: 0 5px;\"></a>\n    </div>\n    <p style=\"margin-top: 10px;\">United States of America (EN)</p>\n</div>"
+        },
+        "componentName" : "forceCommunity:htmlBlock",
+        "id" : "141c51bc-991f-43f1-ad39-de6ab0bd878f",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "bddb6226-defd-403f-aeca-ad7e7ad58810",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1170,
+      "headerBgColor" : "rgba(0, 0, 0, 0)",
+      "isHeaderPinned" : false,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : true
+    },
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "c309d67c-7267-4122-a9c8-3495abeed0cb",
+    "label" : "ServiceNotAvailable",
+    "regions" : [ {
+      "id" : "8b103693-81e2-49a4-99bd-83c8fe1680cd",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "id" : "877beceb-94b0-4513-b1ac-c4c3f55ed9ef",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  } ]
+}
